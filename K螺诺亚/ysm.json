@@ -68,7 +68,8 @@
 			},
 			"texture": [
 				{
-					"uv": "textures/texture.png"
+					"uv": "textures/texture.png",
+					"specular": "textures/pbr/blue_s.png"
 				}
 			],
 			"animation": {
