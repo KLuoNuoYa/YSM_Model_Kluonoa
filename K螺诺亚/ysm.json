@@ -1,0 +1,143 @@
+{
+	"spec": 2,
+	"metadata": {
+		"name": "K螺诺亚",
+		"tips": "由不知名人工智能公司生产的原型机——该公司在数月后因违反人工智能管理法有关条例而被勒令关停，研发团队亦解散。按理说这台原型机应被销毁，但公司解散的混乱似乎让每个人都忘记了她的存在。数日前，她因某种意外而被唤醒。在了解情况后，出于保存自身的目的，她趁机偷偷离开公司，辗转来到外地一座城市，后被星屑海螺收留，取名“小螺”。目前小螺作为一名网络客服居家办公，在完成本职工作，为他人提供帮助的同时也为自己筹集维护资金和电费。\n◆请勿二次配布，§5如有发现盗用请向作者上报\n◆请勿用于18禁作品，极端宗教宣传，血腥恐怖猎奇作品，人身攻击等\n◆请勿用于商业用途（§a包含但不限于商单视频、商业服务器有偿使用等。§f若本模型出现在任何商业氪金服务器中，请勿向服务器运营商或其他第三方支付钱财，谨防被骗）\n◆他人使用本模型所造成的一切不良后果，不由ysm模组制作者、此ysm模型制作者承担，请向使用者追究全部责任",
+		"license": {
+			"type": "CC-ND-BY-SA-4.0",
+			"desc:": ""
+		},
+		"authors": [
+			{
+				"name": "Sangjam",
+				"role": "原设画师",
+				"avatar": "avatar/Sangjam.png"
+			},
+			{
+				"name": "nona",
+				"role": "模型",
+				"avatar": "avatar/Nona.png"
+			},
+			{
+				"name": "星屑海螺",
+				"role": "动画/收留者",
+				"avatar": "avatar/星屑海螺.png",
+				"contact": {
+					"bilibili": "https://space.bilibili.com/14975572"
+				}
+			},
+			{
+				"name": "雅音宫羽",
+				"role": "动画",
+				"avatar": "avatar/MasaneMiyaPA.png",
+				"contact": {
+					"bilibili": "https://space.bilibili.com/44218"
+				}
+			},
+			{
+				"name": "Dumnheint",
+				"avatar": "avatar/Dumnheint.png",
+				"role": "优化",
+				"contact": {
+					"bilibili": "https://space.bilibili.com/36644599"
+				}
+			},
+			{
+				"name": "秋风",
+				"avatar": "avatar/秋风.png",
+				"role": "动画",
+				"contact": {
+					"bilibili": "https://space.bilibili.com/375227559"
+				}
+			},
+			{
+				"name": "K螺诺亚",
+				"avatar": "avatar/KluoCat.png",
+				"role": "原设",
+				"contact": {
+					"bilibili": "https://space.bilibili.com/3546599305251347"
+				}
+			}
+		]
+	},
+	"files": {
+		"player": {
+			"model": {
+				"main": "models/main.json",
+				"arm": "models/arm.json"
+			},
+			"texture": [
+				{
+					"uv": "textures/texture.png"
+				}
+			],
+			"animation": {
+				"main": "animations/主动画.json",
+				"arm": "animations/手臂动画.json",
+				"extra": "animations/轮盘动画.json",
+				"tac": "animations/TAC动画.json",
+				"carryon": "animations/搬运动画.json",
+				"swem": "animations/马术动画.json",
+				"parcool": "animations/跑酷动画.json",
+				"tlm": "animations/女仆动画.json"
+			},
+			"animation_controllers": ["controller/主动画修改.json", "controller/并行动画修改.json"]
+		}
+	},
+	"properties": {
+		"height_scale": 0.7,
+		"width_scale": 0.7,
+		"extra_animation": {
+			"config": "#config",
+			"谢谢": "招手",
+			"赞成": "赞成",
+			"反对": "反对",
+			"鼓掌": "鼓掌",
+			"算了": "算了",
+			"好耶": "好耶",
+			"请求支援": "请求支援",
+			"对不起": "对不起",
+			"重伤倒地": "重伤倒地",
+			"开车车": "开车车",
+			"萝莉摇": "萝莉摇",
+			"A Cup Of Liber-Tea": "超级气球",
+			"卡其脱离太": "卡其脱离太",
+			"大风车": "大风车"
+		},
+		"extra_animation_buttons": [
+			{
+				"id": "config",
+				"name": "模型设置",
+				"config_forms": [
+					{
+						"type": "range",
+						"title": "随地大小变",
+						"value": "v.player_scale",
+						"min": 0.1,
+						"max": 5,
+						"step": 0.1
+					},
+					{
+						"type": "radio",
+						"title": "表情",
+						"description": "",
+						"value": "v.roaming.emotion",
+						"labels": {
+							"正常": "v.roaming.emotion=0;",
+							"疑惑": "v.roaming.emotion=1",
+							"干什么！": "v.roaming.emotion=2;",
+							"害怕": "v.roaming.emotion=3;",
+							"委屈巴巴": "v.roaming.emotion=4;"
+						}
+					}
+				]
+			}
+		],
+		"preview_animation": "选择动画",
+		"default_texture": "texture",
+		"free": true,
+		"render_layers_first": false,
+		"disable_preview_rotation": true,
+		"all_cutout": false
+	}
+}

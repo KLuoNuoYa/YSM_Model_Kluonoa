@@ -1,0 +1,142 @@
+{
+	"format_version": "1.19.0",
+	"animation_controllers": {
+		"player.pre_main": {
+			"initial_state": "空动画",
+			"states": {
+				"空动画": {
+					"animations": ["empty"],
+					"transitions": [
+						{"待命": "ctrl.idle&&!(ysm.food_level<=6)"},
+						{"低电量": "ctrl.idle&&(ysm.food_level<=6)"}
+					],
+					"blend_transition": {
+						"0.0": 1,
+						"0.0278": 0.96571,
+						"0.0556": 0.8738,
+						"0.0833": 0.74074,
+						"0.1111": 0.58299,
+						"0.1389": 0.41701,
+						"0.1667": 0.25926,
+						"0.1944": 0.1262,
+						"0.2222": 0.03429,
+						"0.25": 0
+					}
+				},
+				"待命": {
+					"animations": ["待命"],
+					"transitions": [
+						{"低电量": "ctrl.idle&&(ysm.food_level<=6)"},
+						{"空动画": "!ctrl.idle"}
+					],
+					"blend_transition": {
+						"0.0": 1,
+						"0.0278": 0.96571,
+						"0.0556": 0.8738,
+						"0.0833": 0.74074,
+						"0.1111": 0.58299,
+						"0.1389": 0.41701,
+						"0.1667": 0.25926,
+						"0.1944": 0.1262,
+						"0.2222": 0.03429,
+						"0.25": 0
+					}
+				},
+				"低电量": {
+					"animations": ["低电量"],
+					"transitions": [
+						{"待命": "ctrl.idle&&!(ysm.food_level<=6)"},
+						{"空动画": "!ctrl.idle"}
+					],
+					"blend_transition": {
+						"0.0": 1,
+						"0.0278": 0.96571,
+						"0.0556": 0.8738,
+						"0.0833": 0.74074,
+						"0.1111": 0.58299,
+						"0.1389": 0.41701,
+						"0.1667": 0.25926,
+						"0.1944": 0.1262,
+						"0.2222": 0.03429,
+						"0.25": 0
+					}
+				}
+			}
+		},
+		"player.post_swing": {
+			"states": {
+				"default": {
+					"animations": ["attack_empty"],
+					"on_exit": ["v.swing_sword=0;"],
+					"transitions": [
+						{"attack1": "v.swing_sword&&!ctrl.jump"},
+						{"attack_jump": "v.swing_sword&&ctrl.jump"}
+					]
+				},
+				"attack1": {
+					"animations": [
+						{"sword_attack_01": "!ctrl.idle"},
+						{"sword_idle_attack_01": "ctrl.idle"}
+					],
+					"on_exit": ["v.swing_sword=0;"],
+					"transitions": [
+						{"attack2": "v.swing_sword&&!ctrl.jump"},
+						{"default": "q.all_animations_finished"},
+						{"attack_jump": "v.swing_sword&&ctrl.jump"}
+					],
+					"blend_transition": 0.05,
+					"blend_via_shortest_path": true
+				},
+				"attack2": {
+					"animations": [
+						{"sword_attack_02": "!ctrl.idle"},
+						{"sword_idle_attack_02": "ctrl.idle"}
+					],
+					"on_exit": ["v.swing_sword=0;"],
+					"transitions": [
+						{"attack3": "v.swing_sword&&!ctrl.jump"},
+						{"default": "q.all_animations_finished"},
+						{"attack_jump": "v.swing_sword&&ctrl.jump"}
+					],
+					"blend_transition": 0.05,
+					"blend_via_shortest_path": true
+				},
+				"attack3": {
+					"animations": [
+						{"sword_attack_03": "!ctrl.idle"},
+						{"sword_idle_attack_03": "ctrl.idle"}
+					],
+					"on_exit": ["v.swing_sword=0;"],
+					"transitions": [
+						{"default": "q.all_animations_finished"},
+						{"attack1": "v.swing_sword&&!ctrl.jump"},
+						{"attack_jump": "v.swing_sword&&ctrl.jump"}
+					],
+					"blend_transition": {
+						"0.0": 1,
+						"0.0056": 0.96985,
+						"0.0111": 0.88302,
+						"0.0167": 0.75,
+						"0.0222": 0.58682,
+						"0.0278": 0.41318,
+						"0.0333": 0.25,
+						"0.0389": 0.11698,
+						"0.0445": 0.03015,
+						"0.05": 0
+					},
+					"blend_via_shortest_path": true
+				},
+				"attack_jump": {
+					"animations": ["sword_jump_attack"],
+					"on_exit": ["v.swing_sword=0;"],
+					"transitions": [
+						{"default": "q.all_animations_finished"},
+						{"attack1": "v.swing_sword&&!ctrl.jump"}
+					],
+					"blend_transition": 0.05,
+					"blend_via_shortest_path": true
+				}
+			}
+		}
+	}
+}
