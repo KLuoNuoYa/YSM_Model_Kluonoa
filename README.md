@@ -1,3 +1,5 @@
+![lhKluonew.png](lhKluonew.png)
+
 **K螺诺亚（Kluonoa）人设档案**
 
 **型号**：KLUO-0217
