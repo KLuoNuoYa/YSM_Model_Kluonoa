@@ -196,6 +196,18 @@
 				},
 				"wei_xiao": {
 					"position": [0, 0, -1]
+				},
+				"LeftEyebrow": {
+					"position": [0, -0.7, 0]
+				},
+				"RightEyebrow": {
+					"position": [0, -0.7, 0]
+				},
+				"RightEyelid": {
+					"scale": 0
+				},
+				"LeftEyelid": {
+					"scale": 0
 				}
 			}
 		},
