@@ -11,12 +11,18 @@
 			{
 				"name": "Sangjam",
 				"role": "原设画师",
-				"avatar": "avatar/Sangjam.png"
+				"avatar": "avatar/Sangjam.png",
+				"contact": {
+					"bilibili": "https://space.bilibili.com/474161531"
+				}
 			},
 			{
 				"name": "nona",
 				"role": "模型",
-				"avatar": "avatar/Nona.png"
+				"avatar": "avatar/Nona.png",
+				"contact": {
+					"bilibili": "https://space.bilibili.com/19254145"
+				}
 			},
 			{
 				"name": "星屑海螺",
@@ -24,6 +30,14 @@
 				"avatar": "avatar/星屑海螺.png",
 				"contact": {
 					"bilibili": "https://space.bilibili.com/14975572"
+				}
+			},
+			{
+				"name": "咖啡鱼",
+				"avatar": "avatar/咖啡鱼.png",
+				"role": "部分动作",
+				"contact": {
+					"bilibili": "https://space.bilibili.com/104972076"
 				}
 			},
 			{
@@ -60,13 +74,17 @@
 			},
 			{
 				"name": "K螺诺亚",
-				"avatar": "avatar/KluoCat.png",
+				"avatar": "avatar/NEWKluoCat.png",
 				"role": "原设",
 				"contact": {
 					"bilibili": "https://space.bilibili.com/3546599305251347"
 				}
 			}
-		]
+		],
+		"link": {
+			"home": "https://space.bilibili.com/3546599305251347",
+			"donate": "https://afdian.com/a/ysmmod"
+		}
 	},
 	"files": {
 		"player": {
