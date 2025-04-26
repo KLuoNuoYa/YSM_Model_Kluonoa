@@ -135,3 +135,5 @@
 - 设计使用年限 20 年不代表时间一到就会无法使用，而是指系统在没有外部异常干预的情况下，可以稳定运行的时间，如果超期使用机体的性能可能会下降，但仍能运转一段时间，直到机体损坏到无法修复的程度。
 
 以上设定使用 DeepSeek R1 辅助生成。
+
+KLUO-0217 © 2025 by KLuoNuoYa is licensed under CC BY-NC-SA 4.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
