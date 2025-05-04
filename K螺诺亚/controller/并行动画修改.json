@@ -38,7 +38,8 @@
 						{"表情_疑惑": "v.roaming.emotion==1"},
 						{"表情_干什么": "v.roaming.emotion==2"},
 						{"表情_害怕": "v.roaming.emotion==3"},
-						{"表情_委屈巴巴": "v.roaming.emotion==4"}
+						{"表情_委屈巴巴": "v.roaming.emotion==4"},
+						{"表情_苦呀西": "v.roaming.emotion==5"}
 					]
 				}
 			}

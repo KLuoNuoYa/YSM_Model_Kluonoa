@@ -10220,6 +10220,10 @@
 				"yi_huo": {
 					"position": [0, 0, -1],
 					"scale": 1
+				},
+				"kuyaxi": {
+					"position": [0, 0, 0],
+					"scale": 0
 				}
 			}
 		},
@@ -10263,6 +10267,10 @@
 					"scale": 0
 				},
 				"yi_huo": {
+					"position": [0, 0, 0],
+					"scale": 0
+				},
+				"kuyaxi": {
 					"position": [0, 0, 0],
 					"scale": 0
 				}
@@ -10314,6 +10322,10 @@
 				"yi_huo": {
 					"position": [0, 0, 0],
 					"scale": 0
+				},
+				"kuyaxi": {
+					"position": [0, 0, 0],
+					"scale": 0
 				}
 			}
 		},
@@ -10351,6 +10363,43 @@
 				},
 				"Left_ear": {
 					"rotation": [17.5, 0, 20]
+				},
+				"kuyaxi": {
+					"position": [0, 0, 0],
+					"scale": 0
+				}
+			}
+		},
+		"表情_苦呀西": {
+			"loop": true,
+			"bones": {
+				"Eyes": {
+					"position": [0, 0, 1],
+					"scale": 0
+				},
+				"biyan": {
+					"position": [0, 0, 0],
+					"scale": 0
+				},
+				"kuyaxi": {
+					"position": [0, 0, -1],
+					"scale": 1
+				},
+				"jue_zui": {
+					"position": [0, 0, 0],
+					"scale": 0
+				},
+				"wei_xiao": {
+					"position": [0, 0, 0],
+					"scale": 0
+				},
+				"xiao": {
+					"position": [0, 0, 0],
+					"scale": 0
+				},
+				"zhang_zui": {
+					"position": [0, 0, -1],
+					"scale": 1
 				}
 			}
 		}

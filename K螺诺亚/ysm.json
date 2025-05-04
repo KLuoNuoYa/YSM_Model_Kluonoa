@@ -151,10 +151,11 @@
 						"value": "v.roaming.emotion",
 						"labels": {
 							"正常": "v.roaming.emotion=0;",
-							"疑惑": "v.roaming.emotion=1",
+							"疑惑": "v.roaming.emotion=1;",
 							"干什么！": "v.roaming.emotion=2;",
 							"害怕": "v.roaming.emotion=3;",
-							"委屈巴巴": "v.roaming.emotion=4;"
+							"委屈巴巴": "v.roaming.emotion=4;",
+							"苦呀西": "v.roaming.emotion=5;"
 						}
 					}
 				]
