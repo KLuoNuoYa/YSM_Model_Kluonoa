@@ -1124,7 +1124,7 @@
 			}
 		},
 		"tac:reload:rifle": {
-			"animation_length": 10,
+			"animation_length": 2,
 			"bones": {
 				"UpBody": {
 					"rotation": {
@@ -2916,7 +2916,7 @@
 		},
 		"tac:reload:pistol": {
 			"loop": "hold_on_last_frame",
-			"animation_length": 10,
+			"animation_length": 2,
 			"bones": {
 				"UpBody": {
 					"rotation": {
@@ -4815,7 +4815,7 @@
 		},
 		"tac:reload:rpg": {
 			"loop": "hold_on_last_frame",
-			"animation_length": 10,
+			"animation_length": 3,
 			"bones": {
 				"UpBody": {
 					"rotation": {
