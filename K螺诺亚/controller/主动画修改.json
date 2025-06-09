@@ -43,7 +43,10 @@
 					}
 				},
 				"低电量": {
-					"animations": ["低电量"],
+					"animations": [
+						{"低电量": "(ysm.food_level<=6)&&(ysm.food_level>2)"},
+						{"电量过低": "(ysm.food_level<=2)"}
+					],
 					"transitions": [
 						{"待命": "ctrl.idle&&!(ysm.food_level<=6)"},
 						{"空动画": "!ctrl.idle"}

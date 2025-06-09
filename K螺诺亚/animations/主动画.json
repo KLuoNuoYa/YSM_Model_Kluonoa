@@ -39,6 +39,49 @@
 				}
 			}
 		},
+		"电量过低": {
+			"loop": true,
+			"bones": {
+				"UpBody": {
+					"position": [0, "math.sin(q.anim_time*120)*0.1", 0]
+				},
+				"LeftEyebrow": {
+					"rotation": [0, 0, 7.5],
+					"position": [0, -1, 0]
+				},
+				"RightEyebrow": {
+					"rotation": [0, 0, -7.5],
+					"position": [0, -1, 0]
+				},
+				"jue_zui": {
+					"position": [0, 0, -1]
+				},
+				"fakehair": {
+					"rotation": [-7.5, 0, 0]
+				},
+				"Right_ear": {
+					"rotation": [17.5, 0, -20]
+				},
+				"Left_ear": {
+					"rotation": [17.5, 0, 20]
+				},
+				"LeftArm": {
+					"rotation": [0, 0, "-8+math.sin(90+q.anim_time*120)*1"]
+				},
+				"RightArm": {
+					"rotation": [0, 0, "8-math.sin(90+q.anim_time*120)*1"]
+				},
+				"Head": {
+					"rotation": [20, 0, 5]
+				},
+				"RightEyelid": {
+					"scale": [1, 0, 1]
+				},
+				"LeftEyelid": {
+					"scale": [1, 0, 1]
+				}
+			}
+		},
 		"待命": {
 			"loop": true,
 			"bones": {
