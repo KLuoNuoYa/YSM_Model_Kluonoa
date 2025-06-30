@@ -26,7 +26,7 @@
 				"待命": {
 					"animations": ["待命"],
 					"transitions": [
-						{"低电量": "ctrl.idle&&(ysm.food_level<=6)"},
+						{"低电量": "ctrl.idle&&(ysm.food_level<=6)&&!ysm.rendering_in_inventory"},
 						{"空动画": "!ctrl.idle"}
 					],
 					"blend_transition": {
@@ -49,7 +49,7 @@
 					],
 					"transitions": [
 						{"待命": "ctrl.idle&&!(ysm.food_level<=6)"},
-						{"空动画": "!ctrl.idle"}
+						{"空动画": "!ctrl.idle||ysm.rendering_in_inventory"}
 					],
 					"blend_transition": {
 						"0.0": 1,
