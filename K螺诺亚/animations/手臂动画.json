@@ -300,13 +300,19 @@
 				"wei_xiao": {
 					"position": {
 						"0.0": [0, 0, 0],
-						"0.25": {"pre": [0, 0, 0], "post": [0, 0, -1]}
+						"0.25": {
+							"pre": [0, 0, 0],
+							"post": [0, 0, -1]
+						}
 					}
 				},
 				"xiao": {
 					"position": {
 						"0.0": [0, 0, -1],
-						"0.25": {"pre": [0, 0, -1], "post": [0, 0, 0]}
+						"0.25": {
+							"pre": [0, 0, -1],
+							"post": [0, 0, 0]
+						}
 					}
 				},
 				"jue_zui": {
@@ -1440,11 +1446,11 @@
 							"lerp_mode": "catmullrom"
 						},
 						"0.6667": {
-							"post": [0, -1.5, 0],
+							"post": [0, -1.1, 0],
 							"lerp_mode": "catmullrom"
 						},
 						"1.0": {
-							"post": [0, -1.25, 0],
+							"post": [0, -1, 0],
 							"lerp_mode": "catmullrom"
 						}
 					}
@@ -1670,11 +1676,11 @@
 							"lerp_mode": "catmullrom"
 						},
 						"0.7": {
-							"post": [0, -1.5, 0],
+							"post": [0, -1.1, 0],
 							"lerp_mode": "catmullrom"
 						},
 						"1.0": {
-							"post": [0, -1.25, 0],
+							"post": [0, -1, 0],
 							"lerp_mode": "catmullrom"
 						}
 					}
