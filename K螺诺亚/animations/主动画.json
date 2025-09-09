@@ -100,10 +100,46 @@
 				}
 			}
 		},
-		"idle": {
-			"loop": true
+		"开车_待命": {
+			"loop": true,
+			"bones": {
+				"wei_xiao": {
+					"position": [0, 0, -1],
+					"scale": 1
+				},
+				"UpBody": {
+					"position": [0, "math.sin(q.anim_time*120)*0.1", 0]
+				},
+				"LeftArm": {
+					"rotation": [-35, 0, -10]
+				},
+				"RightArm": {
+					"rotation": [-35, 0, 10]
+				},
+				"MAllBody": {
+					"position": [10.725, 0, 4]
+				},
+				"LeftForeArm": {
+					"rotation": [-90, -7.5, 27.5]
+				},
+				"RightForeArm": {
+					"rotation": [-90, 7.5, -27.5]
+				},
+				"LeftLeg": {
+					"rotation": [-97.5, 0, 0]
+				},
+				"LeftLowerLeg": {
+					"rotation": [47.5, 0, 0]
+				},
+				"RightLeg": {
+					"rotation": [-97.5, 0, 0]
+				},
+				"RightLowerLeg": {
+					"rotation": [47.5, 0, 0]
+				}
+			}
 		},
-		"walk": {
+		"正常_行走": {
 			"loop": true,
 			"animation_length": 1,
 			"blend_weight": "ysm.second_order('walk',math.clamp(q.ground_speed/2,0.3,1),1,1,0)",
@@ -1619,6 +1655,74 @@
 					"rotation": [20, 0, "math.sin(-160+q.anim_time*360)*20"]
 				}
 			}
+		},
+		"开车_行走": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"wei_xiao": {
+					"position": [0, 0, -1],
+					"scale": 1
+				},
+				"LeftArm": {
+					"rotation": [-35, 0, -10]
+				},
+				"RightArm": {
+					"rotation": [-35, 0, 10]
+				},
+				"MAllBody": {
+					"position": [10.725, 0, 4]
+				},
+				"LeftForeArm": {
+					"rotation": [-90, -7.5, 27.5]
+				},
+				"RightForeArm": {
+					"rotation": [-90, 7.5, -27.5]
+				},
+				"LeftLeg": {
+					"rotation": [-97.5, 0, 0]
+				},
+				"LeftLowerLeg": {
+					"rotation": [47.5, 0, 0]
+				},
+				"RightLeg": {
+					"rotation": [-97.5, 0, 0]
+				},
+				"RightLowerLeg": {
+					"rotation": [47.5, 0, 0]
+				},
+				"LeftFrontWheel": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [360, 0, 0]
+					}
+				},
+				"RightFrontWheel": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [360, 0, 0]
+					}
+				},
+				"LeftBackWheel": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [360, 0, 0]
+					}
+				},
+				"RightBackWheel": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [360, 0, 0]
+					}
+				}
+			}
+		},
+		"idle": {
+			"loop": true
+		},
+		"walk": {
+			"loop": true,
+			"blend_weight": "ysm.second_order('walk',math.clamp(q.ground_speed/2,0.3,1),1,1,0)"
 		},
 		"run": {
 			"loop": true,
@@ -9293,8 +9397,22 @@
 				]
 			}
 		},
-		"parallel4": {
+		"——车的仪表": {
 			"loop": true
+		},
+		"parallel4": {
+			"loop": true,
+			"bones": {
+				"PointerSpeed": {
+					"rotation": [0, 0, "math.clamp(-1*(5*math.abs(query.ground_speed)+5*math.abs(query.vertical_speed)),-225,0)"]
+				},
+				"PointerFuel": {
+					"rotation": [0, 0, "math.clamp(ysm.food_level*-11.25,-225,0)"]
+				},
+				"PointerArmor": {
+					"rotation": [0, 0, "math.clamp(ysm.armor_value*-11.25,-225,0)"]
+				}
+			}
 		},
 		"parallel5": {
 			"loop": true
@@ -9434,6 +9552,9 @@
 				},
 				"Player_Size": {
 					"scale": "v.player_scale??1"
+				},
+				"Car": {
+					"scale": "v.roaming.car&&(ctrl.idle||ctrl.walk)"
 				}
 			}
 		},
