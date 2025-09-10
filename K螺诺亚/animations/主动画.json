@@ -10210,7 +10210,7 @@
 			"loop": true,
 			"bones": {
 				"PointerSpeed": {
-					"rotation": [0, 0, "ysm.second_order('speedPointer',math.clamp(-1*(5*math.abs(query.ground_speed)+5*math.abs(query.vertical_speed)),-225,0),20,1,0)"]
+					"rotation": [0, 0, "ysm.second_order('speedPointer',math.clamp(-1*(5*math.abs(query.ground_speed)+5*math.abs(query.vertical_speed)),-225,0),10,1,0)"]
 				},
 				"PointerFuel": {
 					"rotation": [0, 0, "ysm.second_order('fuelPointer',math.clamp(ysm.food_level*-11.25,-225,0),2,1,0)"]
