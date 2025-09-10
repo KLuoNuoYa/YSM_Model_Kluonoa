@@ -1,20 +1,27 @@
 v.anim_ctrl=1;
 
+// 车辆显示控制
+v.show_car=v.roaming.car;
+
+ctrl.tac_hold_gun||ctrl.playing_extra_animation ? {
+    v.show_car=0;
+};
+
 // 空闲
 ctrl.idle ? {
-    !v.roaming.car&&!(ysm.food_level<=6) ? {
+    !v.show_car&&!(ysm.food_level<=6) ? {
         ctrl.set_animation('正常_待命');
         return ctrl.state_continue;
     };
-    !v.roaming.car&&(ysm.food_level<=6)&&(ysm.food_level>2)&&!ysm.rendering_in_inventory ? {
+    !v.show_car&&(ysm.food_level<=6)&&(ysm.food_level>2)&&!ysm.rendering_in_inventory ? {
         ctrl.set_animation('低电量');
         return ctrl.state_continue;
     };
-    !v.roaming.car&&(ysm.food_level<=2)&&!ysm.rendering_in_inventory ? {
+    !v.show_car&&(ysm.food_level<=2)&&!ysm.rendering_in_inventory ? {
         ctrl.set_animation('电量过低');
         return ctrl.state_continue;
     };
-    v.roaming.car ? {
+    v.show_car ? {
         ctrl.set_animation('开车_待命');
         return ctrl.state_continue;
     };
@@ -22,11 +29,11 @@ ctrl.idle ? {
 
 // 行走
 ctrl.walk ? {
-    !v.roaming.car ? {
+    !v.show_car ? {
         ctrl.set_animation('正常_行走');
         return ctrl.state_continue;
     };
-    v.roaming.car ? {
+    v.show_car ? {
         ctrl.set_animation('开车_行走');
         return ctrl.state_continue;
     };
@@ -34,11 +41,11 @@ ctrl.walk ? {
 
 // 奔跑
 ctrl.run ? {
-    !v.roaming.car ? {
+    !v.show_car ? {
         ctrl.set_animation('正常_奔跑');
         return ctrl.state_continue;
     };
-    v.roaming.car ? {
+    v.show_car ? {
         ctrl.set_animation('开车_奔跑');
         return ctrl.state_continue;
     };
@@ -46,11 +53,11 @@ ctrl.run ? {
 
 // 跳跃
 ctrl.jump ? {
-    !v.roaming.car ? {
+    !v.show_car ? {
         ctrl.set_animation('正常_跳跃');
         return ctrl.state_continue;
     };
-    v.roaming.car ? {
+    v.show_car ? {
         ctrl.set_animation('开车_跳跃');
         return ctrl.state_continue;
     };
@@ -58,12 +65,72 @@ ctrl.jump ? {
 
 // 创造飞行
 ctrl.fly ? {
-    !v.roaming.car ? {
+    !v.show_car ? {
         ctrl.set_animation('正常_飞行');
         return ctrl.state_continue;
     };
-    v.roaming.car ? {
+    v.show_car ? {
         ctrl.set_animation('开车_飞行');
+        return ctrl.state_continue;
+    };
+};
+
+// 鞘翅飞行
+ctrl.elytra_fly ? {
+    !v.show_car ? {
+        ctrl.set_animation('正常_鞘翅飞行');
+        return ctrl.state_continue;
+    };
+    v.show_car ? {
+        ctrl.set_animation('开车_鞘翅飞行');
+        return ctrl.state_continue;
+    };
+};
+
+// 水中漂浮
+ctrl.swim_stand ? {
+    !v.show_car ? {
+        ctrl.set_animation('正常_水中漂浮');
+        return ctrl.state_continue;
+    };
+    v.show_car ? {
+        ctrl.set_animation('开车_水中漂浮');
+        return ctrl.state_continue;
+    };
+};
+
+// 游泳
+ctrl.swim ? {
+    !v.show_car ? {
+        ctrl.set_animation('正常_游泳');
+        return ctrl.state_continue;
+    };
+    v.show_car ? {
+        ctrl.set_animation('开车_游泳');
+        return ctrl.state_continue;
+    };
+};
+
+// 受伤
+ctrl.attacked ? {
+    !v.show_car ? {
+        ctrl.set_animation('正常_受伤');
+        return ctrl.state_continue;
+    };
+    v.show_car ? {
+        ctrl.set_animation('开车_受伤');
+        return ctrl.state_continue;
+    };
+};
+
+// 死亡
+ctrl.death ? {
+    !v.show_car ? {
+        ctrl.set_animation('正常_死亡');
+        return ctrl.state_continue;
+    };
+    v.show_car ? {
+        ctrl.set_animation('开车_死亡');
         return ctrl.state_continue;
     };
 };

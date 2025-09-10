@@ -16,13 +16,18 @@
 					"pivot": [0, 0, 0]
 				},
 				{
-					"name": "MRoot",
+					"name": "Root",
 					"parent": "Player_Size",
 					"pivot": [0, 0, 0]
 				},
 				{
+					"name": "CarRoot",
+					"parent": "Root",
+					"pivot": [0.42647, 0.55357, -2.48654]
+				},
+				{
 					"name": "Car",
-					"parent": "MRoot",
+					"parent": "CarRoot",
 					"pivot": [0.42647, 0.55357, -2.48654],
 					"cubes": [
 						{
@@ -5246,13 +5251,8 @@
 					]
 				},
 				{
-					"name": "Root",
-					"parent": "MRoot",
-					"pivot": [0, 0, 0]
-				},
-				{
 					"name": "MAllBody",
-					"parent": "Root",
+					"parent": "CarRoot",
 					"pivot": [0, 21.725, 0]
 				},
 				{
