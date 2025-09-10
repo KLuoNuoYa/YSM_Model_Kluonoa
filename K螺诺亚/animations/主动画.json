@@ -82,7 +82,7 @@
 				}
 			}
 		},
-		"待命": {
+		"正常_待命": {
 			"loop": true,
 			"bones": {
 				"wei_xiao": {
@@ -116,9 +116,6 @@
 				"RightArm": {
 					"rotation": [-35, 0, 10]
 				},
-				"MAllBody": {
-					"position": [10.725, 0, 4]
-				},
 				"LeftForeArm": {
 					"rotation": [-90, -7.5, 27.5]
 				},
@@ -136,6 +133,9 @@
 				},
 				"RightLowerLeg": {
 					"rotation": [47.5, 0, 0]
+				},
+				"Root": {
+					"position": [10.725, 0, 4]
 				}
 			}
 		},
@@ -730,129 +730,129 @@
 					},
 					"position": {
 						"0.0": [
-							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(0.42)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(-0.21)) + (v.leftbow?(0)) + (v.rightbow?({data3}));"
+							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(0.42)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(-0.21)) + (v.leftbow?(0)) + (v.rightbow?(0));"
 						],
 						"0.0417": [
-							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(0.3)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(-0.15)) + (v.leftbow?(0)) + (v.rightbow?({data3}));"
+							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(0.3)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(-0.15)) + (v.leftbow?(0)) + (v.rightbow?(0));"
 						],
 						"0.0833": [
-							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(0.18)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(-0.09)) + (v.leftbow?(0)) + (v.rightbow?({data3}));"
+							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(0.18)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(-0.09)) + (v.leftbow?(0)) + (v.rightbow?(0));"
 						],
 						"0.125": [
-							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(0.08)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(-0.04)) + (v.leftbow?(0)) + (v.rightbow?({data3}));"
+							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(0.08)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(-0.04)) + (v.leftbow?(0)) + (v.rightbow?(0));"
 						],
 						"0.1667": [
-							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?({data3}));"
+							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?(0));"
 						],
 						"0.2083": [
-							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(-0.05)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(0.03)) + (v.leftbow?(0)) + (v.rightbow?({data3}));"
+							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(-0.05)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(0.03)) + (v.leftbow?(0)) + (v.rightbow?(0));"
 						],
 						"0.25": [
-							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(-0.07)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(0.04)) + (v.leftbow?(0)) + (v.rightbow?({data3}));"
+							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(-0.07)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(0.04)) + (v.leftbow?(0)) + (v.rightbow?(0));"
 						],
 						"0.2917": [
-							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(-0.09)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(0.06)) + (v.leftbow?(0)) + (v.rightbow?({data3}));"
+							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(-0.09)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(0.06)) + (v.leftbow?(0)) + (v.rightbow?(0));"
 						],
 						"0.3333": [
-							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(-0.11)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(0.08)) + (v.leftbow?(0)) + (v.rightbow?({data3}));"
+							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(-0.11)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(0.08)) + (v.leftbow?(0)) + (v.rightbow?(0));"
 						],
 						"0.375": [
-							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(-0.13)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(0.1)) + (v.leftbow?(0)) + (v.rightbow?({data3}));"
+							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(-0.13)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(0.1)) + (v.leftbow?(0)) + (v.rightbow?(0));"
 						],
 						"0.4167": [
-							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(-0.15)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(0.11)) + (v.leftbow?(0)) + (v.rightbow?({data3}));"
+							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(-0.15)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(0.11)) + (v.leftbow?(0)) + (v.rightbow?(0));"
 						],
 						"0.4583": [
-							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(-0.16)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(0.12)) + (v.leftbow?(0)) + (v.rightbow?({data3}));"
+							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(-0.16)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(0.12)) + (v.leftbow?(0)) + (v.rightbow?(0));"
 						],
 						"0.5": [
-							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(-0.16)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(0.13)) + (v.leftbow?(0)) + (v.rightbow?({data3}));"
+							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(-0.16)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(0.13)) + (v.leftbow?(0)) + (v.rightbow?(0));"
 						],
 						"0.5417": [
-							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(-0.13)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(0.11)) + (v.leftbow?(0)) + (v.rightbow?({data3}));"
+							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(-0.13)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(0.11)) + (v.leftbow?(0)) + (v.rightbow?(0));"
 						],
 						"0.5833": [
-							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(-0.09)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(0.09)) + (v.leftbow?(0)) + (v.rightbow?({data3}));"
+							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(-0.09)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(0.09)) + (v.leftbow?(0)) + (v.rightbow?(0));"
 						],
 						"0.625": [
-							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(-0.03)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(0.06)) + (v.leftbow?(0)) + (v.rightbow?({data3}));"
+							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(-0.03)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(0.06)) + (v.leftbow?(0)) + (v.rightbow?(0));"
 						],
 						"0.6667": [
-							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(0.04)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(0.02)) + (v.leftbow?(0)) + (v.rightbow?({data3}));"
+							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(0.04)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(0.02)) + (v.leftbow?(0)) + (v.rightbow?(0));"
 						],
 						"0.7083": [
-							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(0.12)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(-0.02)) + (v.leftbow?(0)) + (v.rightbow?({data3}));"
+							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(0.12)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(-0.02)) + (v.leftbow?(0)) + (v.rightbow?(0));"
 						],
 						"0.75": [
-							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(0.19)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(-0.06)) + (v.leftbow?(0)) + (v.rightbow?({data3}));"
+							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(0.19)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(-0.06)) + (v.leftbow?(0)) + (v.rightbow?(0));"
 						],
 						"0.7917": [
-							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(0.25)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(-0.09)) + (v.leftbow?(0)) + (v.rightbow?({data3}));"
+							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(0.25)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(-0.09)) + (v.leftbow?(0)) + (v.rightbow?(0));"
 						],
 						"0.8333": [
-							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(0.3)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(-0.12)) + (v.leftbow?(0)) + (v.rightbow?({data3}));"
+							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(0.3)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(-0.12)) + (v.leftbow?(0)) + (v.rightbow?(0));"
 						],
 						"0.875": [
-							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(0.38)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(-0.17)) + (v.leftbow?(0)) + (v.rightbow?({data3}));"
+							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(0.38)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(-0.17)) + (v.leftbow?(0)) + (v.rightbow?(0));"
 						],
 						"0.9167": [
-							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(0.41)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(-0.19)) + (v.leftbow?(0)) + (v.rightbow?({data3}));"
+							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(0.41)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(-0.19)) + (v.leftbow?(0)) + (v.rightbow?(0));"
 						],
 						"0.9583": [
-							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(0.44)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(-0.21)) + (v.leftbow?(0)) + (v.rightbow?({data3}));"
+							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(0.44)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(-0.21)) + (v.leftbow?(0)) + (v.rightbow?(0));"
 						],
 						"1.0": [
-							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(0.42)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(-0.21)) + (v.leftbow?(0)) + (v.rightbow?({data3}));"
+							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(0.42)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(-0.21)) + (v.leftbow?(0)) + (v.rightbow?(0));"
 						]
 					}
 				},
@@ -1244,129 +1244,129 @@
 					},
 					"position": {
 						"0.0": [
-							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(-0.16)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(0.13)) + (v.leftbow?(0)) + (v.rightbow?({data3}));"
+							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(-0.16)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(0.13)) + (v.leftbow?(0)) + (v.rightbow?(0));"
 						],
 						"0.0417": [
-							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(-0.13)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(0.11)) + (v.leftbow?(0)) + (v.rightbow?({data3}));"
+							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(-0.13)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(0.11)) + (v.leftbow?(0)) + (v.rightbow?(0));"
 						],
 						"0.0833": [
-							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(-0.09)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(0.09)) + (v.leftbow?(0)) + (v.rightbow?({data3}));"
+							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(-0.09)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(0.09)) + (v.leftbow?(0)) + (v.rightbow?(0));"
 						],
 						"0.125": [
-							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(-0.03)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(0.06)) + (v.leftbow?(0)) + (v.rightbow?({data3}));"
+							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(-0.03)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(0.06)) + (v.leftbow?(0)) + (v.rightbow?(0));"
 						],
 						"0.1667": [
-							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(0.04)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(0.02)) + (v.leftbow?(0)) + (v.rightbow?({data3}));"
+							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(0.04)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(0.02)) + (v.leftbow?(0)) + (v.rightbow?(0));"
 						],
 						"0.2083": [
-							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(0.12)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(-0.02)) + (v.leftbow?(0)) + (v.rightbow?({data3}));"
+							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(0.12)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(-0.02)) + (v.leftbow?(0)) + (v.rightbow?(0));"
 						],
 						"0.25": [
-							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(0.19)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(-0.06)) + (v.leftbow?(0)) + (v.rightbow?({data3}));"
+							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(0.19)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(-0.06)) + (v.leftbow?(0)) + (v.rightbow?(0));"
 						],
 						"0.2917": [
-							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(0.25)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(-0.09)) + (v.leftbow?(0)) + (v.rightbow?({data3}));"
+							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(0.25)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(-0.09)) + (v.leftbow?(0)) + (v.rightbow?(0));"
 						],
 						"0.3333": [
-							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(0.3)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(-0.12)) + (v.leftbow?(0)) + (v.rightbow?({data3}));"
+							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(0.3)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(-0.12)) + (v.leftbow?(0)) + (v.rightbow?(0));"
 						],
 						"0.375": [
-							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(0.38)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(-0.17)) + (v.leftbow?(0)) + (v.rightbow?({data3}));"
+							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(0.38)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(-0.17)) + (v.leftbow?(0)) + (v.rightbow?(0));"
 						],
 						"0.4167": [
-							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(0.41)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(-0.19)) + (v.leftbow?(0)) + (v.rightbow?({data3}));"
+							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(0.41)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(-0.19)) + (v.leftbow?(0)) + (v.rightbow?(0));"
 						],
 						"0.4583": [
-							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(0.44)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(-0.21)) + (v.leftbow?(0)) + (v.rightbow?({data3}));"
+							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(0.44)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(-0.21)) + (v.leftbow?(0)) + (v.rightbow?(0));"
 						],
 						"0.5": [
-							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(0.42)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(-0.21)) + (v.leftbow?(0)) + (v.rightbow?({data3}));"
+							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(0.42)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(-0.21)) + (v.leftbow?(0)) + (v.rightbow?(0));"
 						],
 						"0.5417": [
-							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(0.3)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(-0.15)) + (v.leftbow?(0)) + (v.rightbow?({data3}));"
+							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(0.3)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(-0.15)) + (v.leftbow?(0)) + (v.rightbow?(0));"
 						],
 						"0.5833": [
-							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(0.18)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(-0.09)) + (v.leftbow?(0)) + (v.rightbow?({data3}));"
+							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(0.18)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(-0.09)) + (v.leftbow?(0)) + (v.rightbow?(0));"
 						],
 						"0.625": [
-							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(0.08)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(-0.04)) + (v.leftbow?(0)) + (v.rightbow?({data3}));"
+							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(0.08)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(-0.04)) + (v.leftbow?(0)) + (v.rightbow?(0));"
 						],
 						"0.6667": [
-							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?({data3}));"
+							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?(0));"
 						],
 						"0.7083": [
-							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(-0.05)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(0.03)) + (v.leftbow?(0)) + (v.rightbow?({data3}));"
+							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(-0.05)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(0.03)) + (v.leftbow?(0)) + (v.rightbow?(0));"
 						],
 						"0.75": [
-							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(-0.07)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(0.04)) + (v.leftbow?(0)) + (v.rightbow?({data3}));"
+							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(-0.07)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(0.04)) + (v.leftbow?(0)) + (v.rightbow?(0));"
 						],
 						"0.7917": [
-							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(-0.09)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(0.06)) + (v.leftbow?(0)) + (v.rightbow?({data3}));"
+							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(-0.09)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(0.06)) + (v.leftbow?(0)) + (v.rightbow?(0));"
 						],
 						"0.8333": [
-							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(-0.11)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(0.08)) + (v.leftbow?(0)) + (v.rightbow?({data3}));"
+							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(-0.11)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(0.08)) + (v.leftbow?(0)) + (v.rightbow?(0));"
 						],
 						"0.875": [
-							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(-0.13)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(0.1)) + (v.leftbow?(0)) + (v.rightbow?({data3}));"
+							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(-0.13)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(0.1)) + (v.leftbow?(0)) + (v.rightbow?(0));"
 						],
 						"0.9167": [
-							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(-0.15)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(0.11)) + (v.leftbow?(0)) + (v.rightbow?({data3}));"
+							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(-0.15)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(0.11)) + (v.leftbow?(0)) + (v.rightbow?(0));"
 						],
 						"0.9583": [
-							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(-0.16)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(0.12)) + (v.leftbow?(0)) + (v.rightbow?({data3}));"
+							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(-0.16)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(0.12)) + (v.leftbow?(0)) + (v.rightbow?(0));"
 						],
 						"1.0": [
-							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(-0.16)) + (v.leftbow?(0)) + (v.rightbow?({data3}));",
-							"(!v.leftbow&&!v.rightbow?(0.13)) + (v.leftbow?(0)) + (v.rightbow?({data3}));"
+							"(!v.leftbow&&!v.rightbow?(0)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(-0.16)) + (v.leftbow?(0)) + (v.rightbow?(0));",
+							"(!v.leftbow&&!v.rightbow?(0.13)) + (v.leftbow?(0)) + (v.rightbow?(0));"
 						]
 					}
 				},
@@ -1670,9 +1670,6 @@
 				"RightArm": {
 					"rotation": [-35, 0, 10]
 				},
-				"MAllBody": {
-					"position": [10.725, 0, 4]
-				},
 				"LeftForeArm": {
 					"rotation": [-90, -7.5, 27.5]
 				},
@@ -1694,37 +1691,36 @@
 				"LeftFrontWheel": {
 					"rotation": {
 						"0.0": [0, 0, 0],
-						"1.0": [360, 0, 0]
+						"1.0": ["ysm.input_vertical<0 ? -360 : 360", 0, 0]
 					}
 				},
 				"RightFrontWheel": {
 					"rotation": {
 						"0.0": [0, 0, 0],
-						"1.0": [360, 0, 0]
+						"1.0": ["ysm.input_vertical<0 ? -360 : 360", 0, 0]
 					}
 				},
 				"LeftBackWheel": {
 					"rotation": {
 						"0.0": [0, 0, 0],
-						"1.0": [360, 0, 0]
+						"1.0": ["ysm.input_vertical<0 ? -360 : 360", 0, 0]
 					}
 				},
 				"RightBackWheel": {
 					"rotation": {
 						"0.0": [0, 0, 0],
-						"1.0": [360, 0, 0]
+						"1.0": ["ysm.input_vertical<0 ? -360 : 360", 0, 0]
 					}
+				},
+				"Root": {
+					"position": [10.725, 0, 4]
+				},
+				"MRoot": {
+					"position": [0, "math.sin((q.anim_time*360)*10)/20", 0]
 				}
 			}
 		},
-		"idle": {
-			"loop": true
-		},
-		"walk": {
-			"loop": true,
-			"blend_weight": "ysm.second_order('walk',math.clamp(q.ground_speed/2,0.3,1),1,1,0)"
-		},
-		"run": {
+		"正常_奔跑": {
 			"loop": true,
 			"animation_length": 0.5833,
 			"blend_weight": "ysm.second_order('walk',math.clamp(q.ground_speed/2,0.3,1),1,1,0)",
@@ -2385,7 +2381,71 @@
 				}
 			}
 		},
-		"jump": {
+		"开车_奔跑": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"LeftArm": {
+					"rotation": [-35, 0, -10]
+				},
+				"RightArm": {
+					"rotation": [-35, 0, 10]
+				},
+				"LeftForeArm": {
+					"rotation": [-90, -7.5, 27.5]
+				},
+				"RightForeArm": {
+					"rotation": [-90, 7.5, -27.5]
+				},
+				"LeftLeg": {
+					"rotation": [-97.5, 0, 0]
+				},
+				"LeftLowerLeg": {
+					"rotation": [47.5, 0, 0]
+				},
+				"RightLeg": {
+					"rotation": [-97.5, 0, 0]
+				},
+				"RightLowerLeg": {
+					"rotation": [47.5, 0, 0]
+				},
+				"LeftFrontWheel": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [720, 0, 0]
+					}
+				},
+				"RightFrontWheel": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [720, 0, 0]
+					}
+				},
+				"LeftBackWheel": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [720, 0, 0]
+					}
+				},
+				"RightBackWheel": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [720, 0, 0]
+					}
+				},
+				"Root": {
+					"position": [10.725, 0, 4]
+				},
+				"xiao": {
+					"position": [0, 0, -1],
+					"scale": 1
+				},
+				"MRoot": {
+					"position": [0, "math.sin((q.anim_time*360)*10)/20", 0]
+				}
+			}
+		},
+		"正常_跳跃": {
 			"loop": true,
 			"animation_length": 0.75,
 			"bones": {
@@ -2642,7 +2702,58 @@
 				}
 			}
 		},
-		"fly": {
+		"开车_跳跃": {
+			"loop": true,
+			"bones": {
+				"UpBody": {
+					"position": [0, "math.sin(q.anim_time*120)*0.1", 0]
+				},
+				"LeftArm": {
+					"rotation": [-35, 0, -10]
+				},
+				"RightArm": {
+					"rotation": [-35, 0, 10]
+				},
+				"LeftForeArm": {
+					"rotation": [-90, -7.5, 27.5]
+				},
+				"RightForeArm": {
+					"rotation": [-90, 7.5, -27.5]
+				},
+				"LeftLeg": {
+					"rotation": [-97.5, 0, 0]
+				},
+				"LeftLowerLeg": {
+					"rotation": [47.5, 0, 0]
+				},
+				"RightLeg": {
+					"rotation": [-97.5, 0, 0]
+				},
+				"RightLowerLeg": {
+					"rotation": [47.5, 0, 0]
+				},
+				"Root": {
+					"position": [10.725, 0, 4]
+				},
+				"xiao": {
+					"position": [0, 0, -1],
+					"scale": 1
+				},
+				"LeftFrontWheel": {
+					"position": [0, -1, 0]
+				},
+				"RightFrontWheel": {
+					"position": [0, -1, 0]
+				},
+				"LeftBackWheel": {
+					"position": [0, -1, 0]
+				},
+				"RightBackWheel": {
+					"position": [0, -1, 0]
+				}
+			}
+		},
+		"正常_飞行": {
 			"loop": true,
 			"animation_length": 0.75,
 			"blend_weight": "ysm.second_order('walk',math.clamp(q.ground_speed/2,0.3,1),1,1,0)",
@@ -2899,6 +3010,77 @@
 					"rotation": [20, 0, 0]
 				}
 			}
+		},
+		"开车_飞行": {
+			"loop": true,
+			"bones": {
+				"LeftArm": {
+					"rotation": [-35, 0, -10]
+				},
+				"RightArm": {
+					"rotation": [-35, 0, 10]
+				},
+				"LeftForeArm": {
+					"rotation": [-90, -7.5, 27.5]
+				},
+				"RightForeArm": {
+					"rotation": [-90, 7.5, -27.5]
+				},
+				"LeftLeg": {
+					"rotation": [-97.5, 0, 0]
+				},
+				"LeftLowerLeg": {
+					"rotation": [47.5, 0, 0]
+				},
+				"RightLeg": {
+					"rotation": [-97.5, 0, 0]
+				},
+				"RightLowerLeg": {
+					"rotation": [47.5, 0, 0]
+				},
+				"Root": {
+					"position": [10.725, 0, 4]
+				},
+				"xiao": {
+					"position": [0, 0, -1],
+					"scale": 1
+				},
+				"LeftFrontWheel": {
+					"rotation": ["q.anim_time*720", 0, -57.5],
+					"position": [4, 0, 0]
+				},
+				"RightFrontWheel": {
+					"rotation": ["q.anim_time*720", 0, 57.5],
+					"position": [-4, 0, 0]
+				},
+				"LeftBackWheel": {
+					"rotation": ["q.anim_time*720", 0, -57.5],
+					"position": [4, 0, 0]
+				},
+				"RightBackWheel": {
+					"rotation": ["q.anim_time*720", 0, 57.5],
+					"position": [-4, 0, 0]
+				},
+				"MRoot": {
+					"position": [0, "math.sin(q.anim_time*180)", 0]
+				}
+			}
+		},
+		"idle": {
+			"loop": true
+		},
+		"walk": {
+			"loop": true
+		},
+		"run": {
+			"loop": true
+		},
+		"jump": {
+			"loop": true
+		},
+		"fly": {
+			"loop": true,
+			"blend_weight": "ysm.second_order('walk',math.clamp(q.ground_speed/2,0.3,1),1,1,0)"
 		},
 		"elytra_fly": {
 			"loop": true,
@@ -9393,11 +9575,11 @@
 				"0.0": [
 					"v.input_y=ysm.second_order('垂直分量', math.clamp(0.1*q.vertical_speed,-1,1), 1, 0.5, 0);",
 					"v.input_vertical=ysm.second_order('前进分量', ysm.input_vertical, 1, 0.5, 0);",
-					"v.input_horizontal=ysm.second_order('左右分量', ysm.input_horizontal, 1;"
+					"v.input_horizontal=ysm.second_order('左右分量', ysm.input_horizontal, 1, 0.5, 0);"
 				]
 			}
 		},
-		"——车的仪表": {
+		"——车辆相关动画": {
 			"loop": true
 		},
 		"parallel4": {
@@ -9411,6 +9593,15 @@
 				},
 				"PointerArmor": {
 					"rotation": [0, 0, "math.clamp(ysm.armor_value*-11.25,-225,0)"]
+				},
+				"FXP": {
+					"rotation": [0, 0, "math.clamp(ysm.head_yaw,-25,25)"]
+				},
+				"LeftFrontWheel": {
+					"rotation": [0, "math.clamp(-1*ysm.head_yaw,-25,25)", 0]
+				},
+				"RightFrontWheel": {
+					"rotation": [0, "math.clamp(-1*ysm.head_yaw,-25,25)", 0]
 				}
 			}
 		},
@@ -9554,7 +9745,13 @@
 					"scale": "v.player_scale??1"
 				},
 				"Car": {
-					"scale": "v.roaming.car&&(ctrl.idle||ctrl.walk)"
+					"scale": "v.roaming.car&&v.anim_ctrl"
+				},
+				"H": {
+					"scale": "!(v.roaming.car&&v.anim_ctrl)"
+				},
+				"Tail": {
+					"scale": "!(v.roaming.car&&v.anim_ctrl)"
 				}
 			}
 		},

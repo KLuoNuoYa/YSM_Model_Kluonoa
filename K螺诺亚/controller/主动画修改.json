@@ -1,114 +1,88 @@
 {
 	"format_version": "1.19.0",
 	"animation_controllers": {
-		"player.pre_main": {
-			"initial_state": "空动画",
-			"states": {
-				"空动画": {
-					"animations": ["empty"],
-					"transitions": [
-						{"待命": "ctrl.idle"},
-						{"行走": "ctrl.walk"}
-					]
-				},
-				"待命": {
-					"animations": [
-						{"待命": "!v.roaming.car&&!(ysm.food_level<=6)"},
-						{"低电量": "!v.roaming.car&&(ysm.food_level<=6)&&(ysm.food_level>2)&&!ysm.rendering_in_inventory"},
-						{"电量过低": "!v.roaming.car&&(ysm.food_level<=2)&&!ysm.rendering_in_inventory"},
-						{"开车_待命": "v.roaming.car&&ctrl.idle"}
-					],
-					"transitions": [
-						{"空动画": "!(ctrl.idle||ctrl.walk)"},
-						{"行走": "ctrl.walk"}
-					],
-					"blend_transition": {
-						"0.0": 1,
-						"0.0111": 0.96571,
-						"0.0222": 0.8738,
-						"0.0333": 0.74074,
-						"0.0444": 0.58299,
-						"0.0556": 0.41701,
-						"0.0667": 0.25926,
-						"0.0778": 0.1262,
-						"0.0889": 0.03429,
-						"0.1": 0
-					},
-					"blend_via_shortest_path": true
-				},
-				"行走": {
-					"animations": [
-						{"正常_行走": "!v.roaming.car"},
-						{"开车_行走": "v.roaming.car"}
-					],
-					"transitions": [
-						{"待命": "ctrl.idle"},
-						{"空动画": "!(ctrl.idle||ctrl.walk)"}
-					],
-					"blend_transition": {
-						"0.0": 1,
-						"0.0111": 0.96571,
-						"0.0222": 0.8738,
-						"0.0333": 0.74074,
-						"0.0444": 0.58299,
-						"0.0556": 0.41701,
-						"0.0667": 0.25926,
-						"0.0778": 0.1262,
-						"0.0889": 0.03429,
-						"0.1": 0
-					},
-					"blend_via_shortest_path": true
-				}
-			}
-		},
 		"player.post_swing": {
 			"states": {
 				"default": {
 					"animations": ["attack_empty"],
 					"on_exit": ["v.swing_sword=0;"],
 					"transitions": [
-						{"attack1": "v.swing_sword&&!ctrl.jump"},
-						{"attack_jump": "v.swing_sword&&ctrl.jump"}
+						{
+							"attack1": "v.swing_sword&&!ctrl.jump"
+						},
+						{
+							"attack_jump": "v.swing_sword&&ctrl.jump"
+						}
 					]
 				},
 				"attack1": {
 					"animations": [
-						{"sword_attack_01": "!ctrl.idle"},
-						{"sword_idle_attack_01": "ctrl.idle"}
+						{
+							"sword_attack_01": "!ctrl.idle"
+						},
+						{
+							"sword_idle_attack_01": "ctrl.idle"
+						}
 					],
 					"on_exit": ["v.swing_sword=0;"],
 					"transitions": [
-						{"attack2": "v.swing_sword&&!ctrl.jump"},
-						{"default": "q.all_animations_finished"},
-						{"attack_jump": "v.swing_sword&&ctrl.jump"}
+						{
+							"attack2": "v.swing_sword&&!ctrl.jump"
+						},
+						{
+							"default": "q.all_animations_finished"
+						},
+						{
+							"attack_jump": "v.swing_sword&&ctrl.jump"
+						}
 					],
 					"blend_transition": 0.05,
 					"blend_via_shortest_path": true
 				},
 				"attack2": {
 					"animations": [
-						{"sword_attack_02": "!ctrl.idle"},
-						{"sword_idle_attack_02": "ctrl.idle"}
+						{
+							"sword_attack_02": "!ctrl.idle"
+						},
+						{
+							"sword_idle_attack_02": "ctrl.idle"
+						}
 					],
 					"on_exit": ["v.swing_sword=0;"],
 					"transitions": [
-						{"attack3": "v.swing_sword&&!ctrl.jump"},
-						{"default": "q.all_animations_finished"},
-						{"attack_jump": "v.swing_sword&&ctrl.jump"}
+						{
+							"attack3": "v.swing_sword&&!ctrl.jump"
+						},
+						{
+							"default": "q.all_animations_finished"
+						},
+						{
+							"attack_jump": "v.swing_sword&&ctrl.jump"
+						}
 					],
 					"blend_transition": 0.05,
 					"blend_via_shortest_path": true
 				},
 				"attack3": {
 					"animations": [
-						{"sword_attack_03": "!ctrl.idle"},
-						{"sword_idle_attack_03": "ctrl.idle"}
+						{
+							"sword_attack_03": "!ctrl.idle"
+						},
+						{
+							"sword_idle_attack_03": "ctrl.idle"
+						}
 					],
 					"on_exit": ["v.swing_sword=0;"],
 					"transitions": [
-						{"default": "q.all_animations_finished"},
-						{"attack1": "v.swing_sword&&!ctrl.jump"},
-						{"attack_jump": "v.swing_sword&&ctrl.jump"}
+						{
+							"default": "q.all_animations_finished"
+						},
+						{
+							"attack1": "v.swing_sword&&!ctrl.jump"
+						},
+						{
+							"attack_jump": "v.swing_sword&&ctrl.jump"
+						}
 					],
 					"blend_transition": {
 						"0.0": 1,
@@ -128,8 +102,12 @@
 					"animations": ["sword_jump_attack"],
 					"on_exit": ["v.swing_sword=0;"],
 					"transitions": [
-						{"default": "q.all_animations_finished"},
-						{"attack1": "v.swing_sword&&!ctrl.jump"}
+						{
+							"default": "q.all_animations_finished"
+						},
+						{
+							"attack1": "v.swing_sword&&!ctrl.jump"
+						}
 					],
 					"blend_transition": 0.05,
 					"blend_via_shortest_path": true

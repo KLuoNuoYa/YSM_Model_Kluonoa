@@ -153,6 +153,12 @@
 						"step": 0.1
 					},
 					{
+						"type": "checkbox",
+						"title": "车车",
+						"description": "",
+						"value": "v.roaming.car"
+					},
+					{
 						"type": "radio",
 						"title": "表情",
 						"description": "",

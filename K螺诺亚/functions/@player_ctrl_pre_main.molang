@@ -1,0 +1,72 @@
+v.anim_ctrl=1;
+
+// 空闲
+ctrl.idle ? {
+    !v.roaming.car&&!(ysm.food_level<=6) ? {
+        ctrl.set_animation('正常_待命');
+        return ctrl.state_continue;
+    };
+    !v.roaming.car&&(ysm.food_level<=6)&&(ysm.food_level>2)&&!ysm.rendering_in_inventory ? {
+        ctrl.set_animation('低电量');
+        return ctrl.state_continue;
+    };
+    !v.roaming.car&&(ysm.food_level<=2)&&!ysm.rendering_in_inventory ? {
+        ctrl.set_animation('电量过低');
+        return ctrl.state_continue;
+    };
+    v.roaming.car ? {
+        ctrl.set_animation('开车_待命');
+        return ctrl.state_continue;
+    };
+};
+
+// 行走
+ctrl.walk ? {
+    !v.roaming.car ? {
+        ctrl.set_animation('正常_行走');
+        return ctrl.state_continue;
+    };
+    v.roaming.car ? {
+        ctrl.set_animation('开车_行走');
+        return ctrl.state_continue;
+    };
+};
+
+// 奔跑
+ctrl.run ? {
+    !v.roaming.car ? {
+        ctrl.set_animation('正常_奔跑');
+        return ctrl.state_continue;
+    };
+    v.roaming.car ? {
+        ctrl.set_animation('开车_奔跑');
+        return ctrl.state_continue;
+    };
+};
+
+// 跳跃
+ctrl.jump ? {
+    !v.roaming.car ? {
+        ctrl.set_animation('正常_跳跃');
+        return ctrl.state_continue;
+    };
+    v.roaming.car ? {
+        ctrl.set_animation('开车_跳跃');
+        return ctrl.state_continue;
+    };
+};
+
+// 创造飞行
+ctrl.fly ? {
+    !v.roaming.car ? {
+        ctrl.set_animation('正常_飞行');
+        return ctrl.state_continue;
+    };
+    v.roaming.car ? {
+        ctrl.set_animation('开车_飞行');
+        return ctrl.state_continue;
+    };
+};
+
+v.anim_ctrl=0;
+return ctrl.state_bypass;
