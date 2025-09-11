@@ -6255,7 +6255,6 @@
 			}
 		},
 		"谢谢": {
-			"loop": "hold_on_last_frame",
 			"animation_length": 1.5,
 			"bones": {
 				"Root": {
@@ -6604,7 +6603,6 @@
 			}
 		},
 		"赞成": {
-			"loop": "hold_on_last_frame",
 			"animation_length": 1.5,
 			"bones": {
 				"Root": {
@@ -6963,7 +6961,6 @@
 			}
 		},
 		"鼓掌": {
-			"loop": "hold_on_last_frame",
 			"animation_length": 1.5,
 			"bones": {
 				"Root": {
@@ -7450,7 +7447,6 @@
 			}
 		},
 		"反对": {
-			"loop": "hold_on_last_frame",
 			"animation_length": 1.5,
 			"bones": {
 				"Root": {
