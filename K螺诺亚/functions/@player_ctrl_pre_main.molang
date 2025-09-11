@@ -3,7 +3,7 @@ v.anim_ctrl=1;
 // 车辆显示控制
 v.show_car=v.roaming.car;
 
-ctrl.tac_hold_gun||ctrl.playing_extra_animation ? {
+ctrl.tac_hold_gun||ctrl.playing_extra_animation||ctrl.carryon_is_princess ? {
     v.show_car=0;
 };
 

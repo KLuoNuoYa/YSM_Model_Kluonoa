@@ -3984,7 +3984,7 @@
 				},
 				"Root": {
 					"rotation": [0, "-ysm.head_yaw*0.5", "ysm.head_yaw*0.15"],
-					"position": [0, "math.sin(q.anim_time*180)", 0]
+					"position": [0, "3+math.sin(q.anim_time*180)", 0]
 				},
 				"LeftFrontWheel": {
 					"rotation": ["q.anim_time*720", 0, -90],
@@ -4698,7 +4698,7 @@
 				},
 				"Root": {
 					"rotation": ["ysm.second_order('鞘翅pitch', -ysm.head_pitch, 1, 0.8, 0)", 0, 0],
-					"position": [0, "math.sin(q.anim_time*180)", 0]
+					"position": [0, "-20+math.sin(q.anim_time*180)", 0]
 				},
 				"LeftFrontWheel": {
 					"rotation": ["q.anim_time*720", 0, -90],
@@ -5747,37 +5747,25 @@
 				"Eyebrow": {
 					"scale": {
 						"0.0": [1, 1, 1],
-						"0.0417": {
-							"pre": [1, 1, 1],
-							"post": [0, 0, 0]
-						}
+						"0.0417": {"pre": [1, 1, 1], "post": [0, 0, 0]}
 					}
 				},
 				"Eyelid": {
 					"scale": {
 						"0.0": [1, 1, 1],
-						"0.0417": {
-							"pre": [1, 1, 1],
-							"post": [0, 0, 0]
-						}
+						"0.0417": {"pre": [1, 1, 1], "post": [0, 0, 0]}
 					}
 				},
 				"biyan": {
 					"position": {
 						"0.0": [0, 0, 0],
-						"0.0417": {
-							"pre": [0, 0, 0],
-							"post": [0, 0, -1]
-						}
+						"0.0417": {"pre": [0, 0, 0], "post": [0, 0, -1]}
 					}
 				},
 				"zhang_zui": {
 					"position": {
 						"0.0": [0, 0, 0],
-						"0.0417": {
-							"pre": [0, 0, 0],
-							"post": [0, 0, -1]
-						}
+						"0.0417": {"pre": [0, 0, 0], "post": [0, 0, -1]}
 					}
 				},
 				"LeftFrontWheel": {
@@ -5880,7 +5868,7 @@
 					"scale": {
 						"0.0": [1, 1, 1],
 						"0.0417": [5, 5, 5.3],
-						"1.0": [5, 3.9, 1]
+						"0.5": [5, 3.9, 1]
 					}
 				},
 				"LeftFrontDoor": {
