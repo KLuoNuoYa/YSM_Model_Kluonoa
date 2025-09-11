@@ -6,7 +6,7 @@
 				"identifier": "geometry.unknown",
 				"texture_width": 512,
 				"texture_height": 512,
-				"visible_bounds_width": 7,
+				"visible_bounds_width": 11,
 				"visible_bounds_height": 7,
 				"visible_bounds_offset": [0, 1.5, 0]
 			},
@@ -2955,6 +2955,25 @@
 					]
 				},
 				{
+					"name": "FXP_Airbag",
+					"parent": "FXP",
+					"pivot": [10.71471, 24.02193, -3.63677],
+					"cubes": [
+						{
+							"origin": [9.61471, 22.92193, -3.63677],
+							"size": [2.2, 2.2, 1],
+							"uv": {
+								"north": {"uv": [263, 320], "uv_size": [2, 2]},
+								"east": {"uv": [269, 322], "uv_size": [1, 2]},
+								"south": {"uv": [266, 320], "uv_size": [2, 2]},
+								"west": {"uv": [261, 322], "uv_size": [1, 2]},
+								"up": {"uv": [263, 323], "uv_size": [2, 1]},
+								"down": {"uv": [266, 324], "uv_size": [2, -1]}
+							}
+						}
+					]
+				},
+				{
 					"name": "DashboardSpeed",
 					"parent": "Car",
 					"pivot": [10.71471, 23.80969, -6.41112],
@@ -5154,9 +5173,76 @@
 					]
 				},
 				{
-					"name": "ysmGlowHeadlight",
+					"name": "ysmGlow_RIGHT_Headlight",
 					"parent": "Car",
-					"pivot": [-0.08529, -0.11071, 0.49731],
+					"pivot": [-16.73529, 19.83929, -39.25269],
+					"cubes": [
+						{
+							"origin": [-19.04529, 17.52929, -40.00269],
+							"size": [4.62, 4.62, 1.5],
+							"uv": {
+								"north": {"uv": [192, 253], "uv_size": [4, 4]},
+								"east": {"uv": [95, 295], "uv_size": [1, 4]},
+								"south": {"uv": [245, 253], "uv_size": [4, 4]},
+								"west": {"uv": [97, 295], "uv_size": [1, 4]},
+								"up": {"uv": [295, 81], "uv_size": [4, 1]},
+								"down": {"uv": [295, 99], "uv_size": [4, -1]}
+							}
+						}
+					]
+				},
+				{
+					"name": "spring",
+					"parent": "ysmGlow_RIGHT_Headlight",
+					"pivot": [-16.88529, 18.42026, -34.94611],
+					"rotation": [-25, 0, 0],
+					"cubes": [
+						{
+							"origin": [-17.88529, 18.58929, -34.40269],
+							"size": [2, 2, 2],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [2, 2]},
+								"east": {"uv": [0, 0], "uv_size": [2, 2]},
+								"south": {"uv": [0, 0], "uv_size": [2, 2]},
+								"west": {"uv": [0, 0], "uv_size": [2, 2]},
+								"up": {"uv": [2, 2], "uv_size": [-2, -2]},
+								"down": {"uv": [2, 2], "uv_size": [-2, -2]}
+							}
+						},
+						{
+							"origin": [-17.88529, 17.70474, -38.39265],
+							"size": [2, 2, 2],
+							"pivot": [-16.88529, 17.70474, -37.39265],
+							"rotation": [25, 0, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [2, 2]},
+								"east": {"uv": [0, 0], "uv_size": [2, 2]},
+								"south": {"uv": [0, 0], "uv_size": [2, 2]},
+								"west": {"uv": [0, 0], "uv_size": [2, 2]},
+								"up": {"uv": [2, 2], "uv_size": [-2, -2]},
+								"down": {"uv": [2, 2], "uv_size": [-2, -2]}
+							}
+						},
+						{
+							"origin": [-17.88529, 18.42026, -36.94611],
+							"size": [2, 2, 3],
+							"pivot": [-16.88529, 18.42026, -34.94611],
+							"rotation": [12.5, 0, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [2, 2]},
+								"east": {"uv": [0, 0], "uv_size": [3, 2]},
+								"south": {"uv": [0, 0], "uv_size": [2, 2]},
+								"west": {"uv": [0, 0], "uv_size": [3, 2]},
+								"up": {"uv": [2, 3], "uv_size": [-2, -3]},
+								"down": {"uv": [2, 3], "uv_size": [-2, -3]}
+							}
+						}
+					]
+				},
+				{
+					"name": "ysmGlow_LEFT_Headlight",
+					"parent": "Car",
+					"pivot": [16.56471, 19.83929, -39.25269],
 					"cubes": [
 						{
 							"origin": [14.25471, 17.52929, -40.00269],
@@ -5168,18 +5254,6 @@
 								"west": {"uv": [295, 93], "uv_size": [1, 4]},
 								"up": {"uv": [295, 22], "uv_size": [4, 1]},
 								"down": {"uv": [295, 59], "uv_size": [4, -1]}
-							}
-						},
-						{
-							"origin": [-19.04529, 17.52929, -40.00269],
-							"size": [4.62, 4.62, 1.5],
-							"uv": {
-								"north": {"uv": [192, 253], "uv_size": [4, 4]},
-								"east": {"uv": [95, 295], "uv_size": [1, 4]},
-								"south": {"uv": [245, 253], "uv_size": [4, 4]},
-								"west": {"uv": [97, 295], "uv_size": [1, 4]},
-								"up": {"uv": [295, 81], "uv_size": [4, 1]},
-								"down": {"uv": [295, 99], "uv_size": [4, -1]}
 							}
 						}
 					]
