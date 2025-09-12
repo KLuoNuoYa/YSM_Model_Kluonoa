@@ -117,7 +117,7 @@
 					"rotation": [-35, 0, 10]
 				},
 				"MAllBody": {
-					"position": [10.725, 0, 4]
+					"position": [10.325, -1.5, 3.55]
 				},
 				"LeftForeArm": {
 					"rotation": [-90, -7.5, 27.5]
@@ -1658,7 +1658,6 @@
 		},
 		"开车_行走": {
 			"loop": true,
-			"animation_length": 1,
 			"bones": {
 				"wei_xiao": {
 					"position": [0, 0, -1],
@@ -1671,7 +1670,7 @@
 					"rotation": [-35, 0, 10]
 				},
 				"MAllBody": {
-					"position": [10.725, 0, 4]
+					"position": [10.325, -1.5, 3.55]
 				},
 				"LeftForeArm": {
 					"rotation": [-90, -7.5, 27.5]
@@ -1690,30 +1689,6 @@
 				},
 				"RightLowerLeg": {
 					"rotation": [47.5, 0, 0]
-				},
-				"LeftFrontWheel": {
-					"rotation": {
-						"0.0": [0, 0, 0],
-						"1.0": ["ysm.input_vertical<0 ? -360 : 360", 0, 0]
-					}
-				},
-				"RightFrontWheel": {
-					"rotation": {
-						"0.0": [0, 0, 0],
-						"1.0": ["ysm.input_vertical<0 ? -360 : 360", 0, 0]
-					}
-				},
-				"LeftBackWheel": {
-					"rotation": {
-						"0.0": [0, 0, 0],
-						"1.0": ["ysm.input_vertical<0 ? -360 : 360", 0, 0]
-					}
-				},
-				"RightBackWheel": {
-					"rotation": {
-						"0.0": [0, 0, 0],
-						"1.0": ["ysm.input_vertical<0 ? -360 : 360", 0, 0]
-					}
 				},
 				"Root": {
 					"position": [0, "math.sin((q.anim_time*360)*10)/20", 0]
@@ -2383,7 +2358,6 @@
 		},
 		"开车_奔跑": {
 			"loop": true,
-			"animation_length": 1,
 			"bones": {
 				"LeftArm": {
 					"rotation": [-35, 0, -10]
@@ -2392,7 +2366,7 @@
 					"rotation": [-35, 0, 10]
 				},
 				"MAllBody": {
-					"position": [10.725, 0, 4]
+					"position": [10.325, -1.5, 3.55]
 				},
 				"LeftForeArm": {
 					"rotation": [-90, -7.5, 27.5]
@@ -2411,30 +2385,6 @@
 				},
 				"RightLowerLeg": {
 					"rotation": [47.5, 0, 0]
-				},
-				"LeftFrontWheel": {
-					"rotation": {
-						"0.0": [0, 0, 0],
-						"1.0": [720, 0, 0]
-					}
-				},
-				"RightFrontWheel": {
-					"rotation": {
-						"0.0": [0, 0, 0],
-						"1.0": [720, 0, 0]
-					}
-				},
-				"LeftBackWheel": {
-					"rotation": {
-						"0.0": [0, 0, 0],
-						"1.0": [720, 0, 0]
-					}
-				},
-				"RightBackWheel": {
-					"rotation": {
-						"0.0": [0, 0, 0],
-						"1.0": [720, 0, 0]
-					}
 				},
 				"Root": {
 					"position": [0, "math.sin((q.anim_time*360)*10)/20", 0]
@@ -2715,7 +2665,7 @@
 					"rotation": [-35, 0, 10]
 				},
 				"MAllBody": {
-					"position": [10.725, 0, 4]
+					"position": [10.325, -1.5, 3.55]
 				},
 				"LeftForeArm": {
 					"rotation": [-90, -7.5, 27.5]
@@ -3021,7 +2971,7 @@
 					"rotation": [-35, 0, 10]
 				},
 				"MAllBody": {
-					"position": [10.725, 0, 4]
+					"position": [10.325, -1.5, 3.55]
 				},
 				"LeftForeArm": {
 					"rotation": [-90, -7.5, 27.5]
@@ -3215,7 +3165,7 @@
 					"rotation": [-35, 0, 10]
 				},
 				"MAllBody": {
-					"position": [10.725, 0, 4]
+					"position": [10.325, -1.5, 3.55]
 				},
 				"LeftForeArm": {
 					"rotation": [-90, -7.5, 27.5]
@@ -3962,7 +3912,7 @@
 					"rotation": [-35, 0, 10]
 				},
 				"MAllBody": {
-					"position": [10.725, 0, 4]
+					"position": [10.325, -1.5, 3.55]
 				},
 				"LeftForeArm": {
 					"rotation": [-90, -7.5, 27.5]
@@ -4676,7 +4626,7 @@
 					"rotation": [-35, 0, 10]
 				},
 				"MAllBody": {
-					"position": [10.725, 0, 4]
+					"position": [10.325, -1.5, 3.55]
 				},
 				"LeftForeArm": {
 					"rotation": [-90, -7.5, 27.5]
@@ -5144,7 +5094,7 @@
 					}
 				},
 				"MAllBody": {
-					"position": [10.725, 0, 4]
+					"position": [10.325, -1.5, 3.55]
 				},
 				"LeftForeArm": {
 					"rotation": {
@@ -5599,7 +5549,7 @@
 						"0.375": [0, 0, 0],
 						"0.4167": [5, 0, 0],
 						"0.4583": [12.5, 0, 0],
-						"0.5": [17.5, 0, 0]
+						"0.5": [15.25, 0, 0]
 					}
 				},
 				"LeftArm": {
@@ -5645,7 +5595,7 @@
 					}
 				},
 				"MAllBody": {
-					"position": [10.725, 0, 4]
+					"position": [10.325, -1.5, 3.55]
 				},
 				"LeftForeArm": {
 					"rotation": {
@@ -5740,32 +5690,43 @@
 						"0.3333": [10, 0, 0],
 						"0.375": [12.5, 0, 0],
 						"0.4167": [12.5, 0, 0],
-						"0.4583": [17.5, 0, 0],
-						"0.5": [17.5, 0, 0]
+						"0.4583": [17.5, 0, 0]
 					}
 				},
 				"Eyebrow": {
 					"scale": {
 						"0.0": [1, 1, 1],
-						"0.0417": {"pre": [1, 1, 1], "post": [0, 0, 0]}
+						"0.0417": {
+							"pre": [1, 1, 1],
+							"post": [0, 0, 0]
+						}
 					}
 				},
 				"Eyelid": {
 					"scale": {
 						"0.0": [1, 1, 1],
-						"0.0417": {"pre": [1, 1, 1], "post": [0, 0, 0]}
+						"0.0417": {
+							"pre": [1, 1, 1],
+							"post": [0, 0, 0]
+						}
 					}
 				},
 				"biyan": {
 					"position": {
 						"0.0": [0, 0, 0],
-						"0.0417": {"pre": [0, 0, 0], "post": [0, 0, -1]}
+						"0.0417": {
+							"pre": [0, 0, 0],
+							"post": [0, 0, -1]
+						}
 					}
 				},
 				"zhang_zui": {
 					"position": {
 						"0.0": [0, 0, 0],
-						"0.0417": {"pre": [0, 0, 0], "post": [0, 0, -1]}
+						"0.0417": {
+							"pre": [0, 0, 0],
+							"post": [0, 0, -1]
+						}
 					}
 				},
 				"LeftFrontWheel": {
@@ -10471,6 +10432,18 @@
 				},
 				"Tail": {
 					"scale": "!(v.show_car&&v.anim_ctrl)"
+				},
+				"LeftFrontWheel": {
+					"rotation": ["v.wheel_rotate", 0, 0]
+				},
+				"RightFrontWheel": {
+					"rotation": ["v.wheel_rotate", 0, 0]
+				},
+				"LeftBackWheel": {
+					"rotation": ["v.wheel_rotate", 0, 0]
+				},
+				"RightBackWheel": {
+					"rotation": ["v.wheel_rotate", 0, 0]
 				}
 			}
 		},
