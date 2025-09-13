@@ -137,6 +137,7 @@
 		"width_scale": 0.7,
 		"extra_animation": {
 			"config": "#config",
+			"car_config": "#car_config",
 			"谢谢": "招手",
 			"赞成": "赞成",
 			"反对": "反对",
@@ -166,12 +167,6 @@
 						"step": 0.1
 					},
 					{
-						"type": "checkbox",
-						"title": "车车",
-						"description": "",
-						"value": "v.roaming.car"
-					},
-					{
 						"type": "radio",
 						"title": "表情",
 						"description": "",
@@ -184,6 +179,42 @@
 							"委屈巴巴": "v.roaming.emotion=4;",
 							"苦呀西": "v.roaming.emotion=5;"
 						}
+					}
+				]
+			},
+			{
+				"id": "car_config",
+				"name": "车车",
+				"config_forms": [
+					{
+						"type": "checkbox",
+						"title": "开车",
+						"description": "",
+						"value": "v.roaming.car"
+					},
+					{
+						"type": "checkbox",
+						"title": "前备箱",
+						"description": "",
+						"value": "v.roaming.car_hood"
+					},
+					{
+						"type": "checkbox",
+						"title": "后备箱",
+						"description": "",
+						"value": "v.roaming.car_trunk"
+					},
+					{
+						"type": "checkbox",
+						"title": "左门",
+						"description": "",
+						"value": "v.roaming.car_left_door"
+					},
+					{
+						"type": "checkbox",
+						"title": "右门",
+						"description": "",
+						"value": "v.roaming.car_right_door"
 					}
 				]
 			}

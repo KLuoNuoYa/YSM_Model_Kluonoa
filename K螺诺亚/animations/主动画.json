@@ -10447,6 +10447,18 @@
 				},
 				"Clearglass": {
 					"scale": 1
+				},
+				"Hood": {
+					"rotation": ["v.roaming.car_hood?-62.5:0", 0, 0]
+				},
+				"LeftFrontDoor": {
+					"rotation": [0, "v.roaming.car_left_door?75:0", 0]
+				},
+				"RightFrontDoor": {
+					"rotation": [0, "v.roaming.car_right_door?-75:0", 0]
+				},
+				"Trunk": {
+					"rotation": ["v.roaming.car_trunk?77.5:0", 0, 0]
 				}
 			}
 		},
