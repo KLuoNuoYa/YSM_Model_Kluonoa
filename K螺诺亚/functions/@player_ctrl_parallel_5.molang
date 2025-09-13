@@ -1,0 +1,6 @@
+// 雨刮器
+v.show_car&&ysm.weather>=1&&ysm.is_open_air ? {
+    ctrl.set_animation('雨刮器');
+    return ctrl.state_continue;
+};
+return ctrl.state_bypass;

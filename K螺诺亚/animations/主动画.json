@@ -10282,9 +10282,6 @@
 				}
 			}
 		},
-		"parallel5": {
-			"loop": true
-		},
 		"——眨眼": {
 			"loop": true
 		},
@@ -10519,6 +10516,56 @@
 				},
 				"clothe": {
 					"rotation": [7.5, 0, 0]
+				}
+			}
+		},
+		"雨刮器": {
+			"loop": true,
+			"animation_length": 1.0833,
+			"bones": {
+				"RightWiper": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.5": {
+							"pre": [0, 0, 82.5],
+							"post": [0, 0, 82.5],
+							"lerp_mode": "catmullrom"
+						},
+						"1.0": [0, 0, 0]
+					}
+				},
+				"RightWiper1": {
+					"rotation": {
+						"0.25": [0, 0, 0],
+						"0.5": {
+							"pre": [0, 0, 15],
+							"post": [0, 0, 15],
+							"lerp_mode": "catmullrom"
+						},
+						"0.75": [0, 0, 0]
+					}
+				},
+				"LeftWiper": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.5": {
+							"pre": [0, 0, 82.5],
+							"post": [0, 0, 82.5],
+							"lerp_mode": "catmullrom"
+						},
+						"1.0": [0, 0, 0]
+					}
+				},
+				"LeftWiper1": {
+					"rotation": {
+						"0.25": [0, 0, 0],
+						"0.5": {
+							"pre": [0, 0, 15],
+							"post": [0, 0, 15],
+							"lerp_mode": "catmullrom"
+						},
+						"0.75": [0, 0, 0]
+					}
 				}
 			}
 		},
