@@ -3193,9 +3193,6 @@
 					"position": [0, 0, -1],
 					"scale": 1
 				},
-				"ElytraLocator": {
-					"scale": 0
-				},
 				"LeftFrontWheel": {
 					"rotation": ["q.anim_time*720", 15, -57.5],
 					"position": [4, 0, 0]
@@ -10444,6 +10441,9 @@
 				},
 				"RightBackWheel": {
 					"rotation": ["v.wheel_rotate", 0, 0]
+				},
+				"ElytraLocator": {
+					"scale": "!(v.show_car&&v.anim_ctrl)"
 				}
 			}
 		},
