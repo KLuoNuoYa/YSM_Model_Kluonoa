@@ -5833,12 +5833,12 @@
 					"rotation": {
 						"0.4167": [0, 0, 0],
 						"0.625": {
-							"pre": [0, 62.5, 0],
-							"post": [0, 62.5, 0],
+							"pre": [0, 75, 0],
+							"post": [0, 75, 0],
 							"lerp_mode": "catmullrom"
 						},
 						"0.75": {
-							"post": [0, 60, 0],
+							"post": [0, 72.5, 0],
 							"lerp_mode": "catmullrom"
 						}
 					}
@@ -10441,6 +10441,12 @@
 				},
 				"ElytraLocator": {
 					"scale": "!(v.show_car&&v.anim_ctrl)"
+				},
+				"RainyClearglass": {
+					"scale": 0
+				},
+				"Clearglass": {
+					"scale": 1
 				}
 			}
 		},
@@ -10566,6 +10572,12 @@
 						},
 						"0.75": [0, 0, 0]
 					}
+				},
+				"RainyClearglass": {
+					"scale": 1
+				},
+				"Clearglass": {
+					"scale": 0
 				}
 			}
 		},
