@@ -1691,7 +1691,7 @@
 					"rotation": [47.5, 0, 0]
 				},
 				"Root": {
-					"position": [0, "math.sin((q.anim_time*360)*10)/20", 0]
+					"position": [0, "math.sin(q.anim_time*360*10)/20", 0]
 				}
 			}
 		},
@@ -2387,7 +2387,7 @@
 					"rotation": [47.5, 0, 0]
 				},
 				"Root": {
-					"position": [0, "math.sin((q.anim_time*360)*10)/20", 0]
+					"position": [0, "math.sin(q.anim_time*360*10)/20", 0]
 				},
 				"xiao": {
 					"position": [0, 0, -1],

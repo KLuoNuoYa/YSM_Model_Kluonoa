@@ -17,11 +17,6 @@ v.show_car&&(ctrl.walk||ctrl.run||ctrl.jump) ? {
     };
 };
 
-// 雨刮器
-v.show_car&&ysm.weather>=1&&ysm.is_open_air ? {
-    ctrl.set_animation('雨刮器');
-};
-
 // 空闲
 ctrl.idle ? {
     !v.show_car&&!(ysm.food_level<=6) ? {

@@ -23,7 +23,7 @@
 				{
 					"name": "CarRoot",
 					"parent": "Root",
-					"pivot": [0.42647, 0.55357, -2.48654]
+					"pivot": [0, 0, 0]
 				},
 				{
 					"name": "Car",
