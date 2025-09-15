@@ -215,6 +215,12 @@
 						"title": "右门",
 						"description": "",
 						"value": "v.roaming.car_right_door"
+					},
+					{
+						"type": "checkbox",
+						"title": "关闭随机鸣笛",
+						"description": "",
+						"value": "v.roaming.car_can_horn"
 					}
 				]
 			}

@@ -7,13 +7,29 @@ ctrl.tac_hold_gun||ctrl.playing_extra_animation||ctrl.carryon_is_princess ? {
     v.show_car=0;
 };
 
-// 轮胎旋转
 v.show_car&&(ctrl.walk||ctrl.run||ctrl.jump) ? {
+    // 轮胎旋转
     t.speed_frame=math.sqrt(math.pow(q.position_delta(0),2) + math.pow(q.position_delta(2),2))*60;
     ysm.input_vertical<0 ? {
         v.wheel_rotate=math.min_angle(v.wheel_rotate-t.speed_frame);
     } : {
         v.wheel_rotate=math.min_angle(v.wheel_rotate+t.speed_frame);
+    };
+    // 鸣笛
+    !v.roaming.car_can_horn ? {
+        math.mod(q.anim_time,2) <=1 ? {
+            v.horn_check1=0;
+        } : {
+            t.horn_check=1;
+            v.horn_check1!=t.horn_check ? {
+                v.horn_counter=v.horn_counter+math.random_integer(0,2);
+                v.horn_counter>=10 ? {
+                    ysm.play_sound('horn','horn');
+                    v.horn_counter=0;
+                };
+            };
+            v.horn_check1=t.horn_check;
+        };
     };
 };
 
