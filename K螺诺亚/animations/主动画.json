@@ -10419,13 +10419,13 @@
 					"scale": "v.player_scale??1"
 				},
 				"Car": {
-					"scale": "v.show_car&&v.anim_ctrl"
+					"scale": "v.roaming.need_show_car&&v.anim_ctrl"
 				},
 				"H": {
-					"scale": "!(v.show_car&&v.anim_ctrl)"
+					"scale": "!(v.roaming.need_show_car&&v.anim_ctrl)"
 				},
 				"Tail": {
-					"scale": "!(v.show_car&&v.anim_ctrl)"
+					"scale": "!(v.roaming.need_show_car&&v.anim_ctrl)"
 				},
 				"LeftFrontWheel": {
 					"rotation": ["v.wheel_rotate", 0, 0]
@@ -10440,7 +10440,7 @@
 					"rotation": ["v.wheel_rotate", 0, 0]
 				},
 				"ElytraLocator": {
-					"scale": "!(v.show_car&&v.anim_ctrl)"
+					"scale": "!(v.roaming.need_show_car&&v.anim_ctrl)"
 				},
 				"RainyClearglass": {
 					"scale": 0

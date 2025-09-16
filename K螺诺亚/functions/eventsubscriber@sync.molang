@@ -8,3 +8,7 @@ t.event_id==0 ? {
         v.roaming.horn_checker=0;
     };
 };
+
+t.event_id==1 ? {
+    v.roaming.need_show_car=args[1];
+};
