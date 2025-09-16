@@ -25,6 +25,10 @@
 				},
 				"xiao": {
 					"position": [0, 0, -1]
+				},
+				"lianhong": {
+					"position": [0, 0, -1],
+					"scale": 1
 				}
 			}
 		},
