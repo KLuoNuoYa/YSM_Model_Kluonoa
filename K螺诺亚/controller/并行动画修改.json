@@ -49,13 +49,13 @@
 				"default": {
 					"animations": ["empty"],
 					"transitions": [
-						{"雨刮": "v.roaming.need_show_car&&ysm.weather>=1&&ysm.is_open_air"}
+						{"雨刮": "v.show_car&&ysm.weather>=1&&ysm.is_open_air"}
 					]
 				},
 				"雨刮": {
 					"animations": ["雨刮器"],
 					"transitions": [
-						{"default": "!(v.roaming.need_show_car&&ysm.weather>=1&&ysm.is_open_air)&&q.all_animations_finished"}
+						{"default": "!(v.show_car&&ysm.weather>=1&&ysm.is_open_air)&&q.all_animations_finished"}
 					]
 				}
 			}
