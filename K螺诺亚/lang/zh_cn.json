@@ -54,7 +54,5 @@
     "properties.extra_animation_buttons.car_config.config_forms.2.title": "后备箱",
     "properties.extra_animation_buttons.car_config.config_forms.3.title": "左门",
     "properties.extra_animation_buttons.car_config.config_forms.4.title": "右门",
-    "properties.extra_animation_buttons.car_config.config_forms.5.title": "关闭随机鸣笛",
-    "properties.extra_animation_buttons.car_config.config_forms.6.title": "关闭按键鸣笛",
-    "properties.extra_animation_buttons.car_config.config_forms.6.description": "按Tab键鸣笛"
+    "properties.extra_animation_buttons.car_config.config_forms.5.title": "关闭随机鸣笛"
 }
