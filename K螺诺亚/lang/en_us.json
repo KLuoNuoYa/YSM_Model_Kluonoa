@@ -54,5 +54,7 @@
     "properties.extra_animation_buttons.car_config.config_forms.2.title": "Trunk",
     "properties.extra_animation_buttons.car_config.config_forms.3.title": "Left Door",
     "properties.extra_animation_buttons.car_config.config_forms.4.title": "Right Door",
-    "properties.extra_animation_buttons.car_config.config_forms.5.title": "Disable Random Horn"
+    "properties.extra_animation_buttons.car_config.config_forms.5.title": "Disable Random Horn",
+    "properties.extra_animation_buttons.car_config.config_forms.6.title": "Disable Press Horn",
+    "properties.extra_animation_buttons.car_config.config_forms.6.description": "Press Tab key to horn"
 }
