@@ -15,8 +15,8 @@ v.show_car&&(ctrl.walk||ctrl.run||ctrl.jump) ? {
     } : {
         v.wheel_rotate=math.min_angle(v.wheel_rotate+t.speed_frame);
     };
-    // 鸣笛
-    !v.roaming.car_can_horn ? {
+    // 随机鸣笛
+    !v.roaming.car_can_horn && !v.roaming.horn_checker ? {
         math.mod(q.anim_time,2) <=1 ? {
             v.horn_check1=0;
         } : {
@@ -31,6 +31,24 @@ v.show_car&&(ctrl.walk||ctrl.run||ctrl.jump) ? {
             v.horn_check1=t.horn_check;
         };
     };
+};
+
+// 鸣笛
+ysm.keyboard(258)!=v.roaming.horn_checker && !v.roaming.car_can_horn1 && v.show_car ? {
+    ysm.keyboard(258)==1 ? {
+        ysm.sync(0,0);
+    } : {
+        ysm.sync(0,1);
+    };
+};
+v.roaming.horn_checker!=v.roaming.horn_checker1 ? {
+    v.roaming.horn_checker==1 ? {
+        ysm.play_sound('horn_long','horn_long');
+        ysm.stop_sound('horn');
+    } : {
+        ysm.stop_sound('horn_long');
+    };
+    v.roaming.horn_checker1=v.roaming.horn_checker;
 };
 
 // 空闲
