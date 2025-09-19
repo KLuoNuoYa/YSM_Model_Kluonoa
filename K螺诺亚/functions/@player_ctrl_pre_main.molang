@@ -1,58 +1,11 @@
 v.anim_ctrl=1;
 
-// 车辆显示控制
-v.show_car=v.roaming.car && !(ctrl.tac_hold_gun||ctrl.playing_extra_animation||ctrl.carryon_is_princess);
-
-v.show_car&&(ctrl.walk||ctrl.run||ctrl.jump) ? {
-    // 轮胎旋转
-    t.speed_frame=math.sqrt(math.pow(q.position_delta(0),2) + math.pow(q.position_delta(2),2))*60;
-    ysm.input_vertical<0 ? {
-        v.wheel_rotate=math.min_angle(v.wheel_rotate-t.speed_frame);
-    } : {
-        v.wheel_rotate=math.min_angle(v.wheel_rotate+t.speed_frame);
-    };
-    // 随机鸣笛
-    !v.roaming.car_can_horn && !v.roaming.horn_checker ? {
-        math.mod(q.anim_time,2) <=1 ? {
-            v.horn_check1=0;
-        } : {
-            t.horn_check=1;
-            v.horn_check1!=t.horn_check ? {
-                v.horn_counter=v.horn_counter+math.random_integer(0,2);
-                v.horn_counter>=10 ? {
-                    ysm.play_sound('horn','horn');
-                    v.horn_counter=0;
-                };
-            };
-            v.horn_check1=t.horn_check;
-        };
-    };
-};
-
-// 鸣笛
-ysm.keyboard(258)!=v.roaming.horn_checker && !v.roaming.car_can_horn1 && v.show_car ? {
-    ysm.keyboard(258)==1 ? {
-        ysm.sync(0,0);
-    } : {
-        ysm.sync(0,1);
-    };
-};
-v.roaming.horn_checker!=v.roaming.horn_checker1 ? {
-    v.roaming.horn_checker==1 ? {
-        ysm.play_sound('horn_long','horn_long');
-        ysm.stop_sound('horn');
-    } : {
-        ysm.stop_sound('horn_long');
-    };
-    v.roaming.horn_checker1=v.roaming.horn_checker;
-};
-
 // 空闲
-ctrl.idle ? {
+ctrl.idle ? {   // 玩家空闲时
     !v.show_car&&!(ysm.food_level<=6) ? {
-        ctrl.set_beginning_transition_length(0.1);
-        ctrl.set_animation('正常_待命');
-        return ctrl.state_continue;
+        ctrl.set_beginning_transition_length(0.1);  // 设置动画过渡时长
+        ctrl.set_animation('正常_待命');    // 播放动画
+        return ctrl.state_continue;     // 执行
     };
     !v.show_car&&(ysm.food_level<=6)&&(ysm.food_level>2)&&!ysm.rendering_in_inventory ? {
         ctrl.set_beginning_transition_length(0.1);

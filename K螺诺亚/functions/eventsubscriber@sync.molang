@@ -1,3 +1,5 @@
+// 事件订阅器
+
 t.event_id=args[0];
 
 t.event_id==0 ? {
