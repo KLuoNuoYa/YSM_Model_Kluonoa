@@ -826,8 +826,8 @@
 			}
 		},
 		"hold_mainhand:sword": {
-			"loop": true,
-			"animation_length": 1000,
+			"loop": "hold_on_last_frame",
+			"animation_length": 3.125,
 			"bones": {
 				"RightArm": {
 					"rotation": {
@@ -1017,8 +1017,7 @@
 			}
 		},
 		"hold_offhand:sword": {
-			"loop": true,
-			"animation_length": 1000
+			"loop": "hold_on_last_frame"
 		},
 		"swing:sword": {
 			"animation_length": 0.5,
@@ -1032,8 +1031,8 @@
 			}
 		},
 		"hold_mainhand:bow": {
-			"loop": true,
-			"animation_length": 1000,
+			"loop": "hold_on_last_frame",
+			"animation_length": 2.0833,
 			"bones": {
 				"RightArm": {
 					"rotation": {
@@ -1147,8 +1146,8 @@
 			}
 		},
 		"hold_offhand:bow": {
-			"loop": true,
-			"animation_length": 1000,
+			"loop": "hold_on_last_frame",
+			"animation_length": 2.0833,
 			"bones": {
 				"LeftArm": {
 					"rotation": {
@@ -1974,8 +1973,8 @@
 			}
 		},
 		"hold_mainhand:shield": {
-			"loop": true,
-			"animation_length": 1000,
+			"loop": "hold_on_last_frame",
+			"animation_length": 1.0417,
 			"bones": {
 				"RightArm": {
 					"rotation": {
@@ -2033,8 +2032,8 @@
 			}
 		},
 		"use_mainhand:shield": {
-			"loop": true,
-			"animation_length": 60,
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.75,
 			"bones": {
 				"RightArm": {
 					"rotation": {
@@ -2173,8 +2172,8 @@
 			}
 		},
 		"hold_offhand:shield": {
-			"loop": true,
-			"animation_length": 1000,
+			"loop": "hold_on_last_frame",
+			"animation_length": 1.0417,
 			"bones": {
 				"LeftArm": {
 					"rotation": {
@@ -2231,8 +2230,8 @@
 			}
 		},
 		"use_offhand:shield": {
-			"loop": true,
-			"animation_length": 60,
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.75,
 			"bones": {
 				"LeftArm": {
 					"rotation": {
@@ -2372,7 +2371,7 @@
 		},
 		"use_mainhand:spear": {
 			"loop": "hold_on_last_frame",
-			"animation_length": 60,
+			"animation_length": 0.5,
 			"bones": {
 				"UpBody": {
 					"rotation": {
@@ -2479,7 +2478,7 @@
 		},
 		"use_offhand:spear": {
 			"loop": "hold_on_last_frame",
-			"animation_length": 60,
+			"animation_length": 0.5833,
 			"bones": {
 				"UpBody": {
 					"rotation": {
@@ -2591,8 +2590,8 @@
 			}
 		},
 		"hold_mainhand:spear": {
-			"loop": true,
-			"animation_length": 1000,
+			"loop": "hold_on_last_frame",
+			"animation_length": 1.125,
 			"bones": {
 				"RightArm": {
 					"rotation": {
@@ -2707,8 +2706,8 @@
 			}
 		},
 		"hold_offhand:spear": {
-			"loop": true,
-			"animation_length": 1000,
+			"loop": "hold_on_last_frame",
+			"animation_length": 1.125,
 			"bones": {
 				"LeftArm": {
 					"rotation": {
