@@ -95,6 +95,8 @@
 
 > “两小时不到就没电的杂鱼车”——来自某位群友的吐槽
 
+<img src="pictures/iskaicheche.png" height="400" align="right">
+
 - **基础参数**：
 
   - 昵称：噗噜噗噜咕
