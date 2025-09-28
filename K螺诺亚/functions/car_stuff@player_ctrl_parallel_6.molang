@@ -3,13 +3,11 @@ v.show_car=v.roaming.car && !(ctrl.tac_hold_gun||ctrl.playing_extra_animation||c
 
 v.show_car&&(ctrl.walk||ctrl.run||ctrl.jump) ? {
     // 轮胎旋转
-    (q.is_first_person&&ysm.rendering_in_paperdoll) || (!q.is_first_person&&!ysm.rendering_in_paperdoll) ? {    // 纸娃娃检测防止执行两次
-        t.speed_frame=math.sqrt(math.pow(q.position_delta(0),2) + math.pow(q.position_delta(2),2))*math.pi*40;
-        ysm.input_vertical<0 ? {
-            v.wheel_rotate=math.min_angle(v.wheel_rotate-t.speed_frame);    // 后退
-        } : {
-            v.wheel_rotate=math.min_angle(v.wheel_rotate+t.speed_frame);    // 前进
-        };
+    t.speed_frame=math.sqrt(math.pow(q.position_delta(0),2) + math.pow(q.position_delta(2),2))*math.pi*40;
+    ysm.input_vertical<0 ? {
+        v.wheel_rotate=math.min_angle(v.wheel_rotate-t.speed_frame);    // 后退
+    } : {
+        v.wheel_rotate=math.min_angle(v.wheel_rotate+t.speed_frame);    // 前进
     };
     // 随机鸣笛
     !v.roaming.car_can_horn && !v.roaming.horn_checker ? {
