@@ -28,7 +28,7 @@ v.show_car&&(ctrl.walk||ctrl.run||ctrl.jump) ? {
 };
 
 // 按键鸣笛
-ysm.keyboard(258)!=v.roaming.horn_checker && !v.roaming.car_can_horn1 && v.show_car ? {     // Tab键状态变换检测
+ysm.keyboard(258)!=v.roaming.horn_checker && !v.roaming.car_can_horn1 && v.show_car && v.anim_ctrl ? {     // Tab键状态变换检测
     ysm.keyboard(258)==1 ? {    // 当Tab键按下时
         ysm.sync(0,0);
     } : {
