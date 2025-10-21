@@ -6,7 +6,7 @@
   - [Sangjam](https://space.bilibili.com/474161531)
 
 模型：
-  - [Nona-Reeves](https://space.bilibili.com/19254145)（人物模型）
+  - Nona-Reeves（人物模型）
   - [Maks怜悯](https://space.bilibili.com/352177387)（车车模型）
 
 动画：
