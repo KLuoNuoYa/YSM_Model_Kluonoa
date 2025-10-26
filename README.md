@@ -2,6 +2,8 @@
 
 ## K螺诺亚（Kluonoa）YSM 模型制作人员表
 
+<img src="pictures/main.png" width="350" align="right">
+
 原设画师：
   - [Sangjam](https://space.bilibili.com/474161531)
 
