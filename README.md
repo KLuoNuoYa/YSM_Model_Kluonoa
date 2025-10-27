@@ -202,8 +202,12 @@ PBR材质：
 
 ## 表情包
 
+作者：[雾雪雾雪雾](https://www.mihuashi.com/profiles/1051860)
+
 可以在仓库表情包文件夹获取。部分已上架微信，可以在微信打开下方链接获取：
 
 - https://w.url.cn/s/AcZFDBP （第一弹）
+
+---
 
 KLUO-0217 © 2025 by KLuoNuoYa is licensed under CC BY-NC-SA 4.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
