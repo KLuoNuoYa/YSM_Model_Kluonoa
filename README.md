@@ -207,6 +207,7 @@ PBR材质：
 可以在仓库表情包文件夹获取。部分已上架微信，可以在微信打开下方链接获取：
 
 - https://w.url.cn/s/AcZFDBP （第一弹）
+- https://w.url.cn/s/Aveow16 （第二弹）
 
 ---
 
