@@ -10416,7 +10416,7 @@
 					"scale": 0
 				},
 				"Player_Size": {
-					"scale": "v.roaming.player_scale??1"
+					"scale": "v.player_scale??1"
 				},
 				"Car": {
 					"scale": "v.show_car&&v.anim_ctrl"
