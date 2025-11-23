@@ -35,12 +35,12 @@ ysm.keyboard(258)!=v.roaming.horn_checker && !v.roaming.car_can_horn1 && v.show_
         ysm.sync(0,1);
     };
 };
-v.roaming.horn_checker!=v.roaming.horn_checker1 ? {
+v.roaming.horn_checker!=v.horn_checker1 ? {
     v.roaming.horn_checker==1 ? {
         ysm.play_sound('horn_long','horn_long');
         ysm.stop_sound('horn');
     } : {
         ysm.stop_sound('horn_long');
     };
-    v.roaming.horn_checker1=v.roaming.horn_checker;
+    v.horn_checker1=v.roaming.horn_checker;
 };
