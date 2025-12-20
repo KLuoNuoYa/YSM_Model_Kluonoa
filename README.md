@@ -66,6 +66,8 @@ PBR材质：
 
 ---
 
+![kluo2.png](pictures/kluo2.png)
+
 ### **【基础信息】**
 
 - **外观**：
