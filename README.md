@@ -213,6 +213,8 @@ PBR材质：
 
 - https://w.url.cn/s/AcZFDBP （第一弹）
 - https://w.url.cn/s/Aveow16 （第二弹）
+- https://w.url.cn/s/AzqyfzF （第三弹）
+- https://w.url.cn/s/A2wFe2B （第四弹）
 
 ---
 
