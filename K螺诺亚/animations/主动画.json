@@ -5043,6 +5043,9 @@
 							"post": [0, 0, -1]
 						}
 					}
+				},
+				"H": {
+					"scale": "(math.random(0,10)<8)?1:0"
 				}
 			}
 		},
@@ -10246,18 +10249,6 @@
 				},
 				"BackpackLocator": {
 					"scale": 0.8
-				},
-				"ysmGlow_nei1": {
-					"scale": "fn.halo_battery_indicator(1)"
-				},
-				"ysmGlow_nei4": {
-					"scale": "fn.halo_battery_indicator(4)"
-				},
-				"ysmGlow_nei3": {
-					"scale": "fn.halo_battery_indicator(3)"
-				},
-				"ysmGlow_nei2": {
-					"scale": "fn.halo_battery_indicator(2)"
 				}
 			},
 			"timeline": {
@@ -10867,6 +10858,70 @@
 				},
 				"ysmGlow_wai": {
 					"position": [0, "math.sin(q.anim_time*180)*0.1", 0]
+				},
+				"ysmGlow_nei4": {
+					"position": [
+						"(math.random(0,query.max_health/2)<query.health)?0:math.random(-1,1)",
+						0,
+						"(math.random(0,query.max_health/2)<query.health)?0:math.random(-1,1)"
+					],
+					"scale": "(math.random(0,query.max_health/2)<query.health)&&fn.halo_battery_indicator(4)?1:0"
+				},
+				"ysmGlow_nei3": {
+					"position": [
+						"(math.random(0,query.max_health/2)<query.health)?0:math.random(-1,1)",
+						0,
+						"(math.random(0,query.max_health/2)<query.health)?0:math.random(-1,1)"
+					],
+					"scale": "(math.random(0,query.max_health/2)<query.health)&&fn.halo_battery_indicator(3)?1:0"
+				},
+				"ysmGlow_nei2": {
+					"position": [
+						"(math.random(0,query.max_health/2)<query.health)?0:math.random(-1,1)",
+						0,
+						"(math.random(0,query.max_health/2)<query.health)?0:math.random(-1,1)"
+					],
+					"scale": "(math.random(0,query.max_health/2)<query.health)&&fn.halo_battery_indicator(2)?1:0"
+				},
+				"ysmGlow_nei1": {
+					"position": [
+						"(math.random(0,query.max_health/2)<query.health)?0:math.random(-1,1)",
+						0,
+						"(math.random(0,query.max_health/2)<query.health)?0:math.random(-1,1)"
+					],
+					"scale": "(math.random(0,query.max_health/2)<query.health)&&fn.halo_battery_indicator(1)?1:0"
+				},
+				"ysmGlow_wai4": {
+					"position": [
+						"(math.random(0,query.max_health/2)<query.health)?0:math.random(-1,1)",
+						0,
+						"(math.random(0,query.max_health/2)<query.health)?0:math.random(-1,1)"
+					],
+					"scale": "(math.random(0,query.max_health/2)<query.health)?1:0"
+				},
+				"ysmGlow_wai3": {
+					"position": [
+						"(math.random(0,query.max_health/2)<query.health)?0:math.random(-1,1)",
+						0,
+						"(math.random(0,query.max_health/2)<query.health)?0:math.random(-1,1)"
+					],
+					"scale": "(math.random(0,query.max_health/2)<query.health)?1:0"
+				},
+				"ysmGlow_wai1": {
+					"position": [
+						"(math.random(0,query.max_health/2)<query.health)?0:math.random(-1,1)",
+						0,
+						"(math.random(0,query.max_health/2)<query.health)?0:math.random(-1,1)"
+					],
+					"scale": "(math.random(0,query.max_health/2)<query.health)?1:0"
+				},
+				"ysmGlow_wai2": {
+					"position": [
+						"(math.random(0,query.max_health/2)<query.health)?0:math.random(-1,1)",
+						0,
+						"(math.random(0,query.max_health/2)<query.health)?0:math.random(-1,1)"
+					],
+					"scale": "(math.random(0,query.max_health/2)<query.health)?1:0"
 				}
 			}
 		},
