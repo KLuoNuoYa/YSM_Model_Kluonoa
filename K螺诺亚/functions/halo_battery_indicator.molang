@@ -2,9 +2,9 @@
 t.halo_no=args[0];
 
 t.halo_no==4 ? {
-    return ysm.food_level>=18;
+    return ysm.food_level>10;
 } : t.halo_no==3 ? {
-    return ysm.food_level>=12;
+    return ysm.food_level>8;
 } : t.halo_no==2 ? {
     return ysm.food_level>6;
 } : t.halo_no==1 ? {
