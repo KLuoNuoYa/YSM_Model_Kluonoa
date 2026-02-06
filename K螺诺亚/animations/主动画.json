@@ -10246,6 +10246,18 @@
 				},
 				"BackpackLocator": {
 					"scale": 0.8
+				},
+				"ysmGlow_nei1": {
+					"scale": "fn.halo_battery_indicator(1)"
+				},
+				"ysmGlow_nei4": {
+					"scale": "fn.halo_battery_indicator(4)"
+				},
+				"ysmGlow_nei3": {
+					"scale": "fn.halo_battery_indicator(3)"
+				},
+				"ysmGlow_nei2": {
+					"scale": "fn.halo_battery_indicator(2)"
 				}
 			},
 			"timeline": {
