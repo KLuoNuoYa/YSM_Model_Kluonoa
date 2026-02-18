@@ -126,16 +126,19 @@
 					"rotation": [-90, 7.5, -27.5]
 				},
 				"LeftLeg": {
-					"rotation": [-97.5, 0, 0]
+					"rotation": [-97.5, -2.5, 0]
 				},
 				"LeftLowerLeg": {
 					"rotation": [47.5, 0, 0]
 				},
 				"RightLeg": {
-					"rotation": [-97.5, 0, 0]
+					"rotation": [-104.38846, 8.06481, 4.02154]
 				},
 				"RightLowerLeg": {
-					"rotation": [47.5, 0, 0]
+					"rotation": [67.5, 0, 0]
+				},
+				"RightFoot": {
+					"rotation": [-27.5, 0, 0]
 				}
 			}
 		},
@@ -1679,19 +1682,25 @@
 					"rotation": [-90, 7.5, -27.5]
 				},
 				"LeftLeg": {
-					"rotation": [-97.5, 0, 0]
+					"rotation": [-97.5, -2.5, 0]
 				},
 				"LeftLowerLeg": {
 					"rotation": [47.5, 0, 0]
 				},
 				"RightLeg": {
-					"rotation": [-97.5, 0, 0]
+					"rotation": [-96.88846, 8.06481, 4.02154]
 				},
 				"RightLowerLeg": {
-					"rotation": [47.5, 0, 0]
+					"rotation": [55, 0, 0]
 				},
 				"Root": {
 					"position": [0, "math.sin(q.anim_time*360*10)/20", 0]
+				},
+				"Ym": {
+					"rotation": [-7.5, 0, 0]
+				},
+				"RightFoot": {
+					"rotation": [-27.5, 0, 0]
 				}
 			}
 		},
@@ -2375,16 +2384,16 @@
 					"rotation": [-90, 7.5, -27.5]
 				},
 				"LeftLeg": {
-					"rotation": [-97.5, 0, 0]
+					"rotation": [-97.5, -2.5, 0]
 				},
 				"LeftLowerLeg": {
 					"rotation": [47.5, 0, 0]
 				},
 				"RightLeg": {
-					"rotation": [-97.5, 0, 0]
+					"rotation": [-89.38846, 8.06481, 4.02154]
 				},
 				"RightLowerLeg": {
-					"rotation": [47.5, 0, 0]
+					"rotation": [42.5, 0, 0]
 				},
 				"Root": {
 					"position": [0, "math.sin(q.anim_time*360*10)/20", 0]
@@ -2392,6 +2401,12 @@
 				"xiao": {
 					"position": [0, 0, -1],
 					"scale": 1
+				},
+				"Ym": {
+					"rotation": [-17.5, 0, 0]
+				},
+				"RightFoot": {
+					"rotation": [-27.5, 0, 0]
 				}
 			}
 		},
@@ -2674,16 +2689,16 @@
 					"rotation": [-90, 7.5, -27.5]
 				},
 				"LeftLeg": {
-					"rotation": [-97.5, 0, 0]
+					"rotation": [-97.5, -2.5, 0]
 				},
 				"LeftLowerLeg": {
 					"rotation": [47.5, 0, 0]
 				},
 				"RightLeg": {
-					"rotation": [-97.5, 0, 0]
+					"rotation": [-104.38846, 8.06481, 4.02154]
 				},
 				"RightLowerLeg": {
-					"rotation": [47.5, 0, 0]
+					"rotation": [67.5, 0, 0]
 				},
 				"xiao": {
 					"position": [0, 0, -1],
@@ -2700,6 +2715,9 @@
 				},
 				"RightBackWheel": {
 					"position": [0, -1, 0]
+				},
+				"RightFoot": {
+					"rotation": [-27.5, 0, 0]
 				}
 			}
 		},
@@ -2980,16 +2998,16 @@
 					"rotation": [-90, 7.5, -27.5]
 				},
 				"LeftLeg": {
-					"rotation": [-97.5, 0, 0]
+					"rotation": [-97.5, -2.5, 0]
 				},
 				"LeftLowerLeg": {
 					"rotation": [47.5, 0, 0]
 				},
 				"RightLeg": {
-					"rotation": [-97.5, 0, 0]
+					"rotation": [-104.38846, 8.06481, 4.02154]
 				},
 				"RightLowerLeg": {
-					"rotation": [47.5, 0, 0]
+					"rotation": [67.5, 0, 0]
 				},
 				"Root": {
 					"position": [0, "math.sin(q.anim_time*180)", 0]
@@ -3013,6 +3031,9 @@
 				"RightBackWheel": {
 					"rotation": ["q.anim_time*720", 0, 57.5],
 					"position": [-4, 0, 0]
+				},
+				"RightFoot": {
+					"rotation": [-27.5, 0, 0]
 				}
 			}
 		},
@@ -3174,16 +3195,16 @@
 					"rotation": [-90, 7.5, -27.5]
 				},
 				"LeftLeg": {
-					"rotation": [-97.5, 0, 0]
+					"rotation": [-97.5, -2.5, 0]
 				},
 				"LeftLowerLeg": {
 					"rotation": [47.5, 0, 0]
 				},
 				"RightLeg": {
-					"rotation": [-97.5, 0, 0]
+					"rotation": [-104.38846, 8.06481, 4.02154]
 				},
 				"RightLowerLeg": {
-					"rotation": [47.5, 0, 0]
+					"rotation": [67.5, 0, 0]
 				},
 				"Root": {
 					"rotation": ["ysm.second_order('鞘翅pitch', -ysm.head_pitch, 1, 0.8, 0)", 0, 0],
@@ -3208,6 +3229,9 @@
 				"RightBackWheel": {
 					"rotation": ["q.anim_time*720", -15, 57.5],
 					"position": [-4, 0, 0]
+				},
+				"RightFoot": {
+					"rotation": [-27.5, 0, 0]
 				}
 			}
 		},
@@ -3918,16 +3942,16 @@
 					"rotation": [-90, 7.5, -27.5]
 				},
 				"LeftLeg": {
-					"rotation": [-97.5, 0, 0]
+					"rotation": [-97.5, -2.5, 0]
 				},
 				"LeftLowerLeg": {
 					"rotation": [47.5, 0, 0]
 				},
 				"RightLeg": {
-					"rotation": [-97.5, 0, 0]
+					"rotation": [-104.38846, 8.06481, 4.02154]
 				},
 				"RightLowerLeg": {
-					"rotation": [47.5, 0, 0]
+					"rotation": [67.5, 0, 0]
 				},
 				"Root": {
 					"rotation": [0, "-ysm.head_yaw*0.5", "ysm.head_yaw*0.15"],
@@ -3948,6 +3972,9 @@
 				"RightBackWheel": {
 					"rotation": ["q.anim_time*720", -90, 0],
 					"position": [-9, 0, 0]
+				},
+				"RightFoot": {
+					"rotation": [-27.5, 0, 0]
 				}
 			}
 		},
@@ -4632,16 +4659,16 @@
 					"rotation": [-90, 7.5, -27.5]
 				},
 				"LeftLeg": {
-					"rotation": [-97.5, 0, 0]
+					"rotation": [-97.5, -2.5, 0]
 				},
 				"LeftLowerLeg": {
 					"rotation": [47.5, 0, 0]
 				},
 				"RightLeg": {
-					"rotation": [-97.5, 0, 0]
+					"rotation": [-104.38846, 8.06481, 4.02154]
 				},
 				"RightLowerLeg": {
-					"rotation": [47.5, 0, 0]
+					"rotation": [67.5, 0, 0]
 				},
 				"Root": {
 					"rotation": ["ysm.second_order('鞘翅pitch', -ysm.head_pitch, 1, 0.8, 0)", 0, 0],
@@ -4662,6 +4689,9 @@
 				"RightBackWheel": {
 					"rotation": ["q.anim_time*720", -90, 0],
 					"position": [-9, 0, 0]
+				},
+				"RightFoot": {
+					"rotation": [-27.5, 0, 0]
 				}
 			}
 		},
@@ -5123,16 +5153,16 @@
 					}
 				},
 				"LeftLeg": {
-					"rotation": [-97.5, 0, 0]
+					"rotation": [-97.5, -2.5, 0]
 				},
 				"LeftLowerLeg": {
 					"rotation": [47.5, 0, 0]
 				},
 				"RightLeg": {
-					"rotation": [-97.5, 0, 0]
+					"rotation": [-104.38846, 8.06481, 4.02154]
 				},
 				"RightLowerLeg": {
-					"rotation": [47.5, 0, 0]
+					"rotation": [67.5, 0, 0]
 				},
 				"Root": {
 					"rotation": {
@@ -5202,6 +5232,9 @@
 							"post": [0, 0, -1]
 						}
 					}
+				},
+				"RightFoot": {
+					"rotation": [-27.5, 0, 0]
 				}
 			}
 		},
@@ -5636,16 +5669,16 @@
 					}
 				},
 				"LeftLeg": {
-					"rotation": [-97.5, 0, 0]
+					"rotation": [-97.5, -2.5, 0]
 				},
 				"LeftLowerLeg": {
 					"rotation": [47.5, 0, 0]
 				},
 				"RightLeg": {
-					"rotation": [-97.5, 0, 0]
+					"rotation": [-104.38846, 8.06481, 4.02154]
 				},
 				"RightLowerLeg": {
-					"rotation": [47.5, 0, 0]
+					"rotation": [67.5, 0, 0]
 				},
 				"Root": {
 					"rotation": {
@@ -5931,6 +5964,9 @@
 						"0.6667": [0, -1.6, -3.9],
 						"0.7083": [0, -2.525, -4.3]
 					}
+				},
+				"RightFoot": {
+					"rotation": [-27.5, 0, 0]
 				}
 			}
 		},
