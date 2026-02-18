@@ -190,7 +190,7 @@
 					},
 					{
 						"type": "checkbox",
-						"title": "前备箱",
+						"title": "引擎盖",
 						"description": "",
 						"value": "v.roaming.car_hood"
 					},
