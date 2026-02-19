@@ -18,7 +18,7 @@ ctrl.idle ? {   // 玩家空闲时
         return ctrl.state_continue;
     };
     v.show_car ? {
-        ctrl.set_beginning_transition_length(0);
+        ctrl.set_beginning_transition_length(0.1);
         ctrl.set_animation('开车_待命');
         return ctrl.state_continue;
     };
@@ -32,7 +32,7 @@ ctrl.walk ? {
         return ctrl.state_continue;
     };
     v.show_car ? {
-        ctrl.set_beginning_transition_length(0);
+        ctrl.set_beginning_transition_length(0.1);
         ctrl.set_animation('开车_行走');
         return ctrl.state_continue;
     };
@@ -46,7 +46,7 @@ ctrl.run ? {
         return ctrl.state_continue;
     };
     v.show_car ? {
-        ctrl.set_beginning_transition_length(0);
+        ctrl.set_beginning_transition_length(0.1);
         ctrl.set_animation('开车_奔跑');
         return ctrl.state_continue;
     };
