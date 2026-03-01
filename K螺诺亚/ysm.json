@@ -223,6 +223,12 @@
 						"title": "关闭按键鸣笛",
 						"description": "按Tab键鸣笛",
 						"value": "v.roaming.car_can_horn1"
+					},
+					{
+						"type": "checkbox",
+						"title": "赛车改装",
+						"description": "",
+						"value": "v.roaming.car_gt_suit"
 					}
 				]
 			}
@@ -232,6 +238,7 @@
 		"free": true,
 		"render_layers_first": false,
 		"disable_preview_rotation": true,
-		"all_cutout": false
+		"all_cutout": false,
+		"gui_no_lighting": false
 	}
 }

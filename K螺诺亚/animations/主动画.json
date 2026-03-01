@@ -2718,6 +2718,18 @@
 				},
 				"RightFoot": {
 					"rotation": [-27.5, 0, 0]
+				},
+				"GtLeftFrontWheel": {
+					"position": [0, -1, 0]
+				},
+				"GtLeftBackWheel": {
+					"position": [0, -1, 0]
+				},
+				"GtRightFrontWheel": {
+					"position": [0, -1, 0]
+				},
+				"GtRightBackWheel": {
+					"position": [0, -1, 0]
 				}
 			}
 		},
@@ -3034,6 +3046,22 @@
 				},
 				"RightFoot": {
 					"rotation": [-27.5, 0, 0]
+				},
+				"GtLeftFrontWheel": {
+					"rotation": ["q.anim_time*720", 0, -57.5],
+					"position": [4, 0, 0]
+				},
+				"GtLeftBackWheel": {
+					"rotation": ["q.anim_time*720", 0, -57.5],
+					"position": [4, 0, 0]
+				},
+				"GtRightFrontWheel": {
+					"rotation": ["q.anim_time*720", 0, 57.5],
+					"position": [-4, 0, 0]
+				},
+				"GtRightBackWheel": {
+					"rotation": ["q.anim_time*720", 0, 57.5],
+					"position": [-4, 0, 0]
 				}
 			}
 		},
@@ -3232,6 +3260,22 @@
 				},
 				"RightFoot": {
 					"rotation": [-27.5, 0, 0]
+				},
+				"GtLeftFrontWheel": {
+					"rotation": ["q.anim_time*720", 15, -57.5],
+					"position": [4, 0, 0]
+				},
+				"GtLeftBackWheel": {
+					"rotation": ["q.anim_time*720", 15, -57.5],
+					"position": [4, 0, 0]
+				},
+				"GtRightFrontWheel": {
+					"rotation": ["q.anim_time*720", -15, 57.5],
+					"position": [-4, 0, 0]
+				},
+				"GtRightBackWheel": {
+					"rotation": ["q.anim_time*720", -15, 57.5],
+					"position": [-4, 0, 0]
 				}
 			}
 		},
@@ -3975,6 +4019,22 @@
 				},
 				"RightFoot": {
 					"rotation": [-27.5, 0, 0]
+				},
+				"GtLeftFrontWheel": {
+					"rotation": ["q.anim_time*720", 0, -90],
+					"position": [7, 0, 0]
+				},
+				"GtLeftBackWheel": {
+					"rotation": ["q.anim_time*720", 90, 0],
+					"position": [9, 0, 0]
+				},
+				"GtRightFrontWheel": {
+					"rotation": ["q.anim_time*720", 0, 90],
+					"position": [-7, 0, 0]
+				},
+				"GtRightBackWheel": {
+					"rotation": ["q.anim_time*720", -90, 0],
+					"position": [-9, 0, 0]
 				}
 			}
 		},
@@ -4692,6 +4752,22 @@
 				},
 				"RightFoot": {
 					"rotation": [-27.5, 0, 0]
+				},
+				"GtLeftFrontWheel": {
+					"rotation": ["q.anim_time*720", 0, -90],
+					"position": [7, 0, 0]
+				},
+				"GtLeftBackWheel": {
+					"rotation": ["q.anim_time*720", 90, 0],
+					"position": [9, 0, 0]
+				},
+				"GtRightFrontWheel": {
+					"rotation": ["q.anim_time*720", 0, 90],
+					"position": [-7, 0, 0]
+				},
+				"GtRightBackWheel": {
+					"rotation": ["q.anim_time*720", -90, 0],
+					"position": [-9, 0, 0]
 				}
 			}
 		},
@@ -5967,6 +6043,120 @@
 				},
 				"RightFoot": {
 					"rotation": [-27.5, 0, 0]
+				},
+				"GtLeftFrontWheel": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.3333": [0, 0, 0],
+						"0.375": [0, 0, 52.5],
+						"0.4167": [0, 0, 60],
+						"0.4583": [0, 0, 70],
+						"0.5": [0, 0, 82.5],
+						"0.5417": [0, 0, 90],
+						"0.5833": [0, 0, 97.5],
+						"0.625": [0, 0, 90]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.3333": [0, 0, 0],
+						"0.375": [7, 3.5, 0],
+						"0.4167": [8, 4.5, 0],
+						"0.4583": [9, 5.5, 0],
+						"0.5": [11, 4.5, 0],
+						"0.5417": [12, 4.3, 0],
+						"0.5833": [13, 4.7, 0],
+						"0.625": [12, 4.3, 0]
+					}
+				},
+				"GtLeftBackWheel": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.1667": [0, 0, 0],
+						"0.2083": [0, 0, 52.5],
+						"0.25": [0, 0, 60],
+						"0.2917": [0, 0, 70],
+						"0.3333": [0, 0, 82.5],
+						"0.375": [0, 0, 90],
+						"0.4167": [0, 0, 98],
+						"0.4583": [0, 0, 90]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.1667": [0, 0, 0],
+						"0.2083": [8, 3, 0],
+						"0.25": [10, 4, 0],
+						"0.2917": [11, 4, 0],
+						"0.3333": [12, 4, 0],
+						"0.375": [13, 3.3, 0],
+						"0.4167": [14, 4.3, 0],
+						"0.4583": [13, 4.3, 0]
+					}
+				},
+				"GtRightFrontWheel": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.3333": [0, 0, 0],
+						"0.375": [0, 0, -52.5],
+						"0.4167": [0, 0, -60],
+						"0.4583": [0, 0, -70],
+						"0.5": [0, 0, -82.5],
+						"0.5417": [0, 0, -90],
+						"0.5833": [0, 0, -97.5],
+						"0.625": [0, 0, -90]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.3333": [0, 0, 0],
+						"0.375": [-7, 3.5, 0],
+						"0.4167": [-8, 4.5, 0],
+						"0.4583": [-9, 5.5, 0],
+						"0.5": [-11, 4.5, 0],
+						"0.5417": [-12, 4.3, 0],
+						"0.5833": [-13, 4.7, 0],
+						"0.625": [-12, 4.3, 0]
+					}
+				},
+				"GtRightBackWheel": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.1667": [0, 0, 0],
+						"0.2083": [0, 0, -52.5],
+						"0.25": [0, 0, -60],
+						"0.2917": [0, 0, -70],
+						"0.3333": [0, 0, -82.5],
+						"0.375": [0, 0, -90],
+						"0.4167": [0, 0, -98],
+						"0.4583": [0, 0, -90]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.1667": [0, 0, 0],
+						"0.2083": [-8, 3, 0],
+						"0.25": [-10, 4, 0],
+						"0.2917": [-11, 4, 0],
+						"0.3333": [-12, 4, 0],
+						"0.375": [-13, 3.3, 0],
+						"0.4167": [-14, 4.3, 0],
+						"0.4583": [-13, 4.3, 0]
+					}
+				},
+				"GtRearSpoiler": {
+					"rotation": {
+						"0.25": [0, 0, 0],
+						"0.2917": [0, 0, -5],
+						"0.3333": [0, 2.5, -10],
+						"0.375": [0, 5, -15],
+						"0.5417": [0, 2.5, -10],
+						"0.6667": [0, 5, -15]
+					},
+					"position": {
+						"0.25": [0, 0, 0],
+						"0.2917": [-1, -1, 0],
+						"0.3333": [-2, -2, 1],
+						"0.375": [-2, -3, 2],
+						"0.5417": [-2, -2, 1],
+						"0.6667": [-2, -3, 2]
+					}
 				}
 			}
 		},
@@ -10317,6 +10507,12 @@
 				},
 				"RightFrontWheel": {
 					"rotation": [0, "math.clamp(-1*ysm.head_yaw,-25,25)", 0]
+				},
+				"GtLeftFrontWheel": {
+					"rotation": [0, "math.clamp(-1*ysm.head_yaw,-25,25)", 0]
+				},
+				"GtRightFrontWheel": {
+					"rotation": [0, "math.clamp(-1*ysm.head_yaw,-25,25)", 0]
 				}
 			}
 		},
@@ -10466,16 +10662,20 @@
 					"scale": "!(v.show_car&&v.anim_ctrl)"
 				},
 				"LeftFrontWheel": {
-					"rotation": ["v.wheel_rotate", 0, 0]
+					"rotation": ["v.wheel_rotate", 0, 0],
+					"scale": "!v.roaming.car_gt_suit"
 				},
 				"RightFrontWheel": {
-					"rotation": ["v.wheel_rotate", 0, 0]
+					"rotation": ["v.wheel_rotate", 0, 0],
+					"scale": "!v.roaming.car_gt_suit"
 				},
 				"LeftBackWheel": {
-					"rotation": ["v.wheel_rotate", 0, 0]
+					"rotation": ["v.wheel_rotate", 0, 0],
+					"scale": "!v.roaming.car_gt_suit"
 				},
 				"RightBackWheel": {
-					"rotation": ["v.wheel_rotate", 0, 0]
+					"rotation": ["v.wheel_rotate", 0, 0],
+					"scale": "!v.roaming.car_gt_suit"
 				},
 				"ElytraLocator": {
 					"scale": "!(v.show_car&&v.anim_ctrl)"
@@ -10497,6 +10697,34 @@
 				},
 				"Trunk": {
 					"rotation": ["v.roaming.car_trunk?77.5:0", 0, 0]
+				},
+				"Engine": {
+					"scale": "!v.roaming.car_gt_suit"
+				},
+				"GtLeftFrontWheel": {
+					"rotation": ["v.wheel_rotate", 0, 0],
+					"scale": "v.roaming.car_gt_suit"
+				},
+				"GtLeftBackWheel": {
+					"rotation": ["v.wheel_rotate", 0, 0],
+					"scale": "v.roaming.car_gt_suit"
+				},
+				"GtRightFrontWheel": {
+					"rotation": ["v.wheel_rotate", 0, 0],
+					"scale": "v.roaming.car_gt_suit"
+				},
+				"GtRightBackWheel": {
+					"rotation": ["v.wheel_rotate", 0, 0],
+					"scale": "v.roaming.car_gt_suit"
+				},
+				"GtAddon": {
+					"scale": "v.roaming.car_gt_suit"
+				},
+				"GtEngine": {
+					"scale": "v.roaming.car_gt_suit"
+				},
+				"ysmGlow_RIGHT_Headlight": {
+					"scale": "!v.roaming.car_gt_suit"
 				}
 			}
 		},
