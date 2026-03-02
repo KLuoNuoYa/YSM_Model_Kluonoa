@@ -226,7 +226,7 @@
 					},
 					{
 						"type": "checkbox",
-						"title": "赛车改装",
+						"title": "拉力套件",
 						"description": "",
 						"value": "v.roaming.car_gt_suit"
 					}
