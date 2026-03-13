@@ -11,7 +11,7 @@ v.show_car&&(ctrl.walk||ctrl.run||ctrl.jump) ? {
     };
     // 随机鸣笛
     !v.roaming.car_can_horn && !v.roaming.horn_checker ? {
-        math.mod(q.anim_time,2) <=1 ? {     // 2秒检测一次
+        math.mod(q.life_time,2) <=1 ? {     // 2秒检测一次
             v.horn_check1=0;
         } : {
             t.horn_check=1;
