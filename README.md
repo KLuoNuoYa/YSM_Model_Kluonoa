@@ -206,7 +206,9 @@ PBR材质：
 
 ## 表情包
 
-作者：[雾雪雾雪雾](https://www.mihuashi.com/profiles/1051860)
+作者：
+  - [雾雪雾雪雾](https://www.mihuashi.com/profiles/1051860)
+  - [Sangjam](https://space.bilibili.com/474161531) （使用 EmoteLab 制作）
 
 可以在仓库表情包文件夹获取。部分已上架微信，可以在微信打开下方链接获取：
 
