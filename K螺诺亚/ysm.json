@@ -125,7 +125,7 @@
 				"parcool": "animations/跑酷动画.json",
 				"tlm": "animations/女仆动画.json"
 			},
-			"animation_controllers": ["controller/主动画修改.json", "controller/并行动画修改.json"]
+			"animation_controllers": ["controller/主动画修改.json", "controller/并行动画修改.json", "controller/车辆动画相关.json"]
 		}
 	},
 	"properties": {
