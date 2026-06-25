@@ -10750,16 +10750,16 @@
 					"scale": 1
 				},
 				"Hood": {
-					"rotation": ["v.roaming.car_hood_state?-62.5:0", 0, 0]
+					"rotation": ["v.car_hood_state?-62.5:0", 0, 0]
 				},
 				"LeftFrontDoor": {
-					"rotation": [0, "v.roaming.car_left_door_state?75:0", 0]
+					"rotation": [0, "v.car_left_door_state?75:0", 0]
 				},
 				"RightFrontDoor": {
-					"rotation": [0, "v.roaming.car_right_door_state?-75:0", 0]
+					"rotation": [0, "v.car_right_door_state?-75:0", 0]
 				},
 				"Trunk": {
-					"rotation": ["v.roaming.car_trunk_state?77.5:0", 0, 0]
+					"rotation": ["v.car_trunk_state?77.5:0", 0, 0]
 				},
 				"Engine": {
 					"scale": "!v.roaming.car_gt_suit"

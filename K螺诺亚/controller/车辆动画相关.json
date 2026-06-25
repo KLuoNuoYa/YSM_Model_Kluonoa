@@ -5,15 +5,15 @@
 			"states": {
 				"default": {
 					"transitions": [
-						{"hood_open": "v.roaming.car_hood != v.roaming.car_hood_state && v.roaming.car_hood_state == 0"},
-						{"hood_close": "v.roaming.car_hood != v.roaming.car_hood_state && v.roaming.car_hood_state == 1"}
+						{"hood_open": "v.roaming.car_hood != v.car_hood_state && v.car_hood_state == 0"},
+						{"hood_close": "v.roaming.car_hood != v.car_hood_state && v.car_hood_state == 1"}
 					]
 				},
 				"hood_open": {
 					"animations": [
 						{"开前备箱": "v.show_car"}
 					],
-					"on_entry": ["v.roaming.car_hood_state = v.roaming.car_hood;"],
+					"on_entry": ["v.car_hood_state = v.roaming.car_hood;"],
 					"transitions": [
 						{"default": "q.all_animations_finished"}
 					]
@@ -22,7 +22,7 @@
 					"animations": [
 						{"关前备箱": "v.show_car"}
 					],
-					"on_entry": ["v.roaming.car_hood_state = v.roaming.car_hood;"],
+					"on_entry": ["v.car_hood_state = v.roaming.car_hood;"],
 					"transitions": [
 						{"default": "q.all_animations_finished"}
 					]
@@ -33,15 +33,15 @@
 			"states": {
 				"default": {
 					"transitions": [
-						{"trunk_open": "v.roaming.car_trunk != v.roaming.car_trunk_state && v.roaming.car_trunk_state == 0"},
-						{"trunk_close": "v.roaming.car_trunk != v.roaming.car_trunk_state && v.roaming.car_trunk_state == 1"}
+						{"trunk_open": "v.roaming.car_trunk != v.car_trunk_state && v.car_trunk_state == 0"},
+						{"trunk_close": "v.roaming.car_trunk != v.car_trunk_state && v.car_trunk_state == 1"}
 					]
 				},
 				"trunk_open": {
 					"animations": [
 						{"开后备箱": "v.show_car"}
 					],
-					"on_entry": ["v.roaming.car_trunk_state = v.roaming.car_trunk;"],
+					"on_entry": ["v.car_trunk_state = v.roaming.car_trunk;"],
 					"transitions": [
 						{"default": "q.all_animations_finished"}
 					]
@@ -50,7 +50,7 @@
 					"animations": [
 						{"关后备箱": "v.show_car"}
 					],
-					"on_entry": ["v.roaming.car_trunk_state = v.roaming.car_trunk;"],
+					"on_entry": ["v.car_trunk_state = v.roaming.car_trunk;"],
 					"transitions": [
 						{"default": "q.all_animations_finished"}
 					]
@@ -61,15 +61,15 @@
 			"states": {
 				"default": {
 					"transitions": [
-						{"trunk_open": "v.roaming.car_left_door != v.roaming.car_left_door_state && v.roaming.car_left_door_state == 0"},
-						{"trunk_close": "v.roaming.car_left_door != v.roaming.car_left_door_state && v.roaming.car_left_door_state == 1"}
+						{"trunk_open": "v.roaming.car_left_door != v.car_left_door_state && v.car_left_door_state == 0"},
+						{"trunk_close": "v.roaming.car_left_door != v.car_left_door_state && v.car_left_door_state == 1"}
 					]
 				},
 				"trunk_open": {
 					"animations": [
 						{"开左车门": "v.show_car"}
 					],
-					"on_entry": ["v.roaming.car_left_door_state = v.roaming.car_left_door;"],
+					"on_entry": ["v.car_left_door_state = v.roaming.car_left_door;"],
 					"transitions": [
 						{"default": "q.all_animations_finished"}
 					]
@@ -78,7 +78,7 @@
 					"animations": [
 						{"关左车门": "v.show_car"}
 					],
-					"on_entry": ["v.roaming.car_left_door_state = v.roaming.car_left_door;"],
+					"on_entry": ["v.car_left_door_state = v.roaming.car_left_door;"],
 					"transitions": [
 						{"default": "q.all_animations_finished"}
 					]
@@ -89,15 +89,15 @@
 			"states": {
 				"default": {
 					"transitions": [
-						{"trunk_open": "v.roaming.car_right_door != v.roaming.car_right_door_state && v.roaming.car_right_door_state == 0"},
-						{"trunk_close": "v.roaming.car_right_door != v.roaming.car_right_door_state && v.roaming.car_right_door_state == 1"}
+						{"trunk_open": "v.roaming.car_right_door != v.car_right_door_state && v.car_right_door_state == 0"},
+						{"trunk_close": "v.roaming.car_right_door != v.car_right_door_state && v.car_right_door_state == 1"}
 					]
 				},
 				"trunk_open": {
 					"animations": [
 						{"开右车门": "v.show_car"}
 					],
-					"on_entry": ["v.roaming.car_right_door_state = v.roaming.car_right_door;"],
+					"on_entry": ["v.car_right_door_state = v.roaming.car_right_door;"],
 					"transitions": [
 						{"default": "q.all_animations_finished"}
 					]
@@ -106,7 +106,7 @@
 					"animations": [
 						{"关右车门": "v.show_car"}
 					],
-					"on_entry": ["v.roaming.car_right_door_state = v.roaming.car_right_door;"],
+					"on_entry": ["v.car_right_door_state = v.roaming.car_right_door;"],
 					"transitions": [
 						{"default": "q.all_animations_finished"}
 					]
