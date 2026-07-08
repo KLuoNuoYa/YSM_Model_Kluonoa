@@ -1,0 +1,10 @@
+v.cloak_rot_x = ysm.second_order('垂直速度', math.clamp(-2*q.vertical_speed, 0, 25), 1.5, 0.6, 0) + ysm.second_order('水平速度', math.clamp(ysm.ground_speed2, 0, 6), 1.5, 0.6, 0) + ysm.bone_rot('fakecape').x;
+v.cloak_rot_x2 = ysm.second_order('披风1级跟随X', v.cloak_rot_x, 1, 0.5, 0);
+v.cloak_rot_x3 = ysm.second_order('披风2级跟随X', v.cloak_rot_x2, 2, 0.5, 0.2);
+
+v.cloak_rot_z = ysm.second_order('水平旋转速度', math.clamp(v.body_yaw_speed * 5, -20, 20), 1.5, 0.6, 0) + ysm.bone_rot('fakecape').z;
+v.cloak_rot_z2 = ysm.second_order('披风1级跟随Z', v.cloak_rot_z, 1, 0.5, 0);
+v.cloak_rot_z3 = ysm.second_order('披风2级跟随Z', v.cloak_rot_z2, 2, 0.5, 0.2);
+
+v.cloak_rot_xs = ysm.second_order('垂直速度_小', math.clamp(-q.vertical_speed, 0, 20), 1.5, 0.6, 0) + ysm.second_order('水平速度_小', math.clamp(ysm.ground_speed2, 0, 10), 1.5, 0.6, 0) + ysm.bone_rot('fakecape').x/2;
+v.cloak_rot_zs = ysm.second_order('水平旋转速度_小', math.clamp(v.body_yaw_speed * 2, -20, 20), 1.5, 0.6, 0) + ysm.bone_rot('fakecape').z/2;

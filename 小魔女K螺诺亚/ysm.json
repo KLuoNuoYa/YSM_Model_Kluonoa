@@ -1,0 +1,237 @@
+{
+	"spec": 2,
+	"metadata": {
+		"name": "小魔女K螺诺亚",
+		"tips": "\"机器人会魔法吗？\"关于这一点，小螺会用她的尾巴敲三下回车键，然后指着屏幕上冒出来的一行\"Hello World\"说：\"看！这就是硅基生命的咒语咕！\"\n小螺花了一整个周末把自己打扮成法师的样子——尖帽子、法师服，还有一根用旧网线缠出来的\"法杖\"。虽然她连一个真正的火球都搓不出来，但她能用Python在一个下午里写出一套完整的防火墙穿透工具。她坚称这就是\"机械降神\"，尽管她的队友反复强调那个成语是另一个意思。\n\"代码就是我的魔法咒文，服务器就是我的魔法塔。\"小螺这般说道，\"虽然最近的电费有点交不起了咕。。。\"",
+		"license": {
+			"type": "CC BY-NC-SA 4.0"
+		},
+		"authors": [
+			{
+				"name": "Sangjam",
+				"role": "原设画师",
+				"avatar": "avatar/Sangjam.png",
+				"contact": {
+					"bilibili": "https://space.bilibili.com/474161531"
+				}
+			},
+			{
+				"name": "nona",
+				"role": "模型",
+				"avatar": "avatar/Nona.png"
+			},
+			{
+				"name": "咖啡鱼",
+				"avatar": "avatar/咖啡鱼.png",
+				"role": "部分动作",
+				"contact": {
+					"bilibili": "https://space.bilibili.com/104972076"
+				}
+			},
+			{
+				"name": "雅音宫羽",
+				"role": "动画",
+				"avatar": "avatar/MasaneMiyaPA.png",
+				"contact": {
+					"bilibili": "https://space.bilibili.com/44218"
+				}
+			},
+			{
+				"name": "Dumnheint",
+				"avatar": "avatar/Dumnheint.png",
+				"role": "优化",
+				"contact": {
+					"bilibili": "https://space.bilibili.com/36644599"
+				}
+			},
+			{
+				"name": "秋风",
+				"avatar": "avatar/秋风.png",
+				"role": "动画",
+				"contact": {
+					"bilibili": "https://space.bilibili.com/375227559"
+				}
+			},
+			{
+				"name": "12ssssss",
+				"avatar": "avatar/12ssssss.png",
+				"role": "PBR材质",
+				"contact": {
+					"bilibili": "https://space.bilibili.com/14698522"
+				}
+			},
+			{
+				"name": "Maks怜悯",
+				"avatar": "avatar/Maks怜悯.png",
+				"role": "车车模型",
+				"contact": {
+					"bilibili": "https://space.bilibili.com/352177387"
+				}
+			},
+			{
+				"name": "TKYHJ",
+				"avatar": "avatar/TKYHJ.png",
+				"role": "PBR材质",
+				"contact": {
+					"bilibili": "https://space.bilibili.com/449147184"
+				}
+			},
+			{
+				"name": "自动服务网络",
+				"avatar": "avatar/自动服务网络.png",
+				"role": "模型修改"
+			},
+			{
+				"name": "K螺诺亚",
+				"avatar": "avatar/NEWKluoCat.png",
+				"role": "原设",
+				"contact": {
+					"bilibili": "https://space.bilibili.com/3546599305251347"
+				}
+			}
+		],
+		"link": {
+			"GitHub": "https://github.com/KLuoNuoYa/YSM_Model_Kluonoa",
+			"donate": "https://afdian.com/a/ysmmod",
+			"home": "https://space.bilibili.com/3546599305251347"
+		}
+	},
+	"files": {
+		"player": {
+			"model": {
+				"main": "models/main.json",
+				"arm": "models/arm.json"
+			},
+			"texture": [
+				{
+					"uv": "textures/texture.png",
+					"specular": "textures/pbr/blue_s.png"
+				}
+			],
+			"animation": {
+				"main": "animations/主动画.json",
+				"arm": "animations/手臂动画.json",
+				"extra": "animations/轮盘动画.json",
+				"tac": "animations/TAC动画.json",
+				"carryon": "animations/搬运动画.json",
+				"swem": "animations/马术动画.json",
+				"parcool": "animations/跑酷动画.json",
+				"tlm": "animations/女仆动画.json"
+			},
+			"animation_controllers": ["controller/主动画修改.json", "controller/并行动画修改.json", "controller/车辆动画相关.json"]
+		}
+	},
+	"properties": {
+		"height_scale": 0.7,
+		"width_scale": 0.7,
+		"extra_animation": {
+			"config": "#config",
+			"car_config": "#car_config",
+			"谢谢": "招手",
+			"赞成": "赞成",
+			"反对": "反对",
+			"鼓掌": "鼓掌",
+			"算了": "算了",
+			"好耶": "好耶",
+			"请求支援": "请求支援",
+			"对不起": "对不起",
+			"重伤倒地": "重伤倒地",
+			"开车车": "开车车",
+			"萝莉摇": "萝莉摇",
+			"A Cup Of Liber-Tea": "超级气球",
+			"卡其脱离太": "卡其脱离太",
+			"大风车": "大风车"
+		},
+		"extra_animation_buttons": [
+			{
+				"id": "config",
+				"name": "模型设置",
+				"config_forms": [
+					{
+						"type": "range",
+						"title": "随地大小变",
+						"value": "v.player_scale",
+						"min": 0.1,
+						"max": 5,
+						"step": 0.1
+					},
+					{
+						"type": "radio",
+						"title": "表情",
+						"description": "",
+						"value": "v.roaming.emotion",
+						"labels": {
+							"正常": "v.roaming.emotion=0;",
+							"疑惑": "v.roaming.emotion=1;",
+							"干什么！": "v.roaming.emotion=2;",
+							"害怕": "v.roaming.emotion=3;",
+							"委屈巴巴": "v.roaming.emotion=4;",
+							"苦呀西": "v.roaming.emotion=5;"
+						}
+					}
+				]
+			},
+			{
+				"id": "car_config",
+				"name": "车车",
+				"config_forms": [
+					{
+						"type": "checkbox",
+						"title": "开车",
+						"description": "",
+						"value": "v.roaming.car"
+					},
+					{
+						"type": "checkbox",
+						"title": "引擎盖",
+						"description": "",
+						"value": "v.roaming.car_hood"
+					},
+					{
+						"type": "checkbox",
+						"title": "后备箱",
+						"description": "",
+						"value": "v.roaming.car_trunk"
+					},
+					{
+						"type": "checkbox",
+						"title": "左门",
+						"description": "",
+						"value": "v.roaming.car_left_door"
+					},
+					{
+						"type": "checkbox",
+						"title": "右门",
+						"description": "",
+						"value": "v.roaming.car_right_door"
+					},
+					{
+						"type": "checkbox",
+						"title": "关闭随机鸣笛",
+						"description": "",
+						"value": "v.roaming.car_can_horn"
+					},
+					{
+						"type": "checkbox",
+						"title": "关闭按键鸣笛",
+						"description": "按Tab键鸣笛",
+						"value": "v.roaming.car_can_horn1"
+					},
+					{
+						"type": "checkbox",
+						"title": "赛车套件",
+						"description": "",
+						"value": "v.roaming.car_gt_suit"
+					}
+				]
+			}
+		],
+		"preview_animation": "选择界面",
+		"default_texture": "texture",
+		"free": true,
+		"render_layers_first": false,
+		"disable_preview_rotation": true,
+		"all_cutout": false,
+		"gui_no_lighting": false
+	}
+}
