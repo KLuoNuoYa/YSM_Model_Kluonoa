@@ -2506,6 +2506,24 @@
 				},
 				"LeftLeg": {
 					"rotation": [-2.49762, -0.10901, 2.50238]
+				},
+				"RightCape": {
+					"rotation": [0, 0, 0]
+				},
+				"RightCape2": {
+					"rotation": [0, 0, 0]
+				},
+				"RightCape3": {
+					"rotation": [0, 0, 0]
+				},
+				"LeftCape": {
+					"rotation": [0, 0, 0]
+				},
+				"LeftCape2": {
+					"rotation": [0, 0, 0]
+				},
+				"LeftCape3": {
+					"rotation": [0, 0, 0]
 				}
 			}
 		},
@@ -2580,6 +2598,24 @@
 				},
 				"wei_xiao": {
 					"position": [0, 0, 0]
+				},
+				"RightCape": {
+					"rotation": [0, 0, 0]
+				},
+				"RightCape2": {
+					"rotation": [0, 0, 0]
+				},
+				"RightCape3": {
+					"rotation": [0, 0, 0]
+				},
+				"LeftCape": {
+					"rotation": [0, 0, 0]
+				},
+				"LeftCape2": {
+					"rotation": [0, 0, 0]
+				},
+				"LeftCape3": {
+					"rotation": [0, 0, 0]
 				}
 			}
 		},
