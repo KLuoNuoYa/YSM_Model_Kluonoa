@@ -56,5 +56,21 @@
 	"properties.extra_animation_buttons.car_config.config_forms.6.title": "Disable Press Horn",
 	"properties.extra_animation_buttons.car_config.config_forms.6.description": "Press Tab key to horn",
 	"properties.extra_animation_buttons.car_config.config_forms.7.title": "Race Suit",
-	"properties.extra_animation.car_config.desc": "Who needs a driver's license when you can cast spells? (lol)"
+	"properties.extra_animation.car_config.desc": "Who needs a driver's license when you can cast spells? (lol)",
+	"properties.extra_animation_buttons.config.config_forms.2.title": "Hat",
+	"properties.extra_animation_buttons.config.config_forms.3.title": "Spell book",
+	"properties.extra_animation_buttons.config.config_forms.8.title": "Enable vanilla trident model",
+	"properties.extra_animation_buttons.config.config_forms.7.title": "Enable vanilla shield model",
+	"properties.extra_animation_buttons.config.config_forms.6.title": "Enable vanilla sword model",
+	"properties.extra_animation_buttons.config.config_forms.5.title": "Enable Iron's wand model",
+	"properties.extra_animation_buttons.config.config_forms.4.labels.1": "Spellbook",
+	"properties.extra_animation_buttons.config.config_forms.4.labels.0": "Wand",
+	"properties.extra_animation_buttons.config.config_forms.4.title": "Spellcasting Medium",
+	"properties.extra_animation_buttons.config.config_forms.3.labels.2": "Disable display",
+	"properties.extra_animation_buttons.config.config_forms.3.labels.1": "Always display",
+	"properties.extra_animation_buttons.config.config_forms.3.labels.0": "Follow curios slots",
+	"properties.extra_animation_buttons.config.config_forms.3.description": "Display custom accessories",
+	"properties.extra_animation_buttons.config.config_forms.2.labels.2": "Disable display",
+	"properties.extra_animation_buttons.config.config_forms.2.labels.1": "Always display",
+	"properties.extra_animation_buttons.config.config_forms.2.labels.0": "Follow the armor (default)"
 }

@@ -56,5 +56,21 @@
 	"properties.extra_animation_buttons.car_config.config_forms.6.title": "关闭按键鸣笛",
 	"properties.extra_animation_buttons.car_config.config_forms.6.description": "按Tab键鸣笛",
 	"properties.extra_animation_buttons.car_config.config_forms.7.title": "赛车套件",
-	"properties.extra_animation.car_config.desc": "会法术了还需要开车吗（笑）"
+	"properties.extra_animation.car_config.desc": "会法术了还需要开车吗（笑）",
+	"properties.extra_animation_buttons.config.config_forms.2.title": "帽子",
+	"properties.extra_animation_buttons.config.config_forms.2.labels.0": "跟随盔甲（默认）",
+	"properties.extra_animation_buttons.config.config_forms.2.labels.1": "长期显示",
+	"properties.extra_animation_buttons.config.config_forms.2.labels.2": "禁用显示",
+	"properties.extra_animation_buttons.config.config_forms.3.title": "魔法书",
+	"properties.extra_animation_buttons.config.config_forms.3.description": "自定义饰品是否显示",
+	"properties.extra_animation_buttons.config.config_forms.3.labels.0": "跟随饰品栏",
+	"properties.extra_animation_buttons.config.config_forms.3.labels.1": "长期显示",
+	"properties.extra_animation_buttons.config.config_forms.3.labels.2": "禁用显示",
+	"properties.extra_animation_buttons.config.config_forms.4.title": "施法媒介",
+	"properties.extra_animation_buttons.config.config_forms.4.labels.0": "法杖",
+	"properties.extra_animation_buttons.config.config_forms.4.labels.1": "魔法书",
+	"properties.extra_animation_buttons.config.config_forms.5.title": "启用铁魔法法杖模型",
+	"properties.extra_animation_buttons.config.config_forms.6.title": "启用原版剑模型",
+	"properties.extra_animation_buttons.config.config_forms.7.title": "启用原版盾模型",
+	"properties.extra_animation_buttons.config.config_forms.8.title": "启用原版三叉戟模型"
 }
