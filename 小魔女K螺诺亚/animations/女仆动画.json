@@ -2524,6 +2524,9 @@
 				},
 				"LeftCape3": {
 					"rotation": [0, 0, 0]
+				},
+				"Hat": {
+					"scale": 1
 				}
 			}
 		},

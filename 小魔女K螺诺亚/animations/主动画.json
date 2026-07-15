@@ -671,6 +671,9 @@
 				},
 				"RightFoot": {
 					"rotation": [-27.5, 0, 0]
+				},
+				"BackTheRimyIcicle": {
+					"scale": 0
 				}
 			}
 		},
@@ -2263,6 +2266,9 @@
 				},
 				"GtRightBackWheel": {
 					"position": [0, "math.sin((q.anim_time+0.25)*360*10)/20", 0]
+				},
+				"BackTheRimyIcicle": {
+					"scale": 0
 				}
 			}
 		},
@@ -2996,6 +3002,9 @@
 				},
 				"GtRightBackWheel": {
 					"position": [0, "math.sin((q.anim_time+0.25)*360*10)/20", 0]
+				},
+				"BackTheRimyIcicle": {
+					"scale": 0
 				}
 			}
 		},
@@ -3322,6 +3331,9 @@
 				},
 				"GtRightBackWheel": {
 					"position": [0, -1, 0]
+				},
+				"BackTheRimyIcicle": {
+					"scale": 0
 				}
 			}
 		},
@@ -3657,6 +3669,9 @@
 				"GtRightBackWheel": {
 					"rotation": ["q.anim_time*720", 0, 57.5],
 					"position": [-4, 0, 0]
+				},
+				"BackTheRimyIcicle": {
+					"scale": 0
 				}
 			}
 		},
@@ -3922,6 +3937,9 @@
 				"GtRightBackWheel": {
 					"rotation": ["q.anim_time*720", -15, 57.5],
 					"position": [-4, 0, 0]
+				},
+				"BackTheRimyIcicle": {
+					"scale": 0
 				}
 			}
 		},
@@ -4681,6 +4699,9 @@
 				"GtRightBackWheel": {
 					"rotation": ["q.anim_time*720", -90, 0],
 					"position": [-9, 0, 0]
+				},
+				"BackTheRimyIcicle": {
+					"scale": 0
 				}
 			}
 		},
@@ -5417,6 +5438,9 @@
 				"GtRightBackWheel": {
 					"rotation": ["q.anim_time*720", -90, 0],
 					"position": [-9, 0, 0]
+				},
+				"BackTheRimyIcicle": {
+					"scale": 0
 				}
 			}
 		},
@@ -5960,6 +5984,9 @@
 				},
 				"RightFoot": {
 					"rotation": [-27.5, 0, 0]
+				},
+				"BackTheRimyIcicle": {
+					"scale": 0
 				}
 			}
 		},
@@ -6806,6 +6833,9 @@
 						"0.5417": [-2, -2, 1],
 						"0.6667": [-2, -3, 2]
 					}
+				},
+				"BackTheRimyIcicle": {
+					"scale": 0
 				}
 			}
 		},
@@ -9523,6 +9553,9 @@
 				"wei_xiao": {
 					"position": [0, 0, 0],
 					"scale": 0
+				},
+				"RightHandLocator": {
+					"scale": "v.roaming.config_shield"
 				}
 			}
 		},
@@ -9604,6 +9637,12 @@
 				"wei_xiao": {
 					"position": [0, 0, 0],
 					"scale": 0
+				},
+				"LeftShield": {
+					"scale": "!v.roaming.config_shield"
+				},
+				"LeftHandLocator": {
+					"scale": "v.roaming.config_shield"
 				}
 			}
 		},
@@ -10903,6 +10942,14 @@
 				}
 			}
 		},
+		"head:default": {
+			"loop": true,
+			"bones": {
+				"Hat": {
+					"scale": 1
+				}
+			}
+		},
 		"——物理": {
 			"loop": true
 		},
@@ -11194,7 +11241,30 @@
 			"loop": true
 		},
 		"parallel6": {
-			"loop": true
+			"loop": true,
+			"bones": {
+				"BackTheRimyIcicle": {
+					"position": [0, "math.sin(q.anim_time*90)*2", 0]
+				},
+				"BackTheRimyIcicle3": {
+					"position": [0, "ysm.second_order('DroneZ2',v.continuous_yaw,0.5,1,1) - v.continuous_yaw", 0]
+				},
+				"BackTheRimyIcicle2": {
+					"position": [
+						"-( ( query.position(0) - ysm.second_order('DroneX', query.position(0), 0.5, 1.1, 1) ) * math.cos(q.body_y_rotation) + ( query.position(2) - ysm.second_order('DroneZ', query.position(2), 0.5, 1.1, 1) ) * math.sin(q.body_y_rotation) ) * 10",
+						"((query.position(1) - ysm.second_order('DroneY', query.position(1), 0.5,  1.1, 1)) * -10)",
+						"( -( query.position(0) - ysm.second_order('DroneX', query.position(0), 0.5, 1.1, 1) ) * math.sin(q.body_y_rotation) + ( query.position(2) - ysm.second_order('DroneZ', query.position(2), 0.5, 1.1, 1) ) * math.cos(q.body_y_rotation) ) * 10"
+					]
+				}
+			},
+			"timeline": {
+				"0.0": [
+					"v.delta = q.body_y_rotation - v.last_raw;",
+					"v.delta = v.delta > 180 ? v.delta - 360 : (v.delta < -180 ? v.delta + 360 : v.delta);",
+					"v.continuous_yaw = v.continuous_yaw + v.delta;",
+					"v.last_raw = q.body_y_rotation;"
+				]
+			}
 		},
 		"parallel7": {
 			"loop": true
@@ -11411,6 +11481,78 @@
 				},
 				"Cape": {
 					"scale": "!(v.show_car&&v.anim_ctrl)"
+				},
+				"RightIron'sSpellsBook": {
+					"scale": 0
+				},
+				"RightCoverAnimeGroupA2": {
+					"rotation": [-45, 0, 0]
+				},
+				"RightCoverAnimeGroupA1": {
+					"scale": [1, 0.4, 1.6]
+				},
+				"RightCoverAnimeGroupB1": {
+					"scale": [1, 3.1, 0.4]
+				},
+				"RightCoverAnimeGroupB2": {
+					"rotation": [-45, 0, 0]
+				},
+				"LeftIron'sSpellsBook": {
+					"scale": 0
+				},
+				"LeftCoverAnimeGroupA1": {
+					"scale": [1, 0.4, 1.6]
+				},
+				"LeftCoverAnimeGroupA2": {
+					"rotation": [-45, 0, 0]
+				},
+				"LeftCoverAnimeGroupB1": {
+					"scale": [1, 3.1, 0.4]
+				},
+				"LeftCoverAnimeGroupB2": {
+					"rotation": [-45, 0, 0]
+				},
+				"RightTheRimyIcicle": {
+					"scale": 0
+				},
+				"LeftTheRimyIcicle": {
+					"scale": 0
+				},
+				"RightShield": {
+					"scale": 0
+				},
+				"LeftShield": {
+					"scale": 0
+				},
+				"Iron'sSpellsBookForCurios": {
+					"scale": 0
+				},
+				"LeftCoverAnimeGroupA5": {
+					"scale": [1, 3.1, 0.4]
+				},
+				"LeftCoverAnimeGroupA6": {
+					"rotation": [-45, 0, 0]
+				},
+				"LeftCoverAnimeGroupB5": {
+					"scale": [1, 0.4, 1.6]
+				},
+				"LeftCoverAnimeGroupB6": {
+					"rotation": [45, 0, 0]
+				},
+				"RightSword": {
+					"scale": 0
+				},
+				"LeftSword": {
+					"scale": 0
+				},
+				"RightSpear": {
+					"scale": 0
+				},
+				"LeftSpear": {
+					"scale": 0
+				},
+				"Hat": {
+					"scale": 0
 				}
 			}
 		},
@@ -11431,6 +11573,12 @@
 				},
 				"Tail5": {
 					"rotation": [20, 0, "math.sin(-180+q.anim_time*90)*20"]
+				},
+				"Hat": {
+					"scale": "((v.roaming.config_hat_type == 1) || (ysm.has_helmet)) && (v.roaming.config_hat_type != 2);"
+				},
+				"Iron'sSpellsBookForCurios": {
+					"scale": "((v.roaming.config_spellbook_curios == 1)||(ysm.has_any_curios('spellbook')))&&(v.roaming.config_spellbook_curios != 2)"
 				}
 			}
 		},

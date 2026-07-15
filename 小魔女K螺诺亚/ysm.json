@@ -116,10 +116,20 @@
 				"carryon": "animations/搬运动画.json",
 				"swem": "animations/马术动画.json",
 				"parcool": "animations/跑酷动画.json",
-				"tlm": "animations/女仆动画.json"
+				"tlm": "animations/女仆动画.json",
+				"irons_spell_books": "animations/铁魔法动画.json"
 			},
 			"animation_controllers": ["controller/主动画修改.json", "controller/并行动画修改.json", "controller/车辆动画相关.json"]
-		}
+		},
+		"projectiles": [
+			{
+				"model": "models/spear.json",
+				"texture": {
+					"uv": "textures/texture.png"
+				},
+				"match": ["minecraft:trident"]
+			}
+		]
 	},
 	"properties": {
 		"height_scale": 0.7,
@@ -168,6 +178,62 @@
 							"委屈巴巴": "v.roaming.emotion=4;",
 							"苦呀西": "v.roaming.emotion=5;"
 						}
+					},
+					{
+						"type": "radio",
+						"title": "帽子",
+						"description": "",
+						"value": "v.roaming.config_hat_type",
+						"labels": {
+							"跟随盔甲（默认）": "v.roaming.config_hat_type=0;",
+							"长期显示": "v.roaming.config_hat_type=1;",
+							"禁用显示": "v.roaming.config_hat_type=2;"
+						}
+					},
+					{
+						"type": "radio",
+						"title": "魔法书",
+						"description": "自定义饰品是否显示",
+						"value": "v.roaming.config_spellbook_curios",
+						"labels": {
+							"跟随饰品栏": "v.roaming.config_spellbook_curios=0;",
+							"长期显示": "v.roaming.config_spellbook_curios=1;",
+							"禁用显示": "v.roaming.config_spellbook_curios=2;"
+						}
+					},
+					{
+						"type": "radio",
+						"title": "施法媒介",
+						"description": "",
+						"value": "v.roaming.config_spellbook_type",
+						"labels": {
+							"法杖": "v.roaming.config_spellbook_type=0;",
+							"魔法书": "v.roaming.config_spellbook_type=1;"
+						}
+					},
+					{
+						"type": "checkbox",
+						"title": "启用铁魔法法杖模型",
+						"description": "",
+						"value": "v.roaming.config_spellbook_staff"
+					},
+					{
+						"type": "checkbox",
+						"title": "启用原版剑模型",
+						"description": "",
+						"value": "v.roaming.config_sword"
+					},
+					{
+						"type": "checkbox",
+						"title": "启用原版盾模型",
+						"description": "",
+						"value": "v.roaming.config_shield"
+					},
+					{
+						"type": "checkbox",
+						"title": "启用原版三叉戟模型",
+						"description": "",
+						"value": "v.roaming.config_spear"
 					}
 				]
 			},
