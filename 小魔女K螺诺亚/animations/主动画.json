@@ -10942,14 +10942,6 @@
 				}
 			}
 		},
-		"head:default": {
-			"loop": true,
-			"bones": {
-				"Hat": {
-					"scale": 1
-				}
-			}
-		},
 		"——物理": {
 			"loop": true
 		},
