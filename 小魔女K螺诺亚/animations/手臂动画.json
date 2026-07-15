@@ -6104,7 +6104,7 @@
 				"BackTheRimyIcicle": {
 					"scale": "v.roaming.config_spellbook_type == 0?0:1"
 				},
-				"RightIron'sSpellsBook": {
+				"RightIronsSpellsBook": {
 					"rotation": {
 						"0.0": {
 							"post": [
@@ -6136,7 +6136,7 @@
 						}
 					}
 				},
-				"Iron'sSpellsBookForCurios": {
+				"IronsSpellsBookForCurios": {
 					"scale": "v.roaming.config_spellbook_type == 0?1:0"
 				}
 			}
@@ -6562,7 +6562,7 @@
 						]
 					}
 				},
-				"RightIron'sSpellsBook": {
+				"RightIronsSpellsBook": {
 					"rotation": {
 						"0.0": [0, 0, 0],
 						"1.0": [0, 0, 0],
@@ -6627,7 +6627,7 @@
 						]
 					}
 				},
-				"Iron'sSpellsBookForCurios": {
+				"IronsSpellsBookForCurios": {
 					"scale": {
 						"0.0": ["v.roaming.config_spellbook_type == 1?1:1", "v.roaming.config_spellbook_type == 1?1:1", "v.roaming.config_spellbook_type == 1?1:1"],
 						"1.0417": ["v.roaming.config_spellbook_type == 1?1:1", "v.roaming.config_spellbook_type == 1?1:1", "v.roaming.config_spellbook_type == 1?1:1"],
@@ -6647,7 +6647,7 @@
 						"1.25": ["v.roaming.config_spellbook_type == 0?0:1", "v.roaming.config_spellbook_type == 0?0:1", "v.roaming.config_spellbook_type == 0?0:1"]
 					}
 				},
-				"Iron'sSpellsBookForCurios": {
+				"IronsSpellsBookForCurios": {
 					"scale": {
 						"0.0": ["v.roaming.config_spellbook_type == 1?1:1", "v.roaming.config_spellbook_type == 1?1:1", "v.roaming.config_spellbook_type == 1?1:1"],
 						"1.0417": ["v.roaming.config_spellbook_type == 1?1:1", "v.roaming.config_spellbook_type == 1?1:1", "v.roaming.config_spellbook_type == 1?1:1"],
@@ -6970,7 +6970,7 @@
 						}
 					}
 				},
-				"LeftIron'sSpellsBook": {
+				"LeftIronsSpellsBook": {
 					"rotation": {
 						"0.0": [0, 0, 0],
 						"1.0": [0, 0, 0],

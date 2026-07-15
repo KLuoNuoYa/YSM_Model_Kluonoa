@@ -11482,7 +11482,7 @@
 				"Cape": {
 					"scale": "!(v.show_car&&v.anim_ctrl)"
 				},
-				"RightIron'sSpellsBook": {
+				"RightIronsSpellsBook": {
 					"scale": 0
 				},
 				"RightCoverAnimeGroupA2": {
@@ -11497,7 +11497,7 @@
 				"RightCoverAnimeGroupB2": {
 					"rotation": [-45, 0, 0]
 				},
-				"LeftIron'sSpellsBook": {
+				"LeftIronsSpellsBook": {
 					"scale": 0
 				},
 				"LeftCoverAnimeGroupA1": {
@@ -11524,7 +11524,7 @@
 				"LeftShield": {
 					"scale": 0
 				},
-				"Iron'sSpellsBookForCurios": {
+				"IronsSpellsBookForCurios": {
 					"scale": 0
 				},
 				"LeftCoverAnimeGroupA5": {
@@ -11577,7 +11577,7 @@
 				"Hat": {
 					"scale": "((v.roaming.config_hat_type == 1) || (ysm.has_helmet)) && (v.roaming.config_hat_type != 2);"
 				},
-				"Iron'sSpellsBookForCurios": {
+				"IronsSpellsBookForCurios": {
 					"scale": "((v.roaming.config_spellbook_curios == 1)||(ysm.has_any_curios('spellbook')))&&(v.roaming.config_spellbook_curios != 2)"
 				}
 			}
