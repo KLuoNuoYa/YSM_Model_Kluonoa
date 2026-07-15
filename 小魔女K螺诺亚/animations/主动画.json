@@ -11579,6 +11579,13 @@
 				},
 				"IronsSpellsBookForCurios": {
 					"scale": "((v.roaming.config_spellbook_curios == 1)||(ysm.has_any_curios('spellbook')))&&(v.roaming.config_spellbook_curios != 2)"
+				},
+				"Left_ear2": {
+					"rotation": [
+						"((v.roaming.config_hat_type == 1) || (ysm.has_helmet)) && (v.roaming.config_hat_type != 2)?14.2934;",
+						"((v.roaming.config_hat_type == 1) || (ysm.has_helmet)) && (v.roaming.config_hat_type != 2)?-25.1006;",
+						"((v.roaming.config_hat_type == 1) || (ysm.has_helmet)) && (v.roaming.config_hat_type != 2)?19.538;"
+					]
 				}
 			}
 		},
