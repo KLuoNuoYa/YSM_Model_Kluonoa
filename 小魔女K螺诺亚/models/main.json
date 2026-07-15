@@ -1752,7 +1752,7 @@
 					]
 				},
 				{
-					"name": "Iron'sSpellsBookForCar",
+					"name": "IronsSpellsBookForCar",
 					"parent": "Car",
 					"pivot": [13.10621, 23.3125, 19.30643],
 					"rotation": [-112.5, 0, -90],
@@ -1773,7 +1773,7 @@
 				},
 				{
 					"name": "Pages2",
-					"parent": "Iron'sSpellsBookForCar",
+					"parent": "IronsSpellsBookForCar",
 					"pivot": [13.10621, 23.375, 19.11893]
 				},
 				{
@@ -2221,7 +2221,7 @@
 				},
 				{
 					"name": "LeftSide2",
-					"parent": "Iron'sSpellsBookForCar",
+					"parent": "IronsSpellsBookForCar",
 					"pivot": [13.10621, 23.375, 19.11893],
 					"rotation": [0, -67.5, 0]
 				},
@@ -2548,7 +2548,7 @@
 				},
 				{
 					"name": "RightSide2",
-					"parent": "Iron'sSpellsBookForCar",
+					"parent": "IronsSpellsBookForCar",
 					"pivot": [13.10621, 23.375, 19.11893],
 					"rotation": [0, 67.5, 0]
 				},
@@ -17431,7 +17431,7 @@
 					]
 				},
 				{
-					"name": "LeftIron'sSpellsBook",
+					"name": "LeftIronsSpellsBook",
 					"parent": "LeftHand",
 					"pivot": [2.25, 15.8125, -4.5625],
 					"rotation": [-90, 0, 0],
@@ -17452,7 +17452,7 @@
 				},
 				{
 					"name": "Pages3",
-					"parent": "LeftIron'sSpellsBook",
+					"parent": "LeftIronsSpellsBook",
 					"pivot": [2.25, 15.875, -4.75]
 				},
 				{
@@ -17902,7 +17902,7 @@
 				},
 				{
 					"name": "LeftSide3",
-					"parent": "LeftIron'sSpellsBook",
+					"parent": "LeftIronsSpellsBook",
 					"pivot": [2.25, 15.875, -4.75],
 					"rotation": [0, -137.5, 0]
 				},
@@ -18229,7 +18229,7 @@
 				},
 				{
 					"name": "RightSide3",
-					"parent": "LeftIron'sSpellsBook",
+					"parent": "LeftIronsSpellsBook",
 					"pivot": [2.25, 15.875, -4.75],
 					"rotation": [0, 137.5, 0]
 				},
@@ -19920,7 +19920,7 @@
 					]
 				},
 				{
-					"name": "RightIron'sSpellsBook",
+					"name": "RightIronsSpellsBook",
 					"parent": "RightHand",
 					"pivot": [-2.25, 15.8125, -4.5625],
 					"rotation": [-90, 0, 0],
@@ -19941,7 +19941,7 @@
 				},
 				{
 					"name": "Pages",
-					"parent": "RightIron'sSpellsBook",
+					"parent": "RightIronsSpellsBook",
 					"pivot": [-2.25, 15.875, -4.75]
 				},
 				{
@@ -20391,7 +20391,7 @@
 				},
 				{
 					"name": "LeftSide",
-					"parent": "RightIron'sSpellsBook",
+					"parent": "RightIronsSpellsBook",
 					"pivot": [-2.25, 15.875, -4.75],
 					"rotation": [0, 137.5, 0]
 				},
@@ -20718,7 +20718,7 @@
 				},
 				{
 					"name": "RightSide",
-					"parent": "RightIron'sSpellsBook",
+					"parent": "RightIronsSpellsBook",
 					"pivot": [-2.25, 15.875, -4.75],
 					"rotation": [0, -137.5, 0]
 				},
@@ -21333,7 +21333,7 @@
 					"pivot": [0, 17.80174, 0]
 				},
 				{
-					"name": "Iron'sSpellsBookForCurios",
+					"name": "IronsSpellsBookForCurios",
 					"parent": "DownCloth",
 					"pivot": [-4.38011, 16.18468, -0.19357],
 					"rotation": [90, 0, 15],
@@ -21354,7 +21354,7 @@
 				},
 				{
 					"name": "Pages4",
-					"parent": "Iron'sSpellsBookForCurios",
+					"parent": "IronsSpellsBookForCurios",
 					"pivot": [-4.38011, 16.22218, -0.30607]
 				},
 				{
@@ -21802,7 +21802,7 @@
 				},
 				{
 					"name": "LeftSide4",
-					"parent": "Iron'sSpellsBookForCurios",
+					"parent": "IronsSpellsBookForCurios",
 					"pivot": [-4.38011, 16.22218, -0.30607],
 					"rotation": [0, -67.5, 0]
 				},
@@ -22129,7 +22129,7 @@
 				},
 				{
 					"name": "RightSide4",
-					"parent": "Iron'sSpellsBookForCurios",
+					"parent": "IronsSpellsBookForCurios",
 					"pivot": [-4.38011, 16.22218, -0.30607],
 					"rotation": [0, 67.5, 0]
 				},
