@@ -105,6 +105,22 @@
 			"texture": [
 				{
 					"uv": "textures/texture.png",
+					"normal": "textures/pbr/blue_n.png",
+					"specular": "textures/pbr/blue_s.png"
+				},
+				{
+					"uv": "textures/ArsNouveau.png",
+					"normal": "textures/pbr/blue_n.png",
+					"specular": "textures/pbr/blue_s.png"
+				},
+				{
+					"uv": "textures/Botania.png",
+					"normal": "textures/pbr/blue_n.png",
+					"specular": "textures/pbr/blue_s.png"
+				},
+				{
+					"uv": "textures/Cyan.png",
+					"normal": "textures/pbr/blue_n.png",
 					"specular": "textures/pbr/blue_s.png"
 				}
 			],
@@ -123,11 +139,13 @@
 		},
 		"projectiles": [
 			{
+				"match": ["minecraft:trident"],
 				"model": "models/spear.json",
 				"texture": {
-					"uv": "textures/texture.png"
-				},
-				"match": ["minecraft:trident"]
+					"uv": "textures/spear.png",
+					"normal": "textures/pbr/spear_n.png",
+					"specular": "textures/pbr/spear_s.png"
+				}
 			}
 		]
 	},
@@ -234,6 +252,12 @@
 						"title": "启用原版三叉戟模型",
 						"description": "",
 						"value": "v.roaming.config_spear"
+					},
+					{
+						"type": "checkbox",
+						"title": "启用原版长矛模型",
+						"description": "",
+						"value": "v.roaming.config_lance"
 					}
 				]
 			},
@@ -293,6 +317,8 @@
 			}
 		],
 		"preview_animation": "选择界面",
+		"gui_foreground": "textures/gui/foreground.png",
+		"gui_background": "textures/gui/background.png",
 		"default_texture": "texture",
 		"free": true,
 		"render_layers_first": false,

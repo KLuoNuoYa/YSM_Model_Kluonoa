@@ -11584,6 +11584,13 @@
 						"((v.roaming.config_hat_type == 1) || (ysm.has_helmet)) && (v.roaming.config_hat_type != 2)?-25.1006;",
 						"((v.roaming.config_hat_type == 1) || (ysm.has_helmet)) && (v.roaming.config_hat_type != 2)?19.538;"
 					]
+				},
+				"H": {
+					"position": [
+						"-(((v.roaming.config_hat_type == 1) || (ysm.has_helmet)) && (v.roaming.config_hat_type != 2)) ? -0 : -0",
+						"(((v.roaming.config_hat_type == 1) || (ysm.has_helmet)) && (v.roaming.config_hat_type != 2)) ? 0 : -2.2",
+						"(((v.roaming.config_hat_type == 1) || (ysm.has_helmet)) && (v.roaming.config_hat_type != 2)) ? 0 : -1"
+					]
 				}
 			}
 		},
