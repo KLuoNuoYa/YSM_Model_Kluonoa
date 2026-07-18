@@ -79,7 +79,10 @@
 			{
 				"name": "自动服务网络",
 				"avatar": "avatar/自动服务网络.png",
-				"role": "部分动画"
+				"role": "部分动画",
+				"contact": {
+					"bilibili": "https://space.bilibili.com/500395823"
+				}
 			},
 			{
 				"name": "K螺诺亚",
