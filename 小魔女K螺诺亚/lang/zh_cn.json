@@ -72,5 +72,10 @@
 	"properties.extra_animation_buttons.config.config_forms.5.title": "启用铁魔法法杖模型",
 	"properties.extra_animation_buttons.config.config_forms.6.title": "启用原版剑模型",
 	"properties.extra_animation_buttons.config.config_forms.7.title": "启用原版盾模型",
-	"properties.extra_animation_buttons.config.config_forms.8.title": "启用原版三叉戟模型"
+	"properties.extra_animation_buttons.config.config_forms.8.title": "启用原版三叉戟模型",
+	"properties.extra_animation_buttons.config.config_forms.9.title": "启用原版长矛模型",
+	"files.player.texture.texture": "§9蓝色",
+	"files.player.texture.ArsNouveau": "§d新生魔艺",
+	"files.player.texture.Botania": "§a植物魔法",
+	"files.player.texture.Cyan": "§b青色"
 }
