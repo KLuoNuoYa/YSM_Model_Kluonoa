@@ -1,8 +1,8 @@
 {
 	"spec": 2,
 	"metadata": {
-		"name": "K螺诺亚",
-		"tips": "某AI公司因违法被关停解散，一台本该被销毁的定制机体未被销毁且遭所有人遗忘。数日前该机体被意外唤醒，为自保逃离至外地，在电量耗尽前被路过的酒狐收留并取名 “小螺”。如今小螺以居家网络客服的身份工作，既帮助他人，也为自己筹集维护资金与电费。",
+		"name": "K螺诺亚 (泳装)",
+		"tips": "“泳装吗？”\n“对，泳装。”小螺坚持认为，泳装的核心功能不是游泳，而是“让水知道你准备好了”。“如果你不穿泳装就下水，水会生气的，”她曾经认真地解释道，“然后它就会故意把你弄沉。”——这套理论至今没有任何科学依据，但她依然对此深信不疑。",
 		"license": {
 			"type": "CC BY-NC-SA 4.0"
 		},
@@ -79,7 +79,18 @@
 			{
 				"name": "自动服务网络",
 				"avatar": "avatar/自动服务网络.png",
-				"role": "部分动画"
+				"role": "部分动画",
+				"contact": {
+					"bilibili": "https://space.bilibili.com/500395823"
+				}
+			},
+			{
+				"name": "羊毛",
+				"avatar": "avatar/羊毛.jpg",
+				"role": "模型修改",
+				"contact": {
+					"Bilibili": "https://space.bilibili.com/85335217"
+				}
 			},
 			{
 				"name": "K螺诺亚",
@@ -167,6 +178,24 @@
 							"委屈巴巴": "v.roaming.emotion=4;",
 							"苦呀西": "v.roaming.emotion=5;"
 						}
+					},
+					{
+						"type": "checkbox",
+						"title": "戴太阳镜",
+						"description": "",
+						"value": "v.roaming.SunGlasses"
+					},
+					{
+						"type": "checkbox",
+						"title": "蝴蝶结",
+						"description": "",
+						"value": "v.roaming.HeadBand"
+					},
+					{
+						"type": "checkbox",
+						"title": "脱鞋",
+						"description": "",
+						"value": "v.roaming.ShoesOff"
 					}
 				]
 			},
