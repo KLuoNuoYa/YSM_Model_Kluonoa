@@ -1,0 +1,52 @@
+{
+	"format_version": "1.19.0",
+	"animation_controllers": {
+		"player.pre_parallel_nozzle": {
+			"states": {
+				"default": {
+					"animations": ["喷口1", "喷口2"]
+				}
+			}
+		},
+		"player.pre_main_mecha_mgr": {
+			"initial_state": "收起状态",
+			"states": {
+				"收起状态": {
+					"transitions": [
+						{"起飞": "v.roaming.mecha==1&&ctrl.idle;"},
+						{"空中待机": "v.roaming.mecha==1&&!ctrl.idle;"}
+					]
+				},
+				"起飞": {
+					"animations": ["机甲_起飞"],
+					"on_exit": [],
+					"transitions": [
+						{"起飞转待机": "q.all_animations_finished;"}
+					]
+				},
+				"起飞转待机": {
+					"animations": ["机甲_起飞转待机"],
+					"transitions": [
+						{"空中待机": "q.all_animations_finished||!ctrl.idle;"}
+					]
+				},
+				"空中待机": {
+					"animations": ["机甲_空中待机"],
+					"on_entry": ["v.mecha_active=1;"],
+					"on_exit": ["v.mecha_active=0;"],
+					"transitions": [
+						{"降落": "v.roaming.mecha==0&&ctrl.idle;"},
+						{"收起状态": "v.roaming.mecha==0&&!ctrl.idle;"}
+					]
+				},
+				"降落": {
+					"animations": ["机甲_降落"],
+					"on_exit": [],
+					"transitions": [
+						{"收起状态": "q.all_animations_finished||ctrl.idle;"}
+					]
+				}
+			}
+		}
+	}
+}
