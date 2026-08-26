@@ -1,13 +1,6 @@
 {
 	"format_version": "1.19.0",
 	"animation_controllers": {
-		"player.pre_parallel_nozzle": {
-			"states": {
-				"default": {
-					"animations": ["喷口1", "喷口2"]
-				}
-			}
-		},
 		"player.pre_main_mecha_mgr": {
 			"initial_state": "收起状态",
 			"states": {
@@ -45,6 +38,13 @@
 					"transitions": [
 						{"收起状态": "q.all_animations_finished||ctrl.idle;"}
 					]
+				}
+			}
+		},
+		"player.pre_parallel_nozzle_anim": {
+			"states": {
+				"default": {
+					"animations": ["喷口1", "喷口2"]
 				}
 			}
 		}
