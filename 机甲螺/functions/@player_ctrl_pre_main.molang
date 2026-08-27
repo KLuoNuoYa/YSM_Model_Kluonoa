@@ -38,7 +38,7 @@ ctrl.walk ? {
     };
     v.mecha_active&&!v.show_car ? {
         ctrl.set_beginning_transition_length(0.1);
-        ctrl.set_animation('机甲_移动');
+        ctrl.set_animation('机甲_行走');
         return ctrl.state_continue;
     };
     v.show_car ? {
@@ -53,6 +53,11 @@ ctrl.run ? {
     !(v.show_car||v.mecha_active) ? {
         ctrl.set_beginning_transition_length(0.1);
         ctrl.set_animation('正常_奔跑');
+        return ctrl.state_continue;
+    };
+    v.mecha_active&&!v.show_car ? {
+        ctrl.set_beginning_transition_length(0.1);
+        ctrl.set_animation('机甲_奔跑');
         return ctrl.state_continue;
     };
     v.show_car ? {
@@ -137,6 +142,11 @@ ctrl.attacked ? {
     !(v.show_car||v.mecha_active) ? {
         ctrl.set_beginning_transition_length(0.1);
         ctrl.set_animation('正常_受伤');
+        return ctrl.state_continue;
+    };
+    v.mecha_active&&!v.show_car ? {
+        ctrl.set_beginning_transition_length(0.1);
+        ctrl.set_animation('机甲_受伤');
         return ctrl.state_continue;
     };
     v.show_car ? {
