@@ -1,0 +1,1 @@
+v.mecha_active=v.show_mecha && !(ctrl.tac_hold_gun||ctrl.playing_extra_animation);
