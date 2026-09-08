@@ -134,7 +134,7 @@ ctrl.fly ? {
 
 // 鞘翅飞行
 ctrl.elytra_fly ? {
-    !(v.show_car||v.mecha_active) ? {
+    !v.show_car ? {
         ctrl.set_beginning_transition_length(0.1);
         ctrl.set_animation('正常_鞘翅飞行');
         return ctrl.state_continue;

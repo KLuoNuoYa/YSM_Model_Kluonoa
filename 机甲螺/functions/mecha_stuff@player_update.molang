@@ -1,0 +1,1 @@
+v.should_show_mecha = v.roaming.mecha && !(v.show_car)
