@@ -30,46 +30,46 @@
 				"hold": {
 					"animations": [
 						{
-							"TAC正常_下半身待命": "!(v.roaming.mecha&&!v.roaming.car)&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire&&!ctrl.tac_is_reload&&!ctrl.tac_is_melee&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
+							"TAC正常_下半身待命": "!v.should_show_mecha&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire&&!ctrl.tac_is_reload&&!ctrl.tac_is_melee&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
 						},
 						{
-							"TAC机甲_下半身待命": "(v.roaming.mecha&&!v.roaming.car)&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire&&!ctrl.tac_is_reload&&!ctrl.tac_is_melee&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
+							"TAC机甲_下半身待命": "v.should_show_mecha&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire&&!ctrl.tac_is_reload&&!ctrl.tac_is_melee&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
 						},
 						{
-							"TAC正常_步枪持枪": "!(v.roaming.mecha&&!v.roaming.car)&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire&&!ctrl.tac_is_reload&&!ctrl.tac_is_melee&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
+							"TAC正常_步枪持枪": "!v.should_show_mecha&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire&&!ctrl.tac_is_reload&&!ctrl.tac_is_melee&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
 						},
 						{
-							"TAC机甲_步枪持枪": "(v.roaming.mecha&&!v.roaming.car)&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire&&!ctrl.tac_is_reload&&!ctrl.tac_is_melee&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
+							"TAC机甲_步枪持枪": "v.should_show_mecha&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire&&!ctrl.tac_is_reload&&!ctrl.tac_is_melee&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
 						},
 						{
-							"TAC正常_手枪持枪": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='pistol'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire&&!ctrl.tac_is_reload&&!ctrl.tac_is_melee"
+							"TAC正常_手枪持枪": "!v.should_show_mecha&&ctrl.tac_gun_type=='pistol'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire&&!ctrl.tac_is_reload&&!ctrl.tac_is_melee"
 						},
 						{
-							"TAC机甲_手枪持枪": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='pistol'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire&&!ctrl.tac_is_reload&&!ctrl.tac_is_melee"
+							"TAC机甲_手枪持枪": "v.should_show_mecha&&ctrl.tac_gun_type=='pistol'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire&&!ctrl.tac_is_reload&&!ctrl.tac_is_melee"
 						},
 						{
-							"TAC正常_火箭筒持枪": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='rpg'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire&&!ctrl.tac_is_reload&&!ctrl.tac_is_melee"
+							"TAC正常_火箭筒持枪": "!v.should_show_mecha&&ctrl.tac_gun_type=='rpg'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire&&!ctrl.tac_is_reload&&!ctrl.tac_is_melee"
 						},
 						{
-							"TAC机甲_火箭筒持枪": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='rpg'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire&&!ctrl.tac_is_reload&&!ctrl.tac_is_melee"
+							"TAC机甲_火箭筒持枪": "v.should_show_mecha&&ctrl.tac_gun_type=='rpg'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire&&!ctrl.tac_is_reload&&!ctrl.tac_is_melee"
 						},
 						{
-							"TAC正常_M134持枪": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='tacz:minigun'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire&&!ctrl.tac_is_reload&&!ctrl.tac_is_melee"
+							"TAC正常_M134持枪": "!v.should_show_mecha&&ctrl.tac_gun_id=='tacz:minigun'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire&&!ctrl.tac_is_reload&&!ctrl.tac_is_melee"
 						},
 						{
-							"TAC机甲_M134持枪": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='tacz:minigun'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire&&!ctrl.tac_is_reload&&!ctrl.tac_is_melee"
+							"TAC机甲_M134持枪": "v.should_show_mecha&&ctrl.tac_gun_id=='tacz:minigun'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire&&!ctrl.tac_is_reload&&!ctrl.tac_is_melee"
 						},
 						{
-							"SUPERB正常_M134持枪": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:minigun'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire&&!ctrl.tac_is_reload&&!ctrl.tac_is_melee"
+							"SUPERB正常_M134持枪": "!v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:minigun'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire&&!ctrl.tac_is_reload&&!ctrl.tac_is_melee"
 						},
 						{
-							"SUPERB机甲_M134持枪": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:minigun'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire&&!ctrl.tac_is_reload&&!ctrl.tac_is_melee"
+							"SUPERB机甲_M134持枪": "v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:minigun'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire&&!ctrl.tac_is_reload&&!ctrl.tac_is_melee"
 						},
 						{
-							"SUPERB正常_M2HB持枪": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire&&!ctrl.tac_is_reload&&!ctrl.tac_is_melee"
+							"SUPERB正常_M2HB持枪": "!v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire&&!ctrl.tac_is_reload&&!ctrl.tac_is_melee"
 						},
 						{
-							"SUPERB机甲_M2HB持枪": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire&&!ctrl.tac_is_reload&&!ctrl.tac_is_melee"
+							"SUPERB机甲_M2HB持枪": "v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire&&!ctrl.tac_is_reload&&!ctrl.tac_is_melee"
 						}
 					],
 					"transitions": [
@@ -118,34 +118,34 @@
 				"aim": {
 					"animations": [
 						{
-							"TAC正常_下半身待命": "!(v.roaming.mecha&&!v.roaming.car)&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
+							"TAC正常_下半身待命": "!v.should_show_mecha&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
 						},
 						{
-							"TAC机甲_下半身待命": "(v.roaming.mecha&&!v.roaming.car)&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
+							"TAC机甲_下半身待命": "v.should_show_mecha&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
 						},
 						{
-							"TAC正常_步枪瞄准": "!(v.roaming.mecha&&!v.roaming.car)&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&!ctrl.tac_is_fire&&!ctrl.tac_is_reload&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
+							"TAC正常_步枪瞄准": "!v.should_show_mecha&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&!ctrl.tac_is_fire&&!ctrl.tac_is_reload&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
 						},
 						{
-							"TAC机甲_步枪瞄准": "(v.roaming.mecha&&!v.roaming.car)&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&!ctrl.tac_is_fire&&!ctrl.tac_is_reload&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
+							"TAC机甲_步枪瞄准": "v.should_show_mecha&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&!ctrl.tac_is_fire&&!ctrl.tac_is_reload&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
 						},
 						{
-							"TAC正常_M134瞄准": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='tacz:minigun'&&!ctrl.tac_is_fire&&!ctrl.tac_is_reload"
+							"TAC正常_M134瞄准": "!v.should_show_mecha&&ctrl.tac_gun_id=='tacz:minigun'&&!ctrl.tac_is_fire&&!ctrl.tac_is_reload"
 						},
 						{
-							"TAC机甲_M134瞄准": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='tacz:minigun'&&!ctrl.tac_is_fire&&!ctrl.tac_is_reload"
+							"TAC机甲_M134瞄准": "v.should_show_mecha&&ctrl.tac_gun_id=='tacz:minigun'&&!ctrl.tac_is_fire&&!ctrl.tac_is_reload"
 						},
 						{
-							"SUPERB正常_M134瞄准": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:minigun'&&!ctrl.tac_is_fire&&!ctrl.tac_is_reload"
+							"SUPERB正常_M134瞄准": "!v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:minigun'&&!ctrl.tac_is_fire&&!ctrl.tac_is_reload"
 						},
 						{
-							"SUPERB机甲_M134瞄准": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:minigun'&&!ctrl.tac_is_fire&&!ctrl.tac_is_reload"
+							"SUPERB机甲_M134瞄准": "v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:minigun'&&!ctrl.tac_is_fire&&!ctrl.tac_is_reload"
 						},
 						{
-							"SUPERB正常_M2HB瞄准": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&!ctrl.tac_is_fire&&!ctrl.tac_is_reload"
+							"SUPERB正常_M2HB瞄准": "!v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&!ctrl.tac_is_fire&&!ctrl.tac_is_reload"
 						},
 						{
-							"SUPERB机甲_M2HB瞄准": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&!ctrl.tac_is_fire&&!ctrl.tac_is_reload"
+							"SUPERB机甲_M2HB瞄准": "v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&!ctrl.tac_is_fire&&!ctrl.tac_is_reload"
 						}
 					],
 					"transitions": [
@@ -179,16 +179,16 @@
 				"aim_pistol": {
 					"animations": [
 						{
-							"TAC正常_下半身待命": "!(v.roaming.mecha&&!v.roaming.car)&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
+							"TAC正常_下半身待命": "!v.should_show_mecha&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
 						},
 						{
-							"TAC机甲_下半身待命": "(v.roaming.mecha&&!v.roaming.car)&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
+							"TAC机甲_下半身待命": "v.should_show_mecha&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
 						},
 						{
-							"TAC正常_手枪瞄准": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='pistol'&&!ctrl.tac_is_fire&&!ctrl.tac_is_reload"
+							"TAC正常_手枪瞄准": "!v.should_show_mecha&&ctrl.tac_gun_type=='pistol'&&!ctrl.tac_is_fire&&!ctrl.tac_is_reload"
 						},
 						{
-							"TAC机甲_手枪瞄准": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='pistol'&&!ctrl.tac_is_fire&&!ctrl.tac_is_reload"
+							"TAC机甲_手枪瞄准": "v.should_show_mecha&&ctrl.tac_gun_type=='pistol'&&!ctrl.tac_is_fire&&!ctrl.tac_is_reload"
 						}
 					],
 					"transitions": [
@@ -223,16 +223,16 @@
 				"aim_rpg": {
 					"animations": [
 						{
-							"TAC正常_下半身待命": "!(v.roaming.mecha&&!v.roaming.car)&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
+							"TAC正常_下半身待命": "!v.should_show_mecha&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
 						},
 						{
-							"TAC机甲_下半身待命": "(v.roaming.mecha&&!v.roaming.car)&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
+							"TAC机甲_下半身待命": "v.should_show_mecha&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
 						},
 						{
-							"TAC正常_火箭筒瞄准": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='rpg'&&!ctrl.tac_is_fire&&!ctrl.tac_is_reload"
+							"TAC正常_火箭筒瞄准": "!v.should_show_mecha&&ctrl.tac_gun_type=='rpg'&&!ctrl.tac_is_fire&&!ctrl.tac_is_reload"
 						},
 						{
-							"TAC机甲_火箭筒瞄准": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='rpg'&&!ctrl.tac_is_fire&&!ctrl.tac_is_reload"
+							"TAC机甲_火箭筒瞄准": "v.should_show_mecha&&ctrl.tac_gun_type=='rpg'&&!ctrl.tac_is_fire&&!ctrl.tac_is_reload"
 						}
 					],
 					"transitions": [
@@ -266,34 +266,34 @@
 				"fire_hold": {
 					"animations": [
 						{
-							"TAC正常_下半身待命": "!(v.roaming.mecha&&!v.roaming.car)&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
+							"TAC正常_下半身待命": "!v.should_show_mecha&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
 						},
 						{
-							"TAC机甲_下半身待命": "(v.roaming.mecha&&!v.roaming.car)&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
+							"TAC机甲_下半身待命": "v.should_show_mecha&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
 						},
 						{
-							"TAC正常_步枪腰射开火": "!(v.roaming.mecha&&!v.roaming.car)&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&!ctrl.tac_is_reload&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
+							"TAC正常_步枪腰射开火": "!v.should_show_mecha&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&!ctrl.tac_is_reload&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
 						},
 						{
-							"TAC机甲_步枪腰射开火": "(v.roaming.mecha&&!v.roaming.car)&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&!ctrl.tac_is_reload&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
+							"TAC机甲_步枪腰射开火": "v.should_show_mecha&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&!ctrl.tac_is_reload&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
 						},
 						{
-							"TAC正常_M134腰射": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='tacz:minigun'&&!ctrl.tac_is_reload"
+							"TAC正常_M134腰射": "!v.should_show_mecha&&ctrl.tac_gun_id=='tacz:minigun'&&!ctrl.tac_is_reload"
 						},
 						{
-							"TAC机甲_M134腰射": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='tacz:minigun'&&!ctrl.tac_is_reload"
+							"TAC机甲_M134腰射": "v.should_show_mecha&&ctrl.tac_gun_id=='tacz:minigun'&&!ctrl.tac_is_reload"
 						},
 						{
-							"SUPERB正常_M134腰射": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:minigun'&&!ctrl.tac_is_reload"
+							"SUPERB正常_M134腰射": "!v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:minigun'&&!ctrl.tac_is_reload"
 						},
 						{
-							"SUPERB机甲_M134腰射": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:minigun'&&!ctrl.tac_is_reload"
+							"SUPERB机甲_M134腰射": "v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:minigun'&&!ctrl.tac_is_reload"
 						},
 						{
-							"SUPERB正常_M2HB腰射": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&!ctrl.tac_is_reload"
+							"SUPERB正常_M2HB腰射": "!v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&!ctrl.tac_is_reload"
 						},
 						{
-							"SUPERB机甲_M2HB腰射": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&!ctrl.tac_is_reload"
+							"SUPERB机甲_M2HB腰射": "v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&!ctrl.tac_is_reload"
 						}
 					],
 					"transitions": [
@@ -327,16 +327,16 @@
 				"fire_hold_pistol": {
 					"animations": [
 						{
-							"TAC正常_下半身待命": "!(v.roaming.mecha&&!v.roaming.car)&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
+							"TAC正常_下半身待命": "!v.should_show_mecha&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
 						},
 						{
-							"TAC机甲_下半身待命": "(v.roaming.mecha&&!v.roaming.car)&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
+							"TAC机甲_下半身待命": "v.should_show_mecha&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
 						},
 						{
-							"TAC正常_手枪腰射射击": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='pistol'&&!ctrl.tac_is_reload"
+							"TAC正常_手枪腰射射击": "!v.should_show_mecha&&ctrl.tac_gun_type=='pistol'&&!ctrl.tac_is_reload"
 						},
 						{
-							"TAC机甲_手枪腰射射击": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='pistol'&&!ctrl.tac_is_reload"
+							"TAC机甲_手枪腰射射击": "v.should_show_mecha&&ctrl.tac_gun_type=='pistol'&&!ctrl.tac_is_reload"
 						}
 					],
 					"transitions": [
@@ -370,16 +370,16 @@
 				"fire_hold_rpg": {
 					"animations": [
 						{
-							"TAC正常_下半身待命": "!(v.roaming.mecha&&!v.roaming.car)&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
+							"TAC正常_下半身待命": "!v.should_show_mecha&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
 						},
 						{
-							"TAC机甲_下半身待命": "(v.roaming.mecha&&!v.roaming.car)&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
+							"TAC机甲_下半身待命": "v.should_show_mecha&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
 						},
 						{
-							"TAC正常_火箭筒腰射": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='rpg'&&!ctrl.tac_is_reload"
+							"TAC正常_火箭筒腰射": "!v.should_show_mecha&&ctrl.tac_gun_type=='rpg'&&!ctrl.tac_is_reload"
 						},
 						{
-							"TAC机甲_火箭筒腰射": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='rpg'&&!ctrl.tac_is_reload"
+							"TAC机甲_火箭筒腰射": "v.should_show_mecha&&ctrl.tac_gun_type=='rpg'&&!ctrl.tac_is_reload"
 						}
 					],
 					"transitions": [
@@ -413,34 +413,34 @@
 				"fire_aim": {
 					"animations": [
 						{
-							"TAC正常_下半身待命": "!(v.roaming.mecha&&!v.roaming.car)&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
+							"TAC正常_下半身待命": "!v.should_show_mecha&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
 						},
 						{
-							"TAC机甲_下半身待命": "(v.roaming.mecha&&!v.roaming.car)&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
+							"TAC机甲_下半身待命": "v.should_show_mecha&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
 						},
 						{
-							"TAC正常_步枪瞄准开火": "!(v.roaming.mecha&&!v.roaming.car)&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&!ctrl.tac_is_reload&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
+							"TAC正常_步枪瞄准开火": "!v.should_show_mecha&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&!ctrl.tac_is_reload&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
 						},
 						{
-							"TAC机甲_步枪瞄准开火": "(v.roaming.mecha&&!v.roaming.car)&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&!ctrl.tac_is_reload&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
+							"TAC机甲_步枪瞄准开火": "v.should_show_mecha&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&!ctrl.tac_is_reload&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
 						},
 						{
-							"TAC正常_M134瞄准射击": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='tacz:minigun'&&!ctrl.tac_is_reload"
+							"TAC正常_M134瞄准射击": "!v.should_show_mecha&&ctrl.tac_gun_id=='tacz:minigun'&&!ctrl.tac_is_reload"
 						},
 						{
-							"TAC机甲_M134瞄准射击": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='tacz:minigun'&&!ctrl.tac_is_reload"
+							"TAC机甲_M134瞄准射击": "v.should_show_mecha&&ctrl.tac_gun_id=='tacz:minigun'&&!ctrl.tac_is_reload"
 						},
 						{
-							"SUPERB正常_M134瞄准射击": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:minigun'&&!ctrl.tac_is_reload"
+							"SUPERB正常_M134瞄准射击": "!v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:minigun'&&!ctrl.tac_is_reload"
 						},
 						{
-							"SUPERB机甲_M134瞄准射击": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:minigun'&&!ctrl.tac_is_reload"
+							"SUPERB机甲_M134瞄准射击": "v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:minigun'&&!ctrl.tac_is_reload"
 						},
 						{
-							"SUPERB正常_M2HB瞄准射击": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&!ctrl.tac_is_reload"
+							"SUPERB正常_M2HB瞄准射击": "!v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&!ctrl.tac_is_reload"
 						},
 						{
-							"SUPERB机甲_M2HB瞄准射击": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&!ctrl.tac_is_reload"
+							"SUPERB机甲_M2HB瞄准射击": "v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&!ctrl.tac_is_reload"
 						}
 					],
 					"transitions": [
@@ -471,16 +471,16 @@
 				"fire_aim_pistol": {
 					"animations": [
 						{
-							"TAC正常_下半身待命": "!(v.roaming.mecha&&!v.roaming.car)&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
+							"TAC正常_下半身待命": "!v.should_show_mecha&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
 						},
 						{
-							"TAC机甲_下半身待命": "(v.roaming.mecha&&!v.roaming.car)&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
+							"TAC机甲_下半身待命": "v.should_show_mecha&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
 						},
 						{
-							"TAC正常_手枪瞄准射击": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='pistol'&&!ctrl.tac_is_reload"
+							"TAC正常_手枪瞄准射击": "!v.should_show_mecha&&ctrl.tac_gun_type=='pistol'&&!ctrl.tac_is_reload"
 						},
 						{
-							"TAC机甲_手枪瞄准射击": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='pistol'&&!ctrl.tac_is_reload"
+							"TAC机甲_手枪瞄准射击": "v.should_show_mecha&&ctrl.tac_gun_type=='pistol'&&!ctrl.tac_is_reload"
 						}
 					],
 					"transitions": [
@@ -511,16 +511,16 @@
 				"fire_aim_rpg": {
 					"animations": [
 						{
-							"TAC正常_下半身待命": "!(v.roaming.mecha&&!v.roaming.car)&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
+							"TAC正常_下半身待命": "!v.should_show_mecha&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
 						},
 						{
-							"TAC机甲_下半身待命": "(v.roaming.mecha&&!v.roaming.car)&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
+							"TAC机甲_下半身待命": "v.should_show_mecha&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
 						},
 						{
-							"TAC正常_火箭筒瞄准射击": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='rpg'&&!ctrl.tac_is_reload"
+							"TAC正常_火箭筒瞄准射击": "!v.should_show_mecha&&ctrl.tac_gun_type=='rpg'&&!ctrl.tac_is_reload"
 						},
 						{
-							"TAC机甲_火箭筒瞄准射击": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='rpg'&&!ctrl.tac_is_reload"
+							"TAC机甲_火箭筒瞄准射击": "v.should_show_mecha&&ctrl.tac_gun_type=='rpg'&&!ctrl.tac_is_reload"
 						}
 					],
 					"transitions": [
@@ -551,43 +551,43 @@
 				"reload": {
 					"animations": [
 						{
-							"TAC正常_下半身待命": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.idle&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
+							"TAC正常_下半身待命": "!v.should_show_mecha&&ctrl.idle&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
 						},
 						{
-							"TAC机甲_下半身待命": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.idle&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
+							"TAC机甲_下半身待命": "v.should_show_mecha&&ctrl.idle&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
 						},
 						{
-							"TAC正常_下半身行走": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.walk&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
+							"TAC正常_下半身行走": "!v.should_show_mecha&&ctrl.walk&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
 						},
 						{
-							"TAC机甲_下半身行走": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.walk&&ysm.input_vertical>=0&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
+							"TAC机甲_下半身行走": "v.should_show_mecha&&ctrl.walk&&ysm.input_vertical>=0&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
 						},
 						{
-							"TAC机甲_下半身后退": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.walk&&ysm.input_vertical<0&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
+							"TAC机甲_下半身后退": "v.should_show_mecha&&ctrl.walk&&ysm.input_vertical<0&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
 						},
 						{
-							"TAC正常_下半身奔跑": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.run&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
+							"TAC正常_下半身奔跑": "!v.should_show_mecha&&ctrl.run&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
 						},
 						{
-							"TAC机甲_下半身奔跑": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.run&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
+							"TAC机甲_下半身奔跑": "v.should_show_mecha&&ctrl.run&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
 						},
 						{
-							"TAC正常_步枪装弹": "!(v.roaming.mecha&&!v.roaming.car)&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')"
+							"TAC正常_步枪装弹": "!v.should_show_mecha&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')"
 						},
 						{
-							"TAC机甲_步枪装弹": "(v.roaming.mecha&&!v.roaming.car)&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')"
+							"TAC机甲_步枪装弹": "v.should_show_mecha&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')"
 						},
 						{
-							"TAC正常_手枪装弹": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='pistol'"
+							"TAC正常_手枪装弹": "!v.should_show_mecha&&ctrl.tac_gun_type=='pistol'"
 						},
 						{
-							"TAC机甲_手枪装弹": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='pistol'"
+							"TAC机甲_手枪装弹": "v.should_show_mecha&&ctrl.tac_gun_type=='pistol'"
 						},
 						{
-							"TAC正常_火箭筒装弹": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='rpg'"
+							"TAC正常_火箭筒装弹": "!v.should_show_mecha&&ctrl.tac_gun_type=='rpg'"
 						},
 						{
-							"TAC机甲_火箭筒装弹": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='rpg'"
+							"TAC机甲_火箭筒装弹": "v.should_show_mecha&&ctrl.tac_gun_type=='rpg'"
 						}
 					],
 					"transitions": [
@@ -606,43 +606,43 @@
 				"melee": {
 					"animations": [
 						{
-							"TAC正常_下半身待命": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.idle&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
+							"TAC正常_下半身待命": "!v.should_show_mecha&&ctrl.idle&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
 						},
 						{
-							"TAC机甲_下半身待命": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.idle&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
+							"TAC机甲_下半身待命": "v.should_show_mecha&&ctrl.idle&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
 						},
 						{
-							"TAC正常_下半身行走": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.walk&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
+							"TAC正常_下半身行走": "!v.should_show_mecha&&ctrl.walk&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
 						},
 						{
-							"TAC机甲_下半身行走": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.walk&&ysm.input_vertical>=0&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
+							"TAC机甲_下半身行走": "v.should_show_mecha&&ctrl.walk&&ysm.input_vertical>=0&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
 						},
 						{
-							"TAC机甲_下半身后退": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.walk&&ysm.input_vertical<0&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
+							"TAC机甲_下半身后退": "v.should_show_mecha&&ctrl.walk&&ysm.input_vertical<0&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
 						},
 						{
-							"TAC正常_下半身奔跑": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.run&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
+							"TAC正常_下半身奔跑": "!v.should_show_mecha&&ctrl.run&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
 						},
 						{
-							"TAC机甲_下半身奔跑": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.run&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
+							"TAC机甲_下半身奔跑": "v.should_show_mecha&&ctrl.run&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
 						},
 						{
-							"TAC正常_步枪近战": "!(v.roaming.mecha&&!v.roaming.car)&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')"
+							"TAC正常_步枪近战": "!v.should_show_mecha&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')"
 						},
 						{
-							"TAC机甲_步枪近战": "(v.roaming.mecha&&!v.roaming.car)&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')"
+							"TAC机甲_步枪近战": "v.should_show_mecha&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')"
 						},
 						{
-							"TAC正常_手枪近战": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='pistol'"
+							"TAC正常_手枪近战": "!v.should_show_mecha&&ctrl.tac_gun_type=='pistol'"
 						},
 						{
-							"TAC机甲_手枪近战": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='pistol'"
+							"TAC机甲_手枪近战": "v.should_show_mecha&&ctrl.tac_gun_type=='pistol'"
 						},
 						{
-							"TAC正常_火箭筒近战": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='rpg'"
+							"TAC正常_火箭筒近战": "!v.should_show_mecha&&ctrl.tac_gun_type=='rpg'"
 						},
 						{
-							"TAC机甲_火箭筒近战": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='rpg'"
+							"TAC机甲_火箭筒近战": "v.should_show_mecha&&ctrl.tac_gun_type=='rpg'"
 						}
 					],
 					"transitions": [
@@ -661,64 +661,64 @@
 				"run": {
 					"animations": [
 						{
-							"TAC正常_下半身奔跑": "!(v.roaming.mecha&&!v.roaming.car)&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
+							"TAC正常_下半身奔跑": "!v.should_show_mecha&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
 						},
 						{
-							"TAC机甲_下半身奔跑": "(v.roaming.mecha&&!v.roaming.car)&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
+							"TAC机甲_下半身奔跑": "v.should_show_mecha&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
 						},
 						{
-							"TAC正常_步枪奔跑": "!(v.roaming.mecha&&!v.roaming.car)&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&!ctrl.tac_is_melee&&!ctrl.tac_is_fire&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
+							"TAC正常_步枪奔跑": "!v.should_show_mecha&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&!ctrl.tac_is_melee&&!ctrl.tac_is_fire&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
 						},
 						{
-							"TAC机甲_步枪奔跑": "(v.roaming.mecha&&!v.roaming.car)&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&!ctrl.tac_is_melee&&!ctrl.tac_is_fire&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
+							"TAC机甲_步枪奔跑": "v.should_show_mecha&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&!ctrl.tac_is_melee&&!ctrl.tac_is_fire&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
 						},
 						{
-							"TAC正常_手枪奔跑": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='pistol'&&!ctrl.tac_is_melee&&!ctrl.tac_is_fire"
+							"TAC正常_手枪奔跑": "!v.should_show_mecha&&ctrl.tac_gun_type=='pistol'&&!ctrl.tac_is_melee&&!ctrl.tac_is_fire"
 						},
 						{
-							"TAC机甲_手枪奔跑": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='pistol'&&!ctrl.tac_is_melee&&!ctrl.tac_is_fire"
+							"TAC机甲_手枪奔跑": "v.should_show_mecha&&ctrl.tac_gun_type=='pistol'&&!ctrl.tac_is_melee&&!ctrl.tac_is_fire"
 						},
 						{
-							"TAC正常_火箭筒奔跑": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='rpg'&&!ctrl.tac_is_melee&&!ctrl.tac_is_fire"
+							"TAC正常_火箭筒奔跑": "!v.should_show_mecha&&ctrl.tac_gun_type=='rpg'&&!ctrl.tac_is_melee&&!ctrl.tac_is_fire"
 						},
 						{
-							"TAC机甲_火箭筒奔跑": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='rpg'&&!ctrl.tac_is_melee&&!ctrl.tac_is_fire"
+							"TAC机甲_火箭筒奔跑": "v.should_show_mecha&&ctrl.tac_gun_type=='rpg'&&!ctrl.tac_is_melee&&!ctrl.tac_is_fire"
 						},
 						{
-							"TAC正常_步枪腰射开火": "!(v.roaming.mecha&&!v.roaming.car)&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&ctrl.tac_is_fire"
+							"TAC正常_步枪腰射开火": "!v.should_show_mecha&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&ctrl.tac_is_fire"
 						},
 						{
-							"TAC机甲_步枪腰射开火": "(v.roaming.mecha&&!v.roaming.car)&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&ctrl.tac_is_fire"
+							"TAC机甲_步枪腰射开火": "v.should_show_mecha&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&ctrl.tac_is_fire"
 						},
 						{
-							"TAC正常_手枪腰射射击": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='pistol'&&ctrl.tac_is_fire"
+							"TAC正常_手枪腰射射击": "!v.should_show_mecha&&ctrl.tac_gun_type=='pistol'&&ctrl.tac_is_fire"
 						},
 						{
-							"TAC机甲_手枪腰射射击": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='pistol'&&ctrl.tac_is_fire"
+							"TAC机甲_手枪腰射射击": "v.should_show_mecha&&ctrl.tac_gun_type=='pistol'&&ctrl.tac_is_fire"
 						},
 						{
-							"TAC正常_火箭筒腰射": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='rpg'&&ctrl.tac_is_fire"
+							"TAC正常_火箭筒腰射": "!v.should_show_mecha&&ctrl.tac_gun_type=='rpg'&&ctrl.tac_is_fire"
 						},
 						{
-							"TAC机甲_火箭筒腰射": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='rpg'&&ctrl.tac_is_fire"
+							"TAC机甲_火箭筒腰射": "v.should_show_mecha&&ctrl.tac_gun_type=='rpg'&&ctrl.tac_is_fire"
 						},
 						{
-							"TAC正常_M134奔跑": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='tacz:minigun'&&!ctrl.tac_is_melee&&!ctrl.tac_is_fire"
+							"TAC正常_M134奔跑": "!v.should_show_mecha&&ctrl.tac_gun_id=='tacz:minigun'&&!ctrl.tac_is_melee&&!ctrl.tac_is_fire"
 						},
 						{
-							"TAC机甲_M134奔跑": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='tacz:minigun'&&!ctrl.tac_is_melee&&!ctrl.tac_is_fire"
+							"TAC机甲_M134奔跑": "v.should_show_mecha&&ctrl.tac_gun_id=='tacz:minigun'&&!ctrl.tac_is_melee&&!ctrl.tac_is_fire"
 						},
 						{
-							"SUPERB正常_M134奔跑": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:minigun'&&!ctrl.tac_is_melee&&!ctrl.tac_is_fire"
+							"SUPERB正常_M134奔跑": "!v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:minigun'&&!ctrl.tac_is_melee&&!ctrl.tac_is_fire"
 						},
 						{
-							"SUPERB机甲_M134奔跑": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:minigun'&&!ctrl.tac_is_melee&&!ctrl.tac_is_fire"
+							"SUPERB机甲_M134奔跑": "v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:minigun'&&!ctrl.tac_is_melee&&!ctrl.tac_is_fire"
 						},
 						{
-							"SUPERB正常_M2HB奔跑": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&!ctrl.tac_is_melee&&!ctrl.tac_is_fire"
+							"SUPERB正常_M2HB奔跑": "!v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&!ctrl.tac_is_melee&&!ctrl.tac_is_fire"
 						},
 						{
-							"SUPERB机甲_M2HB奔跑": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&!ctrl.tac_is_melee&&!ctrl.tac_is_fire"
+							"SUPERB机甲_M2HB奔跑": "v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&!ctrl.tac_is_melee&&!ctrl.tac_is_fire"
 						}
 					],
 					"transitions": [
@@ -752,154 +752,154 @@
 				"walk": {
 					"animations": [
 						{
-							"TAC正常_下半身行走": "!(v.roaming.mecha&&!v.roaming.car)&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
+							"TAC正常_下半身行走": "!v.should_show_mecha&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
 						},
 						{
-							"TAC机甲_下半身行走": "(v.roaming.mecha&&!v.roaming.car)&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
+							"TAC机甲_下半身行走": "v.should_show_mecha&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
 						},
 						{
-							"TAC正常_步枪持枪": "!(v.roaming.mecha&&!v.roaming.car)&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
+							"TAC正常_步枪持枪": "!v.should_show_mecha&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
 						},
 						{
-							"TAC机甲_步枪持枪": "(v.roaming.mecha&&!v.roaming.car)&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
+							"TAC机甲_步枪持枪": "v.should_show_mecha&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
 						},
 						{
-							"TAC正常_手枪持枪": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='pistol'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire"
+							"TAC正常_手枪持枪": "!v.should_show_mecha&&ctrl.tac_gun_type=='pistol'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire"
 						},
 						{
-							"TAC机甲_手枪持枪": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='pistol'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire"
+							"TAC机甲_手枪持枪": "v.should_show_mecha&&ctrl.tac_gun_type=='pistol'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire"
 						},
 						{
-							"TAC正常_火箭筒持枪": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='rpg'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire"
+							"TAC正常_火箭筒持枪": "!v.should_show_mecha&&ctrl.tac_gun_type=='rpg'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire"
 						},
 						{
-							"TAC机甲_火箭筒持枪": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='rpg'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire"
+							"TAC机甲_火箭筒持枪": "v.should_show_mecha&&ctrl.tac_gun_type=='rpg'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire"
 						},
 						{
-							"TAC正常_步枪腰射开火": "!(v.roaming.mecha&&!v.roaming.car)&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&!ctrl.tac_is_aim&&ctrl.tac_is_fire&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
+							"TAC正常_步枪腰射开火": "!v.should_show_mecha&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&!ctrl.tac_is_aim&&ctrl.tac_is_fire&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
 						},
 						{
-							"TAC机甲_步枪腰射开火": "(v.roaming.mecha&&!v.roaming.car)&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&!ctrl.tac_is_aim&&ctrl.tac_is_fire&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
+							"TAC机甲_步枪腰射开火": "v.should_show_mecha&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&!ctrl.tac_is_aim&&ctrl.tac_is_fire&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
 						},
 						{
-							"TAC正常_手枪腰射射击": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='pistol'&&!ctrl.tac_is_aim&&ctrl.tac_is_fire"
+							"TAC正常_手枪腰射射击": "!v.should_show_mecha&&ctrl.tac_gun_type=='pistol'&&!ctrl.tac_is_aim&&ctrl.tac_is_fire"
 						},
 						{
-							"TAC机甲_手枪腰射射击": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='pistol'&&!ctrl.tac_is_aim&&ctrl.tac_is_fire"
+							"TAC机甲_手枪腰射射击": "v.should_show_mecha&&ctrl.tac_gun_type=='pistol'&&!ctrl.tac_is_aim&&ctrl.tac_is_fire"
 						},
 						{
-							"TAC正常_火箭筒腰射": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='rpg'&&!ctrl.tac_is_aim&&ctrl.tac_is_fire"
+							"TAC正常_火箭筒腰射": "!v.should_show_mecha&&ctrl.tac_gun_type=='rpg'&&!ctrl.tac_is_aim&&ctrl.tac_is_fire"
 						},
 						{
-							"TAC机甲_火箭筒腰射": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='rpg'&&!ctrl.tac_is_aim&&ctrl.tac_is_fire"
+							"TAC机甲_火箭筒腰射": "v.should_show_mecha&&ctrl.tac_gun_type=='rpg'&&!ctrl.tac_is_aim&&ctrl.tac_is_fire"
 						},
 						{
-							"TAC正常_步枪瞄准": "!(v.roaming.mecha&&!v.roaming.car)&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&ctrl.tac_is_aim&&!ctrl.tac_is_fire&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
+							"TAC正常_步枪瞄准": "!v.should_show_mecha&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&ctrl.tac_is_aim&&!ctrl.tac_is_fire&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
 						},
 						{
-							"TAC机甲_步枪瞄准": "(v.roaming.mecha&&!v.roaming.car)&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&ctrl.tac_is_aim&&!ctrl.tac_is_fire&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
+							"TAC机甲_步枪瞄准": "v.should_show_mecha&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&ctrl.tac_is_aim&&!ctrl.tac_is_fire&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
 						},
 						{
-							"TAC正常_手枪瞄准": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='pistol'&&ctrl.tac_is_aim&&!ctrl.tac_is_fire"
+							"TAC正常_手枪瞄准": "!v.should_show_mecha&&ctrl.tac_gun_type=='pistol'&&ctrl.tac_is_aim&&!ctrl.tac_is_fire"
 						},
 						{
-							"TAC机甲_手枪瞄准": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='pistol'&&ctrl.tac_is_aim&&!ctrl.tac_is_fire"
+							"TAC机甲_手枪瞄准": "v.should_show_mecha&&ctrl.tac_gun_type=='pistol'&&ctrl.tac_is_aim&&!ctrl.tac_is_fire"
 						},
 						{
-							"TAC正常_火箭筒瞄准": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='rpg'&&ctrl.tac_is_aim&&!ctrl.tac_is_fire"
+							"TAC正常_火箭筒瞄准": "!v.should_show_mecha&&ctrl.tac_gun_type=='rpg'&&ctrl.tac_is_aim&&!ctrl.tac_is_fire"
 						},
 						{
-							"TAC机甲_火箭筒瞄准": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='rpg'&&ctrl.tac_is_aim&&!ctrl.tac_is_fire"
+							"TAC机甲_火箭筒瞄准": "v.should_show_mecha&&ctrl.tac_gun_type=='rpg'&&ctrl.tac_is_aim&&!ctrl.tac_is_fire"
 						},
 						{
-							"TAC正常_步枪瞄准开火": "!(v.roaming.mecha&&!v.roaming.car)&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&ctrl.tac_is_aim&&ctrl.tac_is_fire&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
+							"TAC正常_步枪瞄准开火": "!v.should_show_mecha&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&ctrl.tac_is_aim&&ctrl.tac_is_fire&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
 						},
 						{
-							"TAC机甲_步枪瞄准开火": "(v.roaming.mecha&&!v.roaming.car)&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&ctrl.tac_is_aim&&ctrl.tac_is_fire&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
+							"TAC机甲_步枪瞄准开火": "v.should_show_mecha&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&ctrl.tac_is_aim&&ctrl.tac_is_fire&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
 						},
 						{
-							"TAC正常_手枪瞄准射击": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='pistol'&&ctrl.tac_is_aim&&ctrl.tac_is_fire"
+							"TAC正常_手枪瞄准射击": "!v.should_show_mecha&&ctrl.tac_gun_type=='pistol'&&ctrl.tac_is_aim&&ctrl.tac_is_fire"
 						},
 						{
-							"TAC机甲_手枪瞄准射击": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='pistol'&&ctrl.tac_is_aim&&ctrl.tac_is_fire"
+							"TAC机甲_手枪瞄准射击": "v.should_show_mecha&&ctrl.tac_gun_type=='pistol'&&ctrl.tac_is_aim&&ctrl.tac_is_fire"
 						},
 						{
-							"TAC正常_火箭筒瞄准射击": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='rpg'&&ctrl.tac_is_aim&&ctrl.tac_is_fire"
+							"TAC正常_火箭筒瞄准射击": "!v.should_show_mecha&&ctrl.tac_gun_type=='rpg'&&ctrl.tac_is_aim&&ctrl.tac_is_fire"
 						},
 						{
-							"TAC机甲_火箭筒瞄准射击": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='rpg'&&ctrl.tac_is_aim&&ctrl.tac_is_fire"
+							"TAC机甲_火箭筒瞄准射击": "v.should_show_mecha&&ctrl.tac_gun_type=='rpg'&&ctrl.tac_is_aim&&ctrl.tac_is_fire"
 						},
 						{
-							"TAC正常_M134持枪": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='tacz:minigun'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire"
+							"TAC正常_M134持枪": "!v.should_show_mecha&&ctrl.tac_gun_id=='tacz:minigun'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire"
 						},
 						{
-							"TAC机甲_M134持枪": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='tacz:minigun'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire"
+							"TAC机甲_M134持枪": "v.should_show_mecha&&ctrl.tac_gun_id=='tacz:minigun'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire"
 						},
 						{
-							"SUPERB正常_M134持枪": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:minigun'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire"
+							"SUPERB正常_M134持枪": "!v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:minigun'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire"
 						},
 						{
-							"SUPERB机甲_M134持枪": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:minigun'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire"
+							"SUPERB机甲_M134持枪": "v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:minigun'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire"
 						},
 						{
-							"SUPERB正常_M2HB持枪": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire"
+							"SUPERB正常_M2HB持枪": "!v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire"
 						},
 						{
-							"SUPERB机甲_M2HB持枪": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire"
+							"SUPERB机甲_M2HB持枪": "v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire"
 						},
 						{
-							"TAC正常_M134腰射": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='tacz:minigun'&&!ctrl.tac_is_aim&&ctrl.tac_is_fire"
+							"TAC正常_M134腰射": "!v.should_show_mecha&&ctrl.tac_gun_id=='tacz:minigun'&&!ctrl.tac_is_aim&&ctrl.tac_is_fire"
 						},
 						{
-							"TAC机甲_M134腰射": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='tacz:minigun'&&!ctrl.tac_is_aim&&ctrl.tac_is_fire"
+							"TAC机甲_M134腰射": "v.should_show_mecha&&ctrl.tac_gun_id=='tacz:minigun'&&!ctrl.tac_is_aim&&ctrl.tac_is_fire"
 						},
 						{
-							"SUPERB正常_M134腰射": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:minigun'&&!ctrl.tac_is_aim&&ctrl.tac_is_fire"
+							"SUPERB正常_M134腰射": "!v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:minigun'&&!ctrl.tac_is_aim&&ctrl.tac_is_fire"
 						},
 						{
-							"SUPERB机甲_M134腰射": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:minigun'&&!ctrl.tac_is_aim&&ctrl.tac_is_fire"
+							"SUPERB机甲_M134腰射": "v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:minigun'&&!ctrl.tac_is_aim&&ctrl.tac_is_fire"
 						},
 						{
-							"SUPERB正常_M2HB腰射": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&!ctrl.tac_is_aim&&ctrl.tac_is_fire"
+							"SUPERB正常_M2HB腰射": "!v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&!ctrl.tac_is_aim&&ctrl.tac_is_fire"
 						},
 						{
-							"SUPERB机甲_M2HB腰射": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&!ctrl.tac_is_aim&&ctrl.tac_is_fire"
+							"SUPERB机甲_M2HB腰射": "v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&!ctrl.tac_is_aim&&ctrl.tac_is_fire"
 						},
 						{
-							"TAC正常_M134瞄准": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='tacz:minigun'&&ctrl.tac_is_aim&&!ctrl.tac_is_fire"
+							"TAC正常_M134瞄准": "!v.should_show_mecha&&ctrl.tac_gun_id=='tacz:minigun'&&ctrl.tac_is_aim&&!ctrl.tac_is_fire"
 						},
 						{
-							"TAC机甲_M134瞄准": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='tacz:minigun'&&ctrl.tac_is_aim&&!ctrl.tac_is_fire"
+							"TAC机甲_M134瞄准": "v.should_show_mecha&&ctrl.tac_gun_id=='tacz:minigun'&&ctrl.tac_is_aim&&!ctrl.tac_is_fire"
 						},
 						{
-							"SUPERB正常_M134瞄准": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:minigun'&&ctrl.tac_is_aim&&!ctrl.tac_is_fire"
+							"SUPERB正常_M134瞄准": "!v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:minigun'&&ctrl.tac_is_aim&&!ctrl.tac_is_fire"
 						},
 						{
-							"SUPERB机甲_M134瞄准": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:minigun'&&ctrl.tac_is_aim&&!ctrl.tac_is_fire"
+							"SUPERB机甲_M134瞄准": "v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:minigun'&&ctrl.tac_is_aim&&!ctrl.tac_is_fire"
 						},
 						{
-							"SUPERB正常_M2HB瞄准": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&ctrl.tac_is_aim&&!ctrl.tac_is_fire"
+							"SUPERB正常_M2HB瞄准": "!v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&ctrl.tac_is_aim&&!ctrl.tac_is_fire"
 						},
 						{
-							"SUPERB机甲_M2HB瞄准": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&ctrl.tac_is_aim&&!ctrl.tac_is_fire"
+							"SUPERB机甲_M2HB瞄准": "v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&ctrl.tac_is_aim&&!ctrl.tac_is_fire"
 						},
 						{
-							"TAC正常_M134瞄准射击": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='tacz:minigun'&&ctrl.tac_is_aim&&ctrl.tac_is_fire"
+							"TAC正常_M134瞄准射击": "!v.should_show_mecha&&ctrl.tac_gun_id=='tacz:minigun'&&ctrl.tac_is_aim&&ctrl.tac_is_fire"
 						},
 						{
-							"TAC机甲_M134瞄准射击": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='tacz:minigun'&&ctrl.tac_is_aim&&ctrl.tac_is_fire"
+							"TAC机甲_M134瞄准射击": "v.should_show_mecha&&ctrl.tac_gun_id=='tacz:minigun'&&ctrl.tac_is_aim&&ctrl.tac_is_fire"
 						},
 						{
-							"SUPERB正常_M134瞄准射击": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:minigun'&&ctrl.tac_is_aim&&ctrl.tac_is_fire"
+							"SUPERB正常_M134瞄准射击": "!v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:minigun'&&ctrl.tac_is_aim&&ctrl.tac_is_fire"
 						},
 						{
-							"SUPERB机甲_M134瞄准射击": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:minigun'&&ctrl.tac_is_aim&&ctrl.tac_is_fire"
+							"SUPERB机甲_M134瞄准射击": "v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:minigun'&&ctrl.tac_is_aim&&ctrl.tac_is_fire"
 						},
 						{
-							"SUPERB正常_M2HB瞄准射击": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&ctrl.tac_is_aim&&ctrl.tac_is_fire"
+							"SUPERB正常_M2HB瞄准射击": "!v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&ctrl.tac_is_aim&&ctrl.tac_is_fire"
 						},
 						{
-							"SUPERB机甲_M2HB瞄准射击": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&ctrl.tac_is_aim&&ctrl.tac_is_fire"
+							"SUPERB机甲_M2HB瞄准射击": "v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&ctrl.tac_is_aim&&ctrl.tac_is_fire"
 						}
 					],
 					"transitions": [
@@ -910,7 +910,7 @@
 							"hold": "ctrl.fly||ctrl.elytra_fly||ctrl.sneaking||ctrl.sneak"
 						},
 						{
-							"walk_back": "(v.roaming.mecha&&!v.roaming.car)&&ysm.input_vertical<0"
+							"walk_back": "v.should_show_mecha&&ysm.input_vertical<0"
 						},
 						{
 							"hold": "ctrl.idle"
@@ -936,112 +936,112 @@
 				"climb": {
 					"animations": [
 						{
-							"TAC正常_步枪匍匐移动": "!(v.roaming.mecha&&!v.roaming.car)&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&ctrl.climb&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
+							"TAC正常_步枪匍匐移动": "!v.should_show_mecha&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&ctrl.climb&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
 						},
 						{
-							"TAC机甲_步枪匍匐移动": "(v.roaming.mecha&&!v.roaming.car)&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&ctrl.climb&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
+							"TAC机甲_步枪匍匐移动": "v.should_show_mecha&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&ctrl.climb&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
 						},
 						{
-							"TAC正常_手枪匍匐移动": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='pistol'&&ctrl.climb"
+							"TAC正常_手枪匍匐移动": "!v.should_show_mecha&&ctrl.tac_gun_type=='pistol'&&ctrl.climb"
 						},
 						{
-							"TAC机甲_手枪匍匐移动": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='pistol'&&ctrl.climb"
+							"TAC机甲_手枪匍匐移动": "v.should_show_mecha&&ctrl.tac_gun_type=='pistol'&&ctrl.climb"
 						},
 						{
-							"TAC正常_火箭筒匍匐移动": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='rpg'&&ctrl.climb"
+							"TAC正常_火箭筒匍匐移动": "!v.should_show_mecha&&ctrl.tac_gun_type=='rpg'&&ctrl.climb"
 						},
 						{
-							"TAC机甲_火箭筒匍匐移动": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='rpg'&&ctrl.climb"
+							"TAC机甲_火箭筒匍匐移动": "v.should_show_mecha&&ctrl.tac_gun_type=='rpg'&&ctrl.climb"
 						},
 						{
-							"TAC正常_步枪匍匐": "!(v.roaming.mecha&&!v.roaming.car)&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&ctrl.climbing&&!ctrl.tac_is_fire&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
+							"TAC正常_步枪匍匐": "!v.should_show_mecha&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&ctrl.climbing&&!ctrl.tac_is_fire&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
 						},
 						{
-							"TAC机甲_步枪匍匐": "(v.roaming.mecha&&!v.roaming.car)&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&ctrl.climbing&&!ctrl.tac_is_fire&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
+							"TAC机甲_步枪匍匐": "v.should_show_mecha&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&ctrl.climbing&&!ctrl.tac_is_fire&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
 						},
 						{
-							"TAC正常_手枪匍匐": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='pistol'&&ctrl.climbing&&!ctrl.tac_is_fire"
+							"TAC正常_手枪匍匐": "!v.should_show_mecha&&ctrl.tac_gun_type=='pistol'&&ctrl.climbing&&!ctrl.tac_is_fire"
 						},
 						{
-							"TAC机甲_手枪匍匐": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='pistol'&&ctrl.climbing&&!ctrl.tac_is_fire"
+							"TAC机甲_手枪匍匐": "v.should_show_mecha&&ctrl.tac_gun_type=='pistol'&&ctrl.climbing&&!ctrl.tac_is_fire"
 						},
 						{
-							"TAC正常_火箭筒匍匐": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='rpg'&&ctrl.climbing&&!ctrl.tac_is_fire"
+							"TAC正常_火箭筒匍匐": "!v.should_show_mecha&&ctrl.tac_gun_type=='rpg'&&ctrl.climbing&&!ctrl.tac_is_fire"
 						},
 						{
-							"TAC机甲_火箭筒匍匐": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='rpg'&&ctrl.climbing&&!ctrl.tac_is_fire"
+							"TAC机甲_火箭筒匍匐": "v.should_show_mecha&&ctrl.tac_gun_type=='rpg'&&ctrl.climbing&&!ctrl.tac_is_fire"
 						},
 						{
-							"TAC正常_步枪匍匐开火": "!(v.roaming.mecha&&!v.roaming.car)&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&ctrl.climbing&&ctrl.tac_is_fire&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
+							"TAC正常_步枪匍匐开火": "!v.should_show_mecha&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&ctrl.climbing&&ctrl.tac_is_fire&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
 						},
 						{
-							"TAC机甲_步枪匍匐开火": "(v.roaming.mecha&&!v.roaming.car)&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&ctrl.climbing&&ctrl.tac_is_fire&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
+							"TAC机甲_步枪匍匐开火": "v.should_show_mecha&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&ctrl.climbing&&ctrl.tac_is_fire&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
 						},
 						{
-							"TAC正常_手枪匍匐射击": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='pistol'&&ctrl.climbing&&ctrl.tac_is_fire"
+							"TAC正常_手枪匍匐射击": "!v.should_show_mecha&&ctrl.tac_gun_type=='pistol'&&ctrl.climbing&&ctrl.tac_is_fire"
 						},
 						{
-							"TAC机甲_手枪匍匐射击": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='pistol'&&ctrl.climbing&&ctrl.tac_is_fire"
+							"TAC机甲_手枪匍匐射击": "v.should_show_mecha&&ctrl.tac_gun_type=='pistol'&&ctrl.climbing&&ctrl.tac_is_fire"
 						},
 						{
-							"TAC正常_火箭筒匍匐射击": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='rpg'&&ctrl.climbing&&ctrl.tac_is_fire"
+							"TAC正常_火箭筒匍匐射击": "!v.should_show_mecha&&ctrl.tac_gun_type=='rpg'&&ctrl.climbing&&ctrl.tac_is_fire"
 						},
 						{
-							"TAC机甲_火箭筒匍匐射击": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='rpg'&&ctrl.climbing&&ctrl.tac_is_fire"
+							"TAC机甲_火箭筒匍匐射击": "v.should_show_mecha&&ctrl.tac_gun_type=='rpg'&&ctrl.climbing&&ctrl.tac_is_fire"
 						},
 						{
-							"TAC正常_M134匍匐移动": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='tacz:minigun'&&ctrl.climb"
+							"TAC正常_M134匍匐移动": "!v.should_show_mecha&&ctrl.tac_gun_id=='tacz:minigun'&&ctrl.climb"
 						},
 						{
-							"TAC机甲_M134匍匐移动": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='tacz:minigun'&&ctrl.climb"
+							"TAC机甲_M134匍匐移动": "v.should_show_mecha&&ctrl.tac_gun_id=='tacz:minigun'&&ctrl.climb"
 						},
 						{
-							"SUPERB正常_M134匍匐移动": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:minigun'&&ctrl.climb"
+							"SUPERB正常_M134匍匐移动": "!v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:minigun'&&ctrl.climb"
 						},
 						{
-							"SUPERB机甲_M134匍匐移动": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:minigun'&&ctrl.climb"
+							"SUPERB机甲_M134匍匐移动": "v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:minigun'&&ctrl.climb"
 						},
 						{
-							"SUPERB正常_M2HB匍匐移动": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&ctrl.climb"
+							"SUPERB正常_M2HB匍匐移动": "!v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&ctrl.climb"
 						},
 						{
-							"SUPERB机甲_M2HB匍匐移动": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&ctrl.climb"
+							"SUPERB机甲_M2HB匍匐移动": "v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&ctrl.climb"
 						},
 						{
-							"TAC正常_M134匍匐": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='tacz:minigun'&&ctrl.climbing&&!ctrl.tac_is_fire"
+							"TAC正常_M134匍匐": "!v.should_show_mecha&&ctrl.tac_gun_id=='tacz:minigun'&&ctrl.climbing&&!ctrl.tac_is_fire"
 						},
 						{
-							"TAC机甲_M134匍匐": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='tacz:minigun'&&ctrl.climbing&&!ctrl.tac_is_fire"
+							"TAC机甲_M134匍匐": "v.should_show_mecha&&ctrl.tac_gun_id=='tacz:minigun'&&ctrl.climbing&&!ctrl.tac_is_fire"
 						},
 						{
-							"SUPERB正常_M134匍匐": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:minigun'&&ctrl.climbing&&!ctrl.tac_is_fire"
+							"SUPERB正常_M134匍匐": "!v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:minigun'&&ctrl.climbing&&!ctrl.tac_is_fire"
 						},
 						{
-							"SUPERB机甲_M134匍匐": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:minigun'&&ctrl.climbing&&!ctrl.tac_is_fire"
+							"SUPERB机甲_M134匍匐": "v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:minigun'&&ctrl.climbing&&!ctrl.tac_is_fire"
 						},
 						{
-							"SUPERB正常_M2HB匍匐": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&ctrl.climbing&&!ctrl.tac_is_fire"
+							"SUPERB正常_M2HB匍匐": "!v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&ctrl.climbing&&!ctrl.tac_is_fire"
 						},
 						{
-							"SUPERB机甲_M2HB匍匐": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&ctrl.climbing&&!ctrl.tac_is_fire"
+							"SUPERB机甲_M2HB匍匐": "v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&ctrl.climbing&&!ctrl.tac_is_fire"
 						},
 						{
-							"TAC正常_M134匍匐射击": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='tacz:minigun'&&ctrl.climbing&&ctrl.tac_is_fire"
+							"TAC正常_M134匍匐射击": "!v.should_show_mecha&&ctrl.tac_gun_id=='tacz:minigun'&&ctrl.climbing&&ctrl.tac_is_fire"
 						},
 						{
-							"TAC机甲_M134匍匐射击": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='tacz:minigun'&&ctrl.climbing&&ctrl.tac_is_fire"
+							"TAC机甲_M134匍匐射击": "v.should_show_mecha&&ctrl.tac_gun_id=='tacz:minigun'&&ctrl.climbing&&ctrl.tac_is_fire"
 						},
 						{
-							"SUPERB正常_M134匍匐射击": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:minigun'&&ctrl.climbing&&ctrl.tac_is_fire"
+							"SUPERB正常_M134匍匐射击": "!v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:minigun'&&ctrl.climbing&&ctrl.tac_is_fire"
 						},
 						{
-							"SUPERB机甲_M134匍匐射击": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:minigun'&&ctrl.climbing&&ctrl.tac_is_fire"
+							"SUPERB机甲_M134匍匐射击": "v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:minigun'&&ctrl.climbing&&ctrl.tac_is_fire"
 						},
 						{
-							"SUPERB正常_M2HB匍匐射击": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&ctrl.climbing&&ctrl.tac_is_fire"
+							"SUPERB正常_M2HB匍匐射击": "!v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&ctrl.climbing&&ctrl.tac_is_fire"
 						},
 						{
-							"SUPERB机甲_M2HB匍匐射击": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&ctrl.climbing&&ctrl.tac_is_fire"
+							"SUPERB机甲_M2HB匍匐射击": "v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&ctrl.climbing&&ctrl.tac_is_fire"
 						}
 					],
 					"transitions": [
@@ -1060,151 +1060,151 @@
 				"walk_back": {
 					"animations": [
 						{
-							"TAC机甲_下半身后退": "(v.roaming.mecha&&!v.roaming.car)&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
+							"TAC机甲_下半身后退": "v.should_show_mecha&&!ctrl.sneak&&!ctrl.sneaking&&!ctrl.fly&&!ctrl.elytra_fly"
 						},
 						{
-							"TAC正常_步枪持枪": "!(v.roaming.mecha&&!v.roaming.car)&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
+							"TAC正常_步枪持枪": "!v.should_show_mecha&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
 						},
 						{
-							"TAC机甲_步枪持枪": "(v.roaming.mecha&&!v.roaming.car)&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
+							"TAC机甲_步枪持枪": "v.should_show_mecha&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
 						},
 						{
-							"TAC正常_手枪持枪": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='pistol'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire"
+							"TAC正常_手枪持枪": "!v.should_show_mecha&&ctrl.tac_gun_type=='pistol'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire"
 						},
 						{
-							"TAC机甲_手枪持枪": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='pistol'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire"
+							"TAC机甲_手枪持枪": "v.should_show_mecha&&ctrl.tac_gun_type=='pistol'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire"
 						},
 						{
-							"TAC正常_火箭筒持枪": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='rpg'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire"
+							"TAC正常_火箭筒持枪": "!v.should_show_mecha&&ctrl.tac_gun_type=='rpg'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire"
 						},
 						{
-							"TAC机甲_火箭筒持枪": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='rpg'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire"
+							"TAC机甲_火箭筒持枪": "v.should_show_mecha&&ctrl.tac_gun_type=='rpg'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire"
 						},
 						{
-							"TAC正常_步枪腰射开火": "!(v.roaming.mecha&&!v.roaming.car)&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&!ctrl.tac_is_aim&&ctrl.tac_is_fire&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
+							"TAC正常_步枪腰射开火": "!v.should_show_mecha&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&!ctrl.tac_is_aim&&ctrl.tac_is_fire&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
 						},
 						{
-							"TAC机甲_步枪腰射开火": "(v.roaming.mecha&&!v.roaming.car)&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&!ctrl.tac_is_aim&&ctrl.tac_is_fire&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
+							"TAC机甲_步枪腰射开火": "v.should_show_mecha&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&!ctrl.tac_is_aim&&ctrl.tac_is_fire&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
 						},
 						{
-							"TAC正常_手枪腰射射击": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='pistol'&&!ctrl.tac_is_aim&&ctrl.tac_is_fire"
+							"TAC正常_手枪腰射射击": "!v.should_show_mecha&&ctrl.tac_gun_type=='pistol'&&!ctrl.tac_is_aim&&ctrl.tac_is_fire"
 						},
 						{
-							"TAC机甲_手枪腰射射击": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='pistol'&&!ctrl.tac_is_aim&&ctrl.tac_is_fire"
+							"TAC机甲_手枪腰射射击": "v.should_show_mecha&&ctrl.tac_gun_type=='pistol'&&!ctrl.tac_is_aim&&ctrl.tac_is_fire"
 						},
 						{
-							"TAC正常_火箭筒腰射": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='rpg'&&!ctrl.tac_is_aim&&ctrl.tac_is_fire"
+							"TAC正常_火箭筒腰射": "!v.should_show_mecha&&ctrl.tac_gun_type=='rpg'&&!ctrl.tac_is_aim&&ctrl.tac_is_fire"
 						},
 						{
-							"TAC机甲_火箭筒腰射": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='rpg'&&!ctrl.tac_is_aim&&ctrl.tac_is_fire"
+							"TAC机甲_火箭筒腰射": "v.should_show_mecha&&ctrl.tac_gun_type=='rpg'&&!ctrl.tac_is_aim&&ctrl.tac_is_fire"
 						},
 						{
-							"TAC正常_步枪瞄准": "!(v.roaming.mecha&&!v.roaming.car)&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&ctrl.tac_is_aim&&!ctrl.tac_is_fire&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
+							"TAC正常_步枪瞄准": "!v.should_show_mecha&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&ctrl.tac_is_aim&&!ctrl.tac_is_fire&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
 						},
 						{
-							"TAC机甲_步枪瞄准": "(v.roaming.mecha&&!v.roaming.car)&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&ctrl.tac_is_aim&&!ctrl.tac_is_fire&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
+							"TAC机甲_步枪瞄准": "v.should_show_mecha&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&ctrl.tac_is_aim&&!ctrl.tac_is_fire&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
 						},
 						{
-							"TAC正常_手枪瞄准": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='pistol'&&ctrl.tac_is_aim&&!ctrl.tac_is_fire"
+							"TAC正常_手枪瞄准": "!v.should_show_mecha&&ctrl.tac_gun_type=='pistol'&&ctrl.tac_is_aim&&!ctrl.tac_is_fire"
 						},
 						{
-							"TAC机甲_手枪瞄准": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='pistol'&&ctrl.tac_is_aim&&!ctrl.tac_is_fire"
+							"TAC机甲_手枪瞄准": "v.should_show_mecha&&ctrl.tac_gun_type=='pistol'&&ctrl.tac_is_aim&&!ctrl.tac_is_fire"
 						},
 						{
-							"TAC正常_火箭筒瞄准": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='rpg'&&ctrl.tac_is_aim&&!ctrl.tac_is_fire"
+							"TAC正常_火箭筒瞄准": "!v.should_show_mecha&&ctrl.tac_gun_type=='rpg'&&ctrl.tac_is_aim&&!ctrl.tac_is_fire"
 						},
 						{
-							"TAC机甲_火箭筒瞄准": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='rpg'&&ctrl.tac_is_aim&&!ctrl.tac_is_fire"
+							"TAC机甲_火箭筒瞄准": "v.should_show_mecha&&ctrl.tac_gun_type=='rpg'&&ctrl.tac_is_aim&&!ctrl.tac_is_fire"
 						},
 						{
-							"TAC正常_步枪瞄准开火": "!(v.roaming.mecha&&!v.roaming.car)&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&ctrl.tac_is_aim&&ctrl.tac_is_fire&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
+							"TAC正常_步枪瞄准开火": "!v.should_show_mecha&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&ctrl.tac_is_aim&&ctrl.tac_is_fire&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
 						},
 						{
-							"TAC机甲_步枪瞄准开火": "(v.roaming.mecha&&!v.roaming.car)&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&ctrl.tac_is_aim&&ctrl.tac_is_fire&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
+							"TAC机甲_步枪瞄准开火": "v.should_show_mecha&&(ctrl.tac_gun_type=='rifle'||ctrl.tac_gun_type=='mg'||ctrl.tac_gun_type=='smg'||ctrl.tac_gun_type=='sniper'||ctrl.tac_gun_type=='shotgun')&&ctrl.tac_is_aim&&ctrl.tac_is_fire&&ctrl.tac_gun_id!='tacz:minigun'&&ctrl.tac_gun_id!='superbwarfare:minigun'&&ctrl.tac_gun_id!='superbwarfare:m_2_hb'"
 						},
 						{
-							"TAC正常_手枪瞄准射击": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='pistol'&&ctrl.tac_is_aim&&ctrl.tac_is_fire"
+							"TAC正常_手枪瞄准射击": "!v.should_show_mecha&&ctrl.tac_gun_type=='pistol'&&ctrl.tac_is_aim&&ctrl.tac_is_fire"
 						},
 						{
-							"TAC机甲_手枪瞄准射击": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='pistol'&&ctrl.tac_is_aim&&ctrl.tac_is_fire"
+							"TAC机甲_手枪瞄准射击": "v.should_show_mecha&&ctrl.tac_gun_type=='pistol'&&ctrl.tac_is_aim&&ctrl.tac_is_fire"
 						},
 						{
-							"TAC正常_火箭筒瞄准射击": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='rpg'&&ctrl.tac_is_aim&&ctrl.tac_is_fire"
+							"TAC正常_火箭筒瞄准射击": "!v.should_show_mecha&&ctrl.tac_gun_type=='rpg'&&ctrl.tac_is_aim&&ctrl.tac_is_fire"
 						},
 						{
-							"TAC机甲_火箭筒瞄准射击": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_type=='rpg'&&ctrl.tac_is_aim&&ctrl.tac_is_fire"
+							"TAC机甲_火箭筒瞄准射击": "v.should_show_mecha&&ctrl.tac_gun_type=='rpg'&&ctrl.tac_is_aim&&ctrl.tac_is_fire"
 						},
 						{
-							"TAC正常_M134持枪": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='tacz:minigun'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire"
+							"TAC正常_M134持枪": "!v.should_show_mecha&&ctrl.tac_gun_id=='tacz:minigun'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire"
 						},
 						{
-							"TAC机甲_M134持枪": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='tacz:minigun'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire"
+							"TAC机甲_M134持枪": "v.should_show_mecha&&ctrl.tac_gun_id=='tacz:minigun'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire"
 						},
 						{
-							"SUPERB正常_M134持枪": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:minigun'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire"
+							"SUPERB正常_M134持枪": "!v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:minigun'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire"
 						},
 						{
-							"SUPERB机甲_M134持枪": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:minigun'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire"
+							"SUPERB机甲_M134持枪": "v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:minigun'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire"
 						},
 						{
-							"SUPERB正常_M2HB持枪": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire"
+							"SUPERB正常_M2HB持枪": "!v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire"
 						},
 						{
-							"SUPERB机甲_M2HB持枪": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire"
+							"SUPERB机甲_M2HB持枪": "v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&!ctrl.tac_is_aim&&!ctrl.tac_is_fire"
 						},
 						{
-							"TAC正常_M134腰射": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='tacz:minigun'&&!ctrl.tac_is_aim&&ctrl.tac_is_fire"
+							"TAC正常_M134腰射": "!v.should_show_mecha&&ctrl.tac_gun_id=='tacz:minigun'&&!ctrl.tac_is_aim&&ctrl.tac_is_fire"
 						},
 						{
-							"TAC机甲_M134腰射": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='tacz:minigun'&&!ctrl.tac_is_aim&&ctrl.tac_is_fire"
+							"TAC机甲_M134腰射": "v.should_show_mecha&&ctrl.tac_gun_id=='tacz:minigun'&&!ctrl.tac_is_aim&&ctrl.tac_is_fire"
 						},
 						{
-							"SUPERB正常_M134腰射": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:minigun'&&!ctrl.tac_is_aim&&ctrl.tac_is_fire"
+							"SUPERB正常_M134腰射": "!v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:minigun'&&!ctrl.tac_is_aim&&ctrl.tac_is_fire"
 						},
 						{
-							"SUPERB机甲_M134腰射": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:minigun'&&!ctrl.tac_is_aim&&ctrl.tac_is_fire"
+							"SUPERB机甲_M134腰射": "v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:minigun'&&!ctrl.tac_is_aim&&ctrl.tac_is_fire"
 						},
 						{
-							"SUPERB正常_M2HB腰射": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&!ctrl.tac_is_aim&&ctrl.tac_is_fire"
+							"SUPERB正常_M2HB腰射": "!v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&!ctrl.tac_is_aim&&ctrl.tac_is_fire"
 						},
 						{
-							"SUPERB机甲_M2HB腰射": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&!ctrl.tac_is_aim&&ctrl.tac_is_fire"
+							"SUPERB机甲_M2HB腰射": "v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&!ctrl.tac_is_aim&&ctrl.tac_is_fire"
 						},
 						{
-							"TAC正常_M134瞄准": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='tacz:minigun'&&ctrl.tac_is_aim&&!ctrl.tac_is_fire"
+							"TAC正常_M134瞄准": "!v.should_show_mecha&&ctrl.tac_gun_id=='tacz:minigun'&&ctrl.tac_is_aim&&!ctrl.tac_is_fire"
 						},
 						{
-							"TAC机甲_M134瞄准": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='tacz:minigun'&&ctrl.tac_is_aim&&!ctrl.tac_is_fire"
+							"TAC机甲_M134瞄准": "v.should_show_mecha&&ctrl.tac_gun_id=='tacz:minigun'&&ctrl.tac_is_aim&&!ctrl.tac_is_fire"
 						},
 						{
-							"SUPERB正常_M134瞄准": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:minigun'&&ctrl.tac_is_aim&&!ctrl.tac_is_fire"
+							"SUPERB正常_M134瞄准": "!v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:minigun'&&ctrl.tac_is_aim&&!ctrl.tac_is_fire"
 						},
 						{
-							"SUPERB机甲_M134瞄准": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:minigun'&&ctrl.tac_is_aim&&!ctrl.tac_is_fire"
+							"SUPERB机甲_M134瞄准": "v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:minigun'&&ctrl.tac_is_aim&&!ctrl.tac_is_fire"
 						},
 						{
-							"SUPERB正常_M2HB瞄准": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&ctrl.tac_is_aim&&!ctrl.tac_is_fire"
+							"SUPERB正常_M2HB瞄准": "!v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&ctrl.tac_is_aim&&!ctrl.tac_is_fire"
 						},
 						{
-							"SUPERB机甲_M2HB瞄准": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&ctrl.tac_is_aim&&!ctrl.tac_is_fire"
+							"SUPERB机甲_M2HB瞄准": "v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&ctrl.tac_is_aim&&!ctrl.tac_is_fire"
 						},
 						{
-							"TAC正常_M134瞄准射击": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='tacz:minigun'&&ctrl.tac_is_aim&&ctrl.tac_is_fire"
+							"TAC正常_M134瞄准射击": "!v.should_show_mecha&&ctrl.tac_gun_id=='tacz:minigun'&&ctrl.tac_is_aim&&ctrl.tac_is_fire"
 						},
 						{
-							"TAC机甲_M134瞄准射击": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='tacz:minigun'&&ctrl.tac_is_aim&&ctrl.tac_is_fire"
+							"TAC机甲_M134瞄准射击": "v.should_show_mecha&&ctrl.tac_gun_id=='tacz:minigun'&&ctrl.tac_is_aim&&ctrl.tac_is_fire"
 						},
 						{
-							"SUPERB正常_M134瞄准射击": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:minigun'&&ctrl.tac_is_aim&&ctrl.tac_is_fire"
+							"SUPERB正常_M134瞄准射击": "!v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:minigun'&&ctrl.tac_is_aim&&ctrl.tac_is_fire"
 						},
 						{
-							"SUPERB机甲_M134瞄准射击": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:minigun'&&ctrl.tac_is_aim&&ctrl.tac_is_fire"
+							"SUPERB机甲_M134瞄准射击": "v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:minigun'&&ctrl.tac_is_aim&&ctrl.tac_is_fire"
 						},
 						{
-							"SUPERB正常_M2HB瞄准射击": "!(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&ctrl.tac_is_aim&&ctrl.tac_is_fire"
+							"SUPERB正常_M2HB瞄准射击": "!v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&ctrl.tac_is_aim&&ctrl.tac_is_fire"
 						},
 						{
-							"SUPERB机甲_M2HB瞄准射击": "(v.roaming.mecha&&!v.roaming.car)&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&ctrl.tac_is_aim&&ctrl.tac_is_fire"
+							"SUPERB机甲_M2HB瞄准射击": "v.should_show_mecha&&ctrl.tac_gun_id=='superbwarfare:m_2_hb'&&ctrl.tac_is_aim&&ctrl.tac_is_fire"
 						}
 					],
 					"transitions": [
@@ -1215,7 +1215,7 @@
 							"hold": "ctrl.fly||ctrl.elytra_fly||ctrl.sneaking||ctrl.sneak"
 						},
 						{
-							"walk": "!((v.roaming.mecha&&!v.roaming.car)&&ysm.input_vertical<0)"
+							"walk": "!(v.should_show_mecha&&ysm.input_vertical<0)"
 						},
 						{
 							"hold": "ctrl.idle"

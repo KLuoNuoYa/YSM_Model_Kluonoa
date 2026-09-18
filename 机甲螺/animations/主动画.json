@@ -34289,6 +34289,9 @@
 				},
 				"BackpackLocator": {
 					"scale": 0.8
+				},
+				"ElytraLocator": {
+					"scale": 0
 				}
 			},
 			"timeline": {
@@ -34372,8 +34375,82 @@
 		"parallel5": {
 			"loop": true
 		},
-		"parallel6": {
+		"——无人机跟随": {
 			"loop": true
+		},
+		"parallel6": {
+			"loop": true,
+			"animation_length": 0.0083,
+			"bones": {
+				"Mrabit-cost-wurenji2": {
+					"rotation": [
+						"-yysm.perlin_noise('123',0 , 0, q.life_time/5 + 0.2) * -25 ",
+						0,
+						"ysm.perlin_noise('123', q.life_time/5 + 0.2, 0,0 ) * 25 + ( ( query.position(0) - ysm.second_order('DroneTiltX', query.position(0), 2, 1.1, 2) ) * math.cos(q.body_y_rotation) + ( query.position(2) - ysm.second_order('DroneTiltZ', query.position(2), 2, 1.1, 2) ) * math.sin(q.body_y_rotation) ) * -10"
+					],
+					"position": [
+						"-yysm.perlin_noise('123', q.life_time/5, 0, 0) * 30",
+						"yysm.perlin_noise('123', 0, q.life_time/5, 0) * 3",
+						"yysm.perlin_noise('123', 0, 0, q.life_time/5) * 30"
+					]
+				},
+				"Left-rabit-cost-wurenji-wing": {
+					"rotation": [
+						0,
+						"-math.mod(q.life_time*3600, 360)",
+						0
+					]
+				},
+				"Left-rabit-cost-wurenji-wing2": {
+					"rotation": [
+						0,
+						"-math.mod(q.life_time*-3600, 360)",
+						0
+					]
+				},
+				"Right-rabit-cost-wurenji-wing2": {
+					"rotation": [
+						0,
+						"-math.mod(q.life_time*3600, 360)",
+						0
+					]
+				},
+				"Right-rabit-cost-wurenji-wing": {
+					"rotation": [
+						0,
+						"-math.mod(q.life_time*-3600, 360)",
+						0
+					]
+				},
+				"Root-rabit-cost-wurenji": {
+					"rotation": [
+						0,
+						"-v.continuous_yaw + ysm.second_order('DroneZ2',v.continuous_yaw,0.5,1,1)",
+						0
+					],
+					"scale": "(v.show_car&&v.anim_ctrl)?0:1"
+				},
+				"Mrabit-cost-wurenji": {
+					"rotation": [
+						"( -( query.position(0) - ysm.second_order('DroneTiltX', query.position(0), 1, 1, 2) ) * math.sin(q.body_y_rotation) + ( query.position(2) - ysm.second_order('DroneTiltZ', query.position(2), 1, 1, 2) ) * math.cos(q.body_y_rotation) ) * 10 + ysm.second_order('DronePitch', ysm.input_vertical * ysm.ground_speed2, 1, 1, 0) * 1.2",
+						0,
+						0
+					],
+					"position": [
+						"-( ( query.position(0) - ysm.second_order('DronePX', query.position(0), 0.3, 0.9, 1) ) * math.cos(q.body_y_rotation) + ( query.position(2) - ysm.second_order('DronePZ', query.position(2), 0.3, 0.9, 1) ) * math.sin(q.body_y_rotation) ) * 10",
+						"(query.position(1) - ysm.second_order('DronePY', query.position(1), 0.45, 1.0, 1)) * -10",
+						"( -( query.position(0) - ysm.second_order('DronePX', query.position(0), 0.3, 0.9, 1) ) * math.sin(q.body_y_rotation) + ( query.position(2) - ysm.second_order('DronePZ', query.position(2), 0.3, 0.9, 1) ) * math.cos(q.body_y_rotation) ) * 10"
+					]
+				}
+			},
+			"timeline": {
+				"0.0": [
+					"v.delta = q.body_y_rotation - v.last_raw;",
+					"v.delta = v.delta > 180 ? v.delta - 360 : (v.delta < -180 ? v.delta + 360 : v.delta);",
+					"v.continuous_yaw = v.continuous_yaw + v.delta;",
+					"v.last_raw = q.body_y_rotation;"
+				]
+			}
 		},
 		"parallel7": {
 			"loop": true
@@ -34793,9 +34870,6 @@
 				"rabit-cost-sword": {
 					"scale": 0
 				},
-				"rabit-cost-wurenji": {
-					"scale": 0
-				},
 				"rabit-cost-sword2": {
 					"scale": 0
 				},
@@ -34807,6 +34881,9 @@
 				},
 				"DG-z-3": {
 					"scale": 0
+				},
+				"rabit-cost-wurenji": {
+					"scale": "!v.roaming.config_wurenji"
 				}
 			}
 		},
@@ -34850,7 +34927,8 @@
 			"loop": true
 		},
 		"pre_parallel6": {
-			"loop": true
+			"loop": true,
+			"animation_length": 0.0083
 		},
 		"pre_parallel7": {
 			"loop": true
@@ -45954,6 +46032,7 @@
 		"机甲_行走": {
 			"loop": true,
 			"animation_length": 1.5,
+			"blend_weight": "ysm.second_order('mecha_move',math.clamp(ysm.ground_speed2/4,0.6,1),1,1,0)",
 			"bones": {
 				"Root": {
 					"rotation": {
@@ -46434,6 +46513,7 @@
 		"机甲_倒退": {
 			"loop": true,
 			"animation_length": 1.5,
+			"blend_weight": "ysm.second_order('mecha_move',math.clamp(ysm.ground_speed2/4,0.6,1),1,1,0)",
 			"bones": {
 				"Root": {
 					"rotation": {
@@ -46914,6 +46994,7 @@
 		"机甲_奔跑": {
 			"loop": true,
 			"animation_length": 0.75,
+			"blend_weight": "ysm.second_order('mecha_move',math.clamp(ysm.ground_speed2/4,0.6,1),1,1,0)",
 			"bones": {
 				"Root": {
 					"rotation": {
@@ -51740,6 +51821,334 @@
 				},
 				"rabit-cost-up-wing-z": {
 					"scale": 0
+				}
+			}
+		},
+		"鞘翅飞行调试": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1.8333,
+			"bones": {
+				"Left-rabit-cost-up-wing2": {
+					"rotation": [
+						"(39.19)*(1-0.45*math.clamp(ysm.elytra_rot_x/45,0,1))",
+						"(47.85)*(1-0.45*math.clamp(ysm.elytra_rot_x/45,0,1))",
+						"(0.75)*(1-0.45*math.clamp(ysm.elytra_rot_x/45,0,1))"
+					]
+				},
+				"ysmGlow-Left-rabit-wing-2-2": {
+					"scale": 1
+				},
+				"Left-rabit-cost-up-wing3": {
+					"rotation": [
+						"(-30)*(1-0.45*math.clamp(ysm.elytra_rot_x/45,0,1))",
+						0,
+						0
+					]
+				},
+				"Right-rabit-cost-up-wing2": {
+					"rotation": [
+						"(39.19)*(1-0.45*math.clamp(ysm.elytra_rot_x/45,0,1))",
+						"(-47.85)*(1-0.45*math.clamp(ysm.elytra_rot_x/45,0,1))",
+						"(-0.75)*(1-0.45*math.clamp(ysm.elytra_rot_x/45,0,1))"
+					]
+				},
+				"ysmGlow-Right-rabit-wing-2-2": {
+					"scale": 1
+				},
+				"Right-rabit-cost-up-wing3": {
+					"rotation": [
+						"(-30)*(1-0.45*math.clamp(ysm.elytra_rot_x/45,0,1))",
+						0,
+						0
+					]
+				},
+				"Rightrabit-cost-wing-base": {
+					"rotation": [
+						0,
+						"(-65)*(1-0.45*math.clamp(ysm.elytra_rot_x/45,0,1))",
+						0
+					]
+				},
+				"Rightrabit-cost-wing-base-1": {
+					"rotation": [
+						"(135)*(1-0.45*math.clamp(ysm.elytra_rot_x/45,0,1))",
+						0,
+						0
+					]
+				},
+				"Rightrabit-cost-wing-z": {
+					"position": [
+						0,
+						0,
+						0
+					],
+					"scale": 1
+				},
+				"Rightrabit-cost-wing-1": {
+					"rotation": [
+						"(-5)*(1-0.45*math.clamp(ysm.elytra_rot_x/45,0,1))",
+						0,
+						0
+					]
+				},
+				"ysmGlow-Right-rabit-wing-1-1": {
+					"scale": {
+						"0.0": {
+							"post": [
+								1,
+								1,
+								1
+							],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"Rightrabit-cost-wing-2": {
+					"rotation": [
+						"(-27.5)*(1-0.45*math.clamp(ysm.elytra_rot_x/45,0,1))",
+						0,
+						0
+					]
+				},
+				"ysmGlow-Right-rabit-wing-2-1": {
+					"scale": {
+						"0.0": {
+							"post": [
+								1,
+								1,
+								1
+							],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"Rightrabit-cost-wing-3": {
+					"rotation": [
+						"(-55)*(1-0.45*math.clamp(ysm.elytra_rot_x/45,0,1))",
+						0,
+						0
+					]
+				},
+				"ysmGlow-Right-rabit-wing-3-1": {
+					"scale": {
+						"0.0": {
+							"post": [
+								1,
+								1,
+								1
+							],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"Rightrabit-cost-wing-4": {
+					"rotation": [
+						"(-82.5)*(1-0.45*math.clamp(ysm.elytra_rot_x/45,0,1))",
+						0,
+						0
+					]
+				},
+				"ysmGlow-Right-rabit-wing-4-1": {
+					"scale": {
+						"0.0": {
+							"post": [
+								1,
+								1,
+								1
+							],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"Rightrabit-cost-wing-base-down": {
+					"rotation": [
+						"(-115)*(1-0.45*math.clamp(ysm.elytra_rot_x/45,0,1))",
+						0,
+						0
+					]
+				},
+				"Rightrabit-cost-wing-base-up": {
+					"rotation": [
+						180,
+						0,
+						0
+					]
+				},
+				"rabit-cost-base-z": {
+					"rotation": [
+						"(32.5)*(1-0.45*math.clamp(ysm.elytra_rot_x/45,0,1))",
+						0,
+						0
+					]
+				},
+				"Right-rabit-cost-wing2": {
+					"rotation": [
+						0,
+						0,
+						"(25)*(1-0.45*math.clamp(ysm.elytra_rot_x/45,0,1))"
+					],
+					"position": [
+						-2,
+						0,
+						0
+					]
+				},
+				"Right-rabit-cost-wing3": {
+					"position": [
+						0,
+						-1,
+						0
+					]
+				},
+				"Right-rabit-cost-wing4": {
+					"position": [
+						2,
+						0,
+						0
+					]
+				},
+				"Left-rabit-cost-wing2": {
+					"rotation": [
+						0,
+						0,
+						"(-25)*(1-0.45*math.clamp(ysm.elytra_rot_x/45,0,1))"
+					],
+					"position": [
+						2,
+						0,
+						0
+					]
+				},
+				"Left-rabit-cost-wing3": {
+					"position": [
+						0,
+						-1,
+						0
+					]
+				},
+				"Left-rabit-cost-wing4": {
+					"rotation": [
+						0,
+						0,
+						0
+					],
+					"position": [
+						-2,
+						0,
+						0
+					]
+				},
+				"Leftrabit-cost-wing-base": {
+					"rotation": [
+						0,
+						"(65)*(1-0.45*math.clamp(ysm.elytra_rot_x/45,0,1))",
+						0
+					]
+				},
+				"Leftrabit-cost-wing-base-1": {
+					"rotation": [
+						"(135)*(1-0.45*math.clamp(ysm.elytra_rot_x/45,0,1))",
+						0,
+						0
+					]
+				},
+				"Leftrabit-cost-wing-z": {
+					"position": [
+						0,
+						0,
+						0
+					],
+					"scale": 1
+				},
+				"Leftrabit-cost-wing-1": {
+					"rotation": [
+						"(-5)*(1-0.45*math.clamp(ysm.elytra_rot_x/45,0,1))",
+						0,
+						0
+					]
+				},
+				"ysmGlow-Left-rabit-wing-1-1": {
+					"scale": {
+						"0.0": {
+							"post": [
+								1,
+								1,
+								1
+							],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"Leftrabit-cost-wing-2": {
+					"rotation": [
+						"(-27.5)*(1-0.45*math.clamp(ysm.elytra_rot_x/45,0,1))",
+						0,
+						0
+					]
+				},
+				"ysmGlow-Left-rabit-wing-2-1": {
+					"scale": {
+						"0.0": {
+							"post": [
+								1,
+								1,
+								1
+							],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"Leftrabit-cost-wing-3": {
+					"rotation": [
+						"(-55)*(1-0.45*math.clamp(ysm.elytra_rot_x/45,0,1))",
+						0,
+						0
+					]
+				},
+				"ysmGlow-Left-rabit-wing-3-1": {
+					"scale": {
+						"0.0": {
+							"post": [
+								1,
+								1,
+								1
+							],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"Leftrabit-cost-wing-4": {
+					"rotation": [
+						"(-82.5)*(1-0.45*math.clamp(ysm.elytra_rot_x/45,0,1))",
+						0,
+						0
+					]
+				},
+				"ysmGlow-Left-rabit-wing-4-1": {
+					"scale": {
+						"0.0": {
+							"post": [
+								1,
+								1,
+								1
+							],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"Leftrabit-cost-wing-base-down": {
+					"rotation": [
+						"(-115)*(1-0.45*math.clamp(ysm.elytra_rot_x/45,0,1))",
+						0,
+						0
+					]
+				},
+				"Leftrabit-cost-wing-base-up": {
+					"rotation": [
+						180,
+						0,
+						0
+					]
 				}
 			}
 		}

@@ -1,4 +1,5 @@
 v.anim_ctrl=1;
+t.prev_move = v.move_class;   // 上一帧的移动档位（0待机/1行走/2奔跑）
 
 // 持枪时主动画让位给 TAC 并行控制器（仅地面移动类状态，泳/飞/跳保持原动画）
 ctrl.tac_hold_gun&&(ctrl.idle||ctrl.walk||ctrl.run) ? {
@@ -9,23 +10,24 @@ ctrl.tac_hold_gun&&(ctrl.idle||ctrl.walk||ctrl.run) ? {
 
 // 空闲
 ctrl.idle ? {   // 玩家空闲时
+    v.move_class=0;
     !(v.show_car||v.mecha_active)&&!(ysm.food_level<=6) ? {
-        ctrl.set_beginning_transition_length(0.1);  // 设置动画过渡时长
+        ctrl.set_beginning_transition_length(0.2);  // 设置动画过渡时长
         ctrl.set_animation('正常_待命');    // 播放动画
         return ctrl.state_continue;     // 执行
     };
     !(v.show_car||v.mecha_active)&&(ysm.food_level<=6)&&(ysm.food_level>2)&&!ysm.rendering_in_inventory ? {
-        ctrl.set_beginning_transition_length(0.1);
+        ctrl.set_beginning_transition_length(0.2);
         ctrl.set_animation('低电量');
         return ctrl.state_continue;
     };
     !(v.show_car||v.mecha_active)&&(ysm.food_level<=2)&&!ysm.rendering_in_inventory ? {
-        ctrl.set_beginning_transition_length(0.1);
+        ctrl.set_beginning_transition_length(0.2);
         ctrl.set_animation('电量过低');
         return ctrl.state_continue;
     };
     v.mecha_active&&!v.show_car ? {
-        ctrl.set_beginning_transition_length(0.1);
+        ctrl.set_beginning_transition_length(0.2);
         ctrl.set_animation('机甲_空中待机');
         return ctrl.state_continue;
     };
@@ -38,18 +40,19 @@ ctrl.idle ? {   // 玩家空闲时
 
 // 行走
 ctrl.walk ? {
+    v.move_class=1;
     !(v.show_car||v.mecha_active) ? {
-        ctrl.set_beginning_transition_length(0.1);
+        ctrl.set_beginning_transition_length(t.prev_move==2 ? 0.3 : 0.2);   // 奔跑减速回行走用更长的过渡，掩盖步态相位差
         ctrl.set_animation('正常_行走');
         return ctrl.state_continue;
     };
     v.mecha_active&&!v.show_car&&(ysm.input_vertical<0) ? {
-        ctrl.set_beginning_transition_length(0.1);
+        ctrl.set_beginning_transition_length(t.prev_move==2 ? 0.3 : 0.2);
         ctrl.set_animation('机甲_倒退');   // 机甲模式向后移动
         return ctrl.state_continue;
     };
     v.mecha_active&&!v.show_car ? {
-        ctrl.set_beginning_transition_length(0.1);
+        ctrl.set_beginning_transition_length(t.prev_move==2 ? 0.3 : 0.2);
         ctrl.set_animation('机甲_行走');
         return ctrl.state_continue;
     };
@@ -62,13 +65,14 @@ ctrl.walk ? {
 
 // 奔跑
 ctrl.run ? {
+    v.move_class=2;
     !(v.show_car||v.mecha_active) ? {
-        ctrl.set_beginning_transition_length(0.1);
+        ctrl.set_beginning_transition_length(0.2);
         ctrl.set_animation('正常_奔跑');
         return ctrl.state_continue;
     };
     v.mecha_active&&!v.show_car ? {
-        ctrl.set_beginning_transition_length(0.1);
+        ctrl.set_beginning_transition_length(0.2);
         ctrl.set_animation('机甲_奔跑');
         return ctrl.state_continue;
     };

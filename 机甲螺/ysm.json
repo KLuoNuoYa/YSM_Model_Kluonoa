@@ -119,17 +119,11 @@
 				"parcool": "animations/跑酷动画.json",
 				"tlm": "animations/女仆动画.json"
 			},
-			"animation_controllers": [
-				"controller/主动画修改.json",
-				"controller/并行动画修改.json",
-				"controller/车辆动画相关.json",
-				"controller/机甲动画相关.json",
-				"controller/TAC动画相关.json"
-			]
+			"animation_controllers": ["controller/主动画修改.json", "controller/并行动画修改.json", "controller/车辆动画相关.json", "controller/机甲动画相关.json", "controller/TAC动画相关.json"]
 		},
 		"projectiles": [
 			{
-				"match": [ "minecraft:trident" ],
+				"match": ["minecraft:trident"],
 				"model": "models/trident.json",
 				"texture": {
 					"uv": "textures/trident.png"
@@ -143,7 +137,7 @@
 		"extra_animation": {
 			"config": "#config",
 			"car_config": "#car_config",
-			"谢谢": "招手",
+			"谢谢": "#mecha_config",
 			"赞成": "赞成",
 			"反对": "反对",
 			"鼓掌": "鼓掌",
@@ -185,6 +179,18 @@
 							"委屈巴巴": "v.roaming.emotion=4;",
 							"苦呀西": "v.roaming.emotion=5;"
 						}
+					},
+					{
+						"type": "checkbox",
+						"title": "显示原版剑模型",
+						"description": "",
+						"value": "v.roaming.config_sword"
+					},
+					{
+						"type": "checkbox",
+						"title": "显示原版三叉戟模型",
+						"description": "",
+						"value": "v.roaming.config_spear"
 					}
 				]
 			},
@@ -250,6 +256,12 @@
 						"type": "checkbox",
 						"title": "启用武装形态",
 						"value": "v.roaming.mecha"
+					},
+					{
+						"type": "checkbox",
+						"title": "无人机",
+						"description": "勾选后关闭无人机显示",
+						"value": "v.roaming.config_wurenji"
 					}
 				]
 			}
