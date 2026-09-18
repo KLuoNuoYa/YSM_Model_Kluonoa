@@ -2652,10 +2652,12 @@
 					"rotation": [27.5, 0, 0]
 				},
 				"Tail3": {
-					"rotation": [-22.5, 0, 0]
+					"rotation": [-22.5, 0, 0],
+					"position": [0, 0.4875, 0.075]
 				},
 				"Tail4": {
-					"rotation": [-32.5, 0, 0]
+					"rotation": [-32.5, 0, 0],
+					"position": [0, 0.775, 0.1]
 				},
 				"rabit-cost-sword2": {
 					"position": [-9, 0, 0]
