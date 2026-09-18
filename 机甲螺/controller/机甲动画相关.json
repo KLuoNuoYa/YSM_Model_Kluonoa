@@ -49,10 +49,10 @@
 					],
 					"transitions": [
 						{
-							"降落": "v.roaming.mecha==0&&(!v.show_car)&&ctrl.idle;"
+							"降落": "!v.should_show_mecha&&(!v.show_car)&&ctrl.idle;"
 						},
 						{
-							"收起状态": "(v.roaming.mecha==0)&&!ctrl.idle||v.show_car;"
+							"收起状态": "(!v.should_show_mecha)&&!ctrl.idle||v.show_car;"
 						}
 					]
 				},
@@ -74,12 +74,12 @@
 				"off": {
 					"animations": [
 						{
-							"喷口关闭": "!(v.roaming.mecha&&!v.show_car||ctrl.elytra_fly)||(ctrl.climbing||ctrl.climb||ctrl.sneak||ctrl.sneaking)"
+							"喷口关闭": "!(v.should_show_mecha&&!v.show_car||ctrl.elytra_fly)||(ctrl.climbing||ctrl.climb||ctrl.sneak||ctrl.sneaking)"
 						}
 					],
 					"transitions": [
 						{
-							"on": "(v.roaming.mecha&&!v.show_car||ctrl.elytra_fly)&&!(ctrl.climbing||ctrl.climb||ctrl.sneak||ctrl.sneaking)"
+							"on": "(v.should_show_mecha&&!v.show_car||ctrl.elytra_fly)&&!(ctrl.climbing||ctrl.climb||ctrl.sneak||ctrl.sneaking)"
 						}
 					],
 					"blend_transition": {
@@ -90,15 +90,15 @@
 				"on": {
 					"animations": [
 						{
-							"喷口1": "(v.roaming.mecha&&!v.show_car||ctrl.elytra_fly)"
+							"喷口1": "(v.should_show_mecha&&!v.show_car||ctrl.elytra_fly)"
 						},
 						{
-							"喷口2": "(v.roaming.mecha&&!v.show_car||ctrl.elytra_fly)"
+							"喷口2": "(v.should_show_mecha&&!v.show_car||ctrl.elytra_fly)"
 						}
 					],
 					"transitions": [
 						{
-							"off": "!(v.roaming.mecha&&!v.show_car||ctrl.elytra_fly)||(ctrl.climbing||ctrl.climb||ctrl.sneak||ctrl.sneaking)"
+							"off": "!(v.should_show_mecha&&!v.show_car||ctrl.elytra_fly)||(ctrl.climbing||ctrl.climb||ctrl.sneak||ctrl.sneaking)"
 						}
 					],
 					"blend_transition": {
@@ -120,7 +120,7 @@
 					],
 					"transitions": [
 						{
-							"展开中": "(v.roaming.mecha&&!v.show_car||ctrl.elytra_fly)&&!(ctrl.climbing||ctrl.climb||ctrl.sneak||ctrl.sneaking)"
+							"展开中": "(v.should_show_mecha&&!v.show_car||ctrl.elytra_fly)&&!(ctrl.climbing||ctrl.climb||ctrl.sneak||ctrl.sneaking)"
 						}
 					],
 					"blend_transition": {
@@ -137,7 +137,7 @@
 					],
 					"transitions": [
 						{
-							"收起中": "!(v.roaming.mecha&&!v.show_car||ctrl.elytra_fly)||(ctrl.climbing||ctrl.climb||ctrl.sneak||ctrl.sneaking)"
+							"收起中": "!(v.should_show_mecha&&!v.show_car||ctrl.elytra_fly)||(ctrl.climbing||ctrl.climb||ctrl.sneak||ctrl.sneaking)"
 						},
 						{
 							"展开": "q.all_animations_finished"
@@ -160,7 +160,7 @@
 							"飞行": "ctrl.elytra_fly"
 						},
 						{
-							"收起中": "!(v.roaming.mecha&&!v.show_car||ctrl.elytra_fly)||(ctrl.climbing||ctrl.climb||ctrl.sneak||ctrl.sneaking)"
+							"收起中": "!(v.should_show_mecha&&!v.show_car||ctrl.elytra_fly)||(ctrl.climbing||ctrl.climb||ctrl.sneak||ctrl.sneaking)"
 						}
 					],
 					"blend_transition": {
@@ -177,7 +177,7 @@
 					],
 					"transitions": [
 						{
-							"展开中": "(v.roaming.mecha&&!v.show_car||ctrl.elytra_fly)&&!(ctrl.climbing||ctrl.climb||ctrl.sneak||ctrl.sneaking)"
+							"展开中": "(v.should_show_mecha&&!v.show_car||ctrl.elytra_fly)&&!(ctrl.climbing||ctrl.climb||ctrl.sneak||ctrl.sneaking)"
 						},
 						{
 							"收起": "q.all_animations_finished"
@@ -200,7 +200,7 @@
 							"展开": "!ctrl.elytra_fly"
 						},
 						{
-							"收起中": "!(v.roaming.mecha&&!v.show_car||ctrl.elytra_fly)||(ctrl.climbing||ctrl.climb||ctrl.sneak||ctrl.sneaking)"
+							"收起中": "!(v.should_show_mecha&&!v.show_car||ctrl.elytra_fly)||(ctrl.climbing||ctrl.climb||ctrl.sneak||ctrl.sneaking)"
 						}
 					],
 					"blend_transition": {

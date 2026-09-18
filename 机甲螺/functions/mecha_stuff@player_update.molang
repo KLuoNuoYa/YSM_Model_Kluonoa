@@ -1,1 +1,1 @@
-v.should_show_mecha = v.roaming.mecha && !(v.show_car)
+v.should_show_mecha = v.roaming.mecha && !(v.show_car||q.is_riding||tlm.is_sitting);
