@@ -34384,14 +34384,14 @@
 			"bones": {
 				"Mrabit-cost-wurenji2": {
 					"rotation": [
-						"-yysm.perlin_noise('123',0 , 0, q.life_time/5 + 0.2) * -25 ",
 						0,
-						"ysm.perlin_noise('123', q.life_time/5 + 0.2, 0,0 ) * 25 + ( ( query.position(0) - ysm.second_order('DroneTiltX', query.position(0), 2, 1.1, 2) ) * math.cos(q.body_y_rotation) + ( query.position(2) - ysm.second_order('DroneTiltZ', query.position(2), 2, 1.1, 2) ) * math.sin(q.body_y_rotation) ) * -10"
+						0,
+						"( ( query.position(0) - ysm.second_order('DroneTiltX', query.position(0), 2, 1.1, 2) ) * math.cos(q.body_y_rotation) + ( query.position(2) - ysm.second_order('DroneTiltZ', query.position(2), 2, 1.1, 2) ) * math.sin(q.body_y_rotation) ) * -10"
 					],
 					"position": [
-						"-yysm.perlin_noise('123', q.life_time/5, 0, 0) * 30",
-						"yysm.perlin_noise('123', 0, q.life_time/5, 0) * 3",
-						"yysm.perlin_noise('123', 0, 0, q.life_time/5) * 30"
+						0,
+						"ysm.perlin_noise('DroneRandomPosY', 0, q.life_time/5, 0) * 3",
+						"ysm.perlin_noise('DroneRandomPosZ', 0, 0, q.life_time/5) * 30"
 					]
 				},
 				"Left-rabit-cost-wurenji-wing": {
@@ -34441,6 +34441,30 @@
 						"(query.position(1) - ysm.second_order('DronePY', query.position(1), 0.45, 1.0, 1)) * -10",
 						"( -( query.position(0) - ysm.second_order('DronePX', query.position(0), 0.3, 0.9, 1) ) * math.sin(q.body_y_rotation) + ( query.position(2) - ysm.second_order('DronePZ', query.position(2), 0.3, 0.9, 1) ) * math.cos(q.body_y_rotation) ) * 10"
 					]
+				},
+				"ysmGlow-t34": {
+					"scale": "!v.drone_light_front"
+				},
+				"ysmGlow-t31": {
+					"scale": "v.drone_light_front"
+				},
+				"ysmGlow-t35": {
+					"scale": "!v.drone_light_rear"
+				},
+				"ysmGlow-t23": {
+					"scale": "v.drone_light_rear"
+				},
+				"ysmGlow-t36": {
+					"scale": "!v.drone_light_rear"
+				},
+				"ysmGlow-t25": {
+					"scale": "v.drone_light_rear"
+				},
+				"ysmGlow-t37": {
+					"scale": "!v.drone_light_front"
+				},
+				"ysmGlow-t24": {
+					"scale": "v.drone_light_front"
 				}
 			},
 			"timeline": {
@@ -34448,7 +34472,9 @@
 					"v.delta = q.body_y_rotation - v.last_raw;",
 					"v.delta = v.delta > 180 ? v.delta - 360 : (v.delta < -180 ? v.delta + 360 : v.delta);",
 					"v.continuous_yaw = v.continuous_yaw + v.delta;",
-					"v.last_raw = q.body_y_rotation;"
+					"v.last_raw = q.body_y_rotation;",
+					"v.drone_light_front=math.mod(q.life_time,0.5)>=0.08&&math.mod(q.life_time,0.5)<0.21;",
+					"v.drone_light_rear=math.mod(q.life_time,0.5)>=0.33&&math.mod(q.life_time,0.5)<0.46;"
 				]
 			}
 		},
