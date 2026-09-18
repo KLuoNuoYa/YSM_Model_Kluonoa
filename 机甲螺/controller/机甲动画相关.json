@@ -18,7 +18,6 @@
 					"animations": [
 						"机甲_起飞"
 					],
-					"on_exit": [],
 					"transitions": [
 						{
 							"收起状态": "v.show_car;"
@@ -50,10 +49,10 @@
 					],
 					"transitions": [
 						{
-							"降落": "(v.roaming.mecha==0||v.show_car)&&ctrl.idle;"
+							"降落": "v.roaming.mecha==0&&(!v.show_car)&&ctrl.idle;"
 						},
 						{
-							"收起状态": "(v.roaming.mecha==0||v.show_car)&&!ctrl.idle;"
+							"收起状态": "(v.roaming.mecha==0)&&!ctrl.idle||v.show_car;"
 						}
 					]
 				},
@@ -61,7 +60,6 @@
 					"animations": [
 						"机甲_降落"
 					],
-					"on_exit": [],
 					"transitions": [
 						{
 							"收起状态": "q.all_animations_finished||!ctrl.idle;"
