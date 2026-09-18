@@ -9166,7 +9166,7 @@
 							"lerp_mode": "catmullrom"
 						},
 						"0.1667": {
-							"post": ["1*!v.roaming.config_lance", "1.5!v.roaming.config_lance", "1!v.roaming.config_lance"],
+							"post": ["1*!v.roaming.config_lance", "1.5*!v.roaming.config_lance", "1*!v.roaming.config_lance"],
 							"lerp_mode": "catmullrom"
 						},
 						"0.3333": {
