@@ -2458,60 +2458,299 @@
 		},
 		"statue": {
 			"loop": true,
+			"animation_length": 5.7917,
 			"bones": {
-				"Root": {
-					"rotation": [0, 25, 0]
+				"Leftrabit-cost-wing-base": {
+					"relative_to": {
+						"rotation": "entity"
+					},
+					"rotation": [0, 40, 0]
 				},
-				"UpperBody": {
-					"rotation": [0, -7.5, 0]
+				"Leftrabit-cost-wing-base-1": {
+					"rotation": [135, 0, 0]
 				},
-				"Head": {
-					"rotation": [2.82652, -2.4786, -7.50706]
+				"Leftrabit-cost-wing-base-up": {
+					"rotation": [180, 0, 0]
 				},
-				"RightEyesBase": {
-					"position": [0.25, 0, 0]
+				"Leftrabit-cost-wing-base-down": {
+					"rotation": [-115, 0, 0]
 				},
-				"LeftEyesBase": {
-					"position": [0.25, 0, 0]
+				"Leftrabit-cost-wing-1": {
+					"rotation": [-5, 0, 0]
 				},
-				"wei_xiao": {
-					"position": [0, 0, -1]
+				"ysmGlow-Left-rabit-wing-1-1": {
+					"scale": {
+						"0.0": {
+							"post": [1.2, 1.2, 1.2],
+							"lerp_mode": "catmullrom"
+						}
+					}
 				},
-				"Hair": {
+				"Leftrabit-cost-wing-2": {
+					"rotation": [-27.5, 0, 0]
+				},
+				"ysmGlow-Left-rabit-wing-2-1": {
+					"scale": {
+						"0.0": {
+							"post": [1, 1, 1],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"Leftrabit-cost-wing-3": {
+					"rotation": [-55, 0, 0]
+				},
+				"ysmGlow-Left-rabit-wing-3-1": {
+					"scale": {
+						"0.0": {
+							"post": [1, 1, 1],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"Leftrabit-cost-wing-4": {
+					"rotation": [-82.5, 0, 0]
+				},
+				"ysmGlow-Left-rabit-wing-4-1": {
+					"scale": {
+						"0.0": {
+							"post": [1.2, 1.2, 1.2],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"Leftrabit-cost-wing-z": {
+					"position": [0, 0, 0],
+					"scale": 1
+				},
+				"Rightrabit-cost-wing-base": {
+					"rotation": [0, -60, 0]
+				},
+				"Rightrabit-cost-wing-base-1": {
+					"rotation": [135, 0, 0]
+				},
+				"Rightrabit-cost-wing-z": {
+					"position": [0, 0, 0],
+					"scale": 1
+				},
+				"Rightrabit-cost-wing-1": {
+					"rotation": [-5, 0, 0]
+				},
+				"ysmGlow-Right-rabit-wing-1-1": {
+					"scale": {
+						"0.0": {
+							"post": [1, 1, 1],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"Rightrabit-cost-wing-2": {
+					"rotation": [-27.5, 0, 0]
+				},
+				"ysmGlow-Right-rabit-wing-2-1": {
+					"scale": {
+						"0.0": {
+							"post": [1.2, 1.2, 1.2],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"Rightrabit-cost-wing-3": {
+					"rotation": [-55, 0, 0]
+				},
+				"ysmGlow-Right-rabit-wing-3-1": {
+					"scale": {
+						"0.0": {
+							"post": [1, 1, 1],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"Rightrabit-cost-wing-4": {
+					"rotation": [-82.5, 0, 0]
+				},
+				"ysmGlow-Right-rabit-wing-4-1": {
+					"scale": {
+						"0.0": {
+							"post": [1, 1, 1],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"Rightrabit-cost-wing-base-down": {
+					"rotation": [-115, 0, 0]
+				},
+				"Rightrabit-cost-wing-base-up": {
+					"rotation": [180, 0, 0]
+				},
+				"rabit-cost-base-z": {
 					"rotation": [0, 0, 0]
 				},
-				"LongHair": {
-					"rotation": [0, 0, 7.5]
+				"Left-rabit-cost-wing3": {
+					"position": [0, -1, 0]
 				},
-				"RightArm": {
-					"rotation": [-35, 0, 17.5]
+				"Left-rabit-cost-wing4": {
+					"rotation": [0, 0, 0],
+					"position": [-2, 0, 0]
 				},
-				"RightForeArm": {
-					"rotation": [-130.24258, 5.73853, -4.83711]
+				"Left-rabit-cost-wing2": {
+					"rotation": [34.3569, 7.13136, -35.29284],
+					"position": [2, 0, 0]
 				},
-				"RightLeg": {
-					"rotation": [-26.3413, 10.91563, 1.16627]
+				"Right-rabit-cost-wing2": {
+					"rotation": [34.3569, -7.13136, 35.29284],
+					"position": [-2, 0, 0]
 				},
-				"RightLowerLeg": {
-					"rotation": [70, 0, 0]
+				"Right-rabit-cost-wing3": {
+					"position": [0, 0, 0]
 				},
-				"RightFoot": {
-					"rotation": [12.5, 0, 0]
+				"Right-rabit-cost-wing4": {
+					"position": [2, 0, 0]
 				},
-				"LeftEyebrow": {
-					"rotation": [0, 0, 10]
+				"Left-rabit-cost-up-wing2": {
+					"rotation": [39.18664, 47.85051, 0.74835]
 				},
-				"RightEyebrow": {
-					"rotation": [0, 0, -10]
+				"Left-rabit-cost-up-wing3": {
+					"rotation": [-30, 0, 0]
+				},
+				"ysmGlow-Left-rabit-wing-2-2": {
+					"scale": 1
+				},
+				"Right-rabit-cost-up-wing2": {
+					"rotation": [39.18664, -47.85051, -0.74835]
+				},
+				"ysmGlow-Right-rabit-wing-2-2": {
+					"scale": 1.1
+				},
+				"Right-rabit-cost-up-wing3": {
+					"rotation": [-30, 0, 0]
 				},
 				"LeftArm": {
-					"rotation": [21.77537, -33.23075, -19.40652]
+					"rotation": [-21.54866, 43.51952, -74.80767]
 				},
-				"LeftForeArm": {
-					"rotation": [-50, 0, 0]
+				"RightArm": {
+					"rotation": [-20, 0, 52.5]
+				},
+				"RightLeg": {
+					"rotation": [10, 35, 15],
+					"position": [-0.47474, 0.12721, 0.34415]
+				},
+				"rabit-cost-wurenji": {
+					"rotation": [24.49355, 28.47773, 15.46588],
+					"position": [2.05118, 23.01107, -1.20714]
 				},
 				"LeftLeg": {
-					"rotation": [-2.49762, -0.10901, 2.50238]
+					"rotation": [-61.16237, 28.72688, -9.96364]
+				},
+				"rabit-cost-sword": {
+					"position": [-10, 0, 0]
+				},
+				"Tail": {
+					"rotation": [27.5, 0, 0]
+				},
+				"Tail2": {
+					"rotation": [27.5, 0, 0]
+				},
+				"Tail3": {
+					"rotation": [-22.5, 0, 0]
+				},
+				"Tail4": {
+					"rotation": [-32.5, 0, 0]
+				},
+				"rabit-cost-sword2": {
+					"position": [-9, 0, 0]
+				},
+				"AllBody": {
+					"rotation": [-2.53566, -45.16186, 10.6268]
+				},
+				"MUpBody": {
+					"rotation": [0, 15, 0]
+				},
+				"Head": {
+					"rotation": [18.62116, 46.87293, 5.6234]
+				},
+				"RightEyebrow2": {
+					"rotation": [0, 0, 25],
+					"position": [0.29302, -0.33785, 0]
+				},
+				"LeftEyebrow2": {
+					"rotation": [0, 0, -25],
+					"position": [-0.29302, -0.33785, 0]
+				},
+				"HairA1": {
+					"rotation": [0, 0, 15]
+				},
+				"HairB2": {
+					"rotation": [0, 0, 30]
+				},
+				"HairC1": {
+					"rotation": [0, 0, 20]
+				},
+				"HairD1": {
+					"rotation": [0, 0, 30]
+				},
+				"HairA4": {
+					"rotation": [0, 0, 25]
+				},
+				"HairB4": {
+					"rotation": [0, 0, 22.5]
+				},
+				"HaloRoot": {
+					"rotation": [-180, 0, 0],
+					"position": [0, 17.67767, 17.67767]
+				},
+				"ysmGlow_nei": {
+					"position": [0, 3, 0]
+				},
+				"LeftForeArm": {
+					"rotation": [-30, 0, 0]
+				},
+				"RightHand": {
+					"rotation": [-11.59455, 3.08807, -22.28926]
+				},
+				"RightFoot": {
+					"rotation": [37.5, 0, 0]
+				},
+				"LeftLowerLeg": {
+					"rotation": [110, 0, 0]
+				},
+				"LeftFoot": {
+					"rotation": [25, 0, 0]
+				},
+				"Left-rabit-cost-wurenji-wing": {
+					"rotation": [0, -30, 0]
+				},
+				"Left-rabit-cost-wurenji-wing2": {
+					"rotation": [0, 37.5, 0]
+				},
+				"Right-rabit-cost-wurenji-wing2": {
+					"rotation": [0, -32.5, 0]
+				},
+				"Right-rabit-cost-wurenji-wing": {
+					"rotation": [0, 32.5, 0]
+				},
+				"rabit-cost-sword3": {
+					"rotation": [264.90087, 1.09909, -63.27519],
+					"scale": 1
+				},
+				"wei_xiao": {
+					"position": [0, 0, 0],
+					"scale": 0
+				},
+				"Root-rabit-cost-wurenji": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0],
+					"scale": 1
+				},
+				"Mrabit-cost-wurenji2": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"Leftpenyan-z": {
+					"scale": 1
+				},
+				"Rightpenyan-z": {
+					"scale": 1
 				}
 			}
 		},
