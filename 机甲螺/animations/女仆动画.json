@@ -2753,6 +2753,10 @@
 				},
 				"Rightpenyan-z": {
 					"scale": 1
+				},
+				"Mrabit-cost-wurenji": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
 				}
 			}
 		},
