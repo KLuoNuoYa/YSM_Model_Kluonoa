@@ -1,0 +1,214 @@
+{
+	"format_version": "1.19.0",
+	"animation_controllers": {
+		"player.pre_main_mecha_mgr": {
+			"initial_state": "收起状态",
+			"states": {
+				"收起状态": {
+					"transitions": [
+						{
+							"起飞": "v.should_show_mecha&&ctrl.idle;"
+						},
+						{
+							"空中待机": "v.should_show_mecha&&!ctrl.idle;"
+						}
+					]
+				},
+				"起飞": {
+					"animations": [
+						"机甲_起飞"
+					],
+					"transitions": [
+						{
+							"收起状态": "v.show_car;"
+						},
+						{
+							"起飞转待机": "q.all_animations_finished;"
+						}
+					]
+				},
+				"起飞转待机": {
+					"animations": [
+						"机甲_起飞转待机"
+					],
+					"transitions": [
+						{
+							"收起状态": "v.show_car;"
+						},
+						{
+							"空中待机": "q.all_animations_finished||!ctrl.idle;"
+						}
+					]
+				},
+				"空中待机": {
+					"on_entry": [
+						"v.mecha_active=1;"
+					],
+					"on_exit": [
+						"v.mecha_active=0;"
+					],
+					"transitions": [
+						{
+							"降落": "!v.should_show_mecha&&(!v.show_car)&&ctrl.idle;"
+						},
+						{
+							"收起状态": "(!v.should_show_mecha)&&!ctrl.idle||v.show_car;"
+						}
+					]
+				},
+				"降落": {
+					"animations": [
+						"机甲_降落"
+					],
+					"transitions": [
+						{
+							"收起状态": "q.all_animations_finished||!ctrl.idle;"
+						}
+					]
+				}
+			}
+		},
+		"player.pre_parallel_nozzle_anim": {
+			"initial_state": "off",
+			"states": {
+				"off": {
+					"animations": [
+						{
+							"喷口关闭": "!(v.should_show_mecha&&!v.show_car||ctrl.elytra_fly)||(ctrl.climbing||ctrl.climb||ctrl.sneak||ctrl.sneaking)"
+						}
+					],
+					"transitions": [
+						{
+							"on": "(v.should_show_mecha&&!v.show_car||ctrl.elytra_fly)&&!(ctrl.climbing||ctrl.climb||ctrl.sneak||ctrl.sneaking)"
+						}
+					],
+					"blend_transition": {
+						"0.0": 1,
+						"0.2": 0
+					}
+				},
+				"on": {
+					"animations": [
+						{
+							"喷口1": "(v.should_show_mecha&&!v.show_car||ctrl.elytra_fly)"
+						},
+						{
+							"喷口2": "(v.should_show_mecha&&!v.show_car||ctrl.elytra_fly)"
+						}
+					],
+					"transitions": [
+						{
+							"off": "!(v.should_show_mecha&&!v.show_car||ctrl.elytra_fly)||(ctrl.climbing||ctrl.climb||ctrl.sneak||ctrl.sneaking)"
+						}
+					],
+					"blend_transition": {
+						"0.0": 1,
+						"0.2": 0
+					}
+				}
+			}
+		},
+		"player.pre_parallel_wing_anim": {
+			"initial_state": "收起",
+			"states": {
+				"收起": {
+					"animations": [
+						"完全收起",
+						{
+							"光翼隐藏": "v.show_car&&v.anim_ctrl"
+						}
+					],
+					"transitions": [
+						{
+							"展开中": "(v.should_show_mecha&&!v.show_car||ctrl.elytra_fly)&&!(ctrl.climbing||ctrl.climb||ctrl.sneak||ctrl.sneaking)"
+						}
+					],
+					"blend_transition": {
+						"0.0": 1,
+						"0.1": 0
+					}
+				},
+				"展开中": {
+					"animations": [
+						"展开过程",
+						{
+							"光翼隐藏": "v.show_car&&v.anim_ctrl"
+						}
+					],
+					"transitions": [
+						{
+							"收起中": "!(v.should_show_mecha&&!v.show_car||ctrl.elytra_fly)||(ctrl.climbing||ctrl.climb||ctrl.sneak||ctrl.sneaking)"
+						},
+						{
+							"展开": "q.all_animations_finished"
+						}
+					],
+					"blend_transition": {
+						"0.0": 1,
+						"0.1": 0
+					}
+				},
+				"展开": {
+					"animations": [
+						"完全展开",
+						{
+							"光翼隐藏": "v.show_car&&v.anim_ctrl"
+						}
+					],
+					"transitions": [
+						{
+							"飞行": "ctrl.elytra_fly"
+						},
+						{
+							"收起中": "!(v.should_show_mecha&&!v.show_car||ctrl.elytra_fly)||(ctrl.climbing||ctrl.climb||ctrl.sneak||ctrl.sneaking)"
+						}
+					],
+					"blend_transition": {
+						"0.0": 1,
+						"0.1": 0
+					}
+				},
+				"收起中": {
+					"animations": [
+						"展开过程倒放",
+						{
+							"光翼隐藏": "v.show_car&&v.anim_ctrl"
+						}
+					],
+					"transitions": [
+						{
+							"展开中": "(v.should_show_mecha&&!v.show_car||ctrl.elytra_fly)&&!(ctrl.climbing||ctrl.climb||ctrl.sneak||ctrl.sneaking)"
+						},
+						{
+							"收起": "q.all_animations_finished"
+						}
+					],
+					"blend_transition": {
+						"0.0": 1,
+						"0.1": 0
+					}
+				},
+				"飞行": {
+					"animations": [
+						"鞘翅飞行调试",
+						{
+							"光翼隐藏": "v.show_car&&v.anim_ctrl"
+						}
+					],
+					"transitions": [
+						{
+							"展开": "!ctrl.elytra_fly"
+						},
+						{
+							"收起中": "!(v.should_show_mecha&&!v.show_car||ctrl.elytra_fly)||(ctrl.climbing||ctrl.climb||ctrl.sneak||ctrl.sneaking)"
+						}
+					],
+					"blend_transition": {
+						"0.0": 1,
+						"0.1": 0
+					}
+				}
+			}
+		}
+	}
+}

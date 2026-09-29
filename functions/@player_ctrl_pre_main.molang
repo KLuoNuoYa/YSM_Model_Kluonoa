@@ -1,0 +1,221 @@
+v.anim_ctrl=1;
+t.prev_move = v.move_class;   // 上一帧的移动档位（0待机/1行走/2奔跑）
+
+// 持枪时主动画让位给 TAC 并行控制器（仅地面移动类状态，泳/飞/跳保持原动画）
+ctrl.tac_hold_gun&&(ctrl.idle||ctrl.walk||ctrl.run) ? {
+    ctrl.set_beginning_transition_length(0.1);
+    ctrl.set_animation('empty');   // idle/walk/run 间切换时同名动画不会重置，平滑过渡
+    return ctrl.state_continue;    // 正常播放所设的 empty 动画
+};
+
+// 空闲
+ctrl.idle ? {   // 玩家空闲时
+    v.move_class=0;
+    !(v.show_car||v.mecha_active)&&!(ysm.food_level<=6) ? {
+        ctrl.set_beginning_transition_length(0.2);  // 设置动画过渡时长
+        ctrl.set_animation('正常_待命');    // 播放动画
+        return ctrl.state_continue;     // 执行
+    };
+    !(v.show_car||v.mecha_active)&&(ysm.food_level<=6)&&(ysm.food_level>2)&&!ysm.rendering_in_inventory ? {
+        ctrl.set_beginning_transition_length(0.2);
+        ctrl.set_animation('低电量');
+        return ctrl.state_continue;
+    };
+    !(v.show_car||v.mecha_active)&&(ysm.food_level<=2)&&!ysm.rendering_in_inventory ? {
+        ctrl.set_beginning_transition_length(0.2);
+        ctrl.set_animation('电量过低');
+        return ctrl.state_continue;
+    };
+    v.mecha_active&&!v.show_car ? {
+        ctrl.set_beginning_transition_length(0.2);
+        ctrl.set_animation('机甲_空中待机');
+        return ctrl.state_continue;
+    };
+    v.show_car ? {
+        ctrl.set_beginning_transition_length(0);
+        ctrl.set_animation('开车_待命');
+        return ctrl.state_continue;
+    };
+};
+
+// 行走
+ctrl.walk ? {
+    v.move_class=1;
+    !(v.show_car||v.mecha_active) ? {
+        ctrl.set_beginning_transition_length(t.prev_move==2 ? 0.3 : 0.2);   // 奔跑减速回行走用更长的过渡，掩盖步态相位差
+        ctrl.set_animation('正常_行走');
+        return ctrl.state_continue;
+    };
+    v.mecha_active&&!v.show_car&&(ysm.input_vertical<0) ? {
+        ctrl.set_beginning_transition_length(t.prev_move==2 ? 0.3 : 0.2);
+        ctrl.set_animation('机甲_倒退');   // 机甲模式向后移动
+        return ctrl.state_continue;
+    };
+    v.mecha_active&&!v.show_car ? {
+        ctrl.set_beginning_transition_length(t.prev_move==2 ? 0.3 : 0.2);
+        ctrl.set_animation('机甲_行走');
+        return ctrl.state_continue;
+    };
+    v.show_car ? {
+        ctrl.set_beginning_transition_length(0);
+        ctrl.set_animation('开车_行走');
+        return ctrl.state_continue;
+    };
+};
+
+// 奔跑
+ctrl.run ? {
+    v.move_class=2;
+    !(v.show_car||v.mecha_active) ? {
+        ctrl.set_beginning_transition_length(0.2);
+        ctrl.set_animation('正常_奔跑');
+        return ctrl.state_continue;
+    };
+    v.mecha_active&&!v.show_car ? {
+        ctrl.set_beginning_transition_length(0.2);
+        ctrl.set_animation('机甲_奔跑');
+        return ctrl.state_continue;
+    };
+    v.show_car ? {
+        ctrl.set_beginning_transition_length(0);
+        ctrl.set_animation('开车_奔跑');
+        return ctrl.state_continue;
+    };
+};
+
+// 跳跃
+ctrl.jump ? {
+    !(v.show_car||v.mecha_active) ? {
+        ctrl.set_beginning_transition_length(0.1);
+        ctrl.set_animation('正常_跳跃');
+        return ctrl.state_continue;
+    };
+    v.mecha_active&&!v.show_car ? {
+        ctrl.set_beginning_transition_length(0.1);
+        ctrl.set_animation('机甲_空中待机');   // 机甲无专用跳跃动画，跳跃时保持悬浮姿势
+        return ctrl.state_continue;
+    };
+    v.show_car ? {
+        ctrl.set_beginning_transition_length(0);
+        ctrl.set_animation('开车_跳跃');
+        return ctrl.state_continue;
+    };
+};
+
+// 创造飞行
+ctrl.fly ? {
+    !(v.show_car||v.mecha_active) ? {
+        ctrl.set_beginning_transition_length(0.1);
+        ctrl.set_animation('正常_飞行');
+        return ctrl.state_continue;
+    };
+    v.mecha_active&&!v.show_car&&(ysm.ground_speed2>12) ? {
+        ctrl.set_beginning_transition_length(0.1);
+        ctrl.set_animation('机甲_奔跑');   // 疾跑飞行沿用地面奔跑（实测：普通飞行≤11，疾跑飞行>11，阈值取12）
+        return ctrl.state_continue;
+    };
+    v.mecha_active&&!v.show_car&&(ysm.input_vertical<0) ? {
+        ctrl.set_beginning_transition_length(0.1);
+        ctrl.set_animation('机甲_倒退');   // 空中后退沿用地面倒退（输入判断，倒退低速也有动作）
+        return ctrl.state_continue;
+    };
+    v.mecha_active&&!v.show_car&&(ysm.ground_speed2>1) ? {
+        ctrl.set_beginning_transition_length(0.1);
+        ctrl.set_animation('机甲_行走');   // 空中移动沿用地面行走（速度判断，滑行至将近停稳才切悬停）
+        return ctrl.state_continue;
+    };
+    v.mecha_active&&!v.show_car ? {
+        ctrl.set_beginning_transition_length(0.1);
+        ctrl.set_animation('机甲_空中待机');   // 空中悬停与地面待机一致
+        return ctrl.state_continue;
+    };
+    v.show_car ? {
+        ctrl.set_beginning_transition_length(0);
+        ctrl.set_animation('开车_飞行');
+        return ctrl.state_continue;
+    };
+};
+
+// 鞘翅飞行
+ctrl.elytra_fly ? {
+    !v.show_car ? {
+        ctrl.set_beginning_transition_length(0.1);
+        ctrl.set_animation('正常_鞘翅飞行');
+        return ctrl.state_continue;
+    };
+    v.show_car ? {
+        ctrl.set_beginning_transition_length(0);
+        ctrl.set_animation('开车_鞘翅飞行');
+        return ctrl.state_continue;
+    };
+};
+
+// 水中漂浮
+ctrl.swim_stand ? {
+    !v.show_car ? {
+        ctrl.set_beginning_transition_length(0.1);
+        ctrl.set_animation('正常_水中漂浮');
+        return ctrl.state_continue;
+    };
+    v.show_car ? {
+        ctrl.set_beginning_transition_length(0);
+        ctrl.set_animation('开车_水中漂浮');
+        return ctrl.state_continue;
+    };
+};
+
+// 游泳
+ctrl.swim ? {
+    !v.show_car ? {
+        ctrl.set_beginning_transition_length(0.1);
+        ctrl.set_animation('正常_游泳');
+        return ctrl.state_continue;
+    };
+    v.show_car ? {
+        ctrl.set_beginning_transition_length(0);
+        ctrl.set_animation('开车_游泳');
+        return ctrl.state_continue;
+    };
+};
+
+// 受伤
+ctrl.attacked ? {
+    !(v.show_car||v.mecha_active) ? {
+        ctrl.set_beginning_transition_length(0.1);
+        ctrl.set_animation('正常_受伤');
+        return ctrl.state_continue;
+    };
+    v.mecha_active&&!v.show_car ? {
+        ctrl.set_beginning_transition_length(0.1);
+        ctrl.set_animation('机甲_受伤');
+        return ctrl.state_continue;
+    };
+    v.show_car ? {
+        ctrl.set_beginning_transition_length(0);
+        ctrl.set_animation('开车_受伤');
+        return ctrl.state_continue;
+    };
+};
+
+// 死亡
+ctrl.death ? {
+    !(v.show_car||v.mecha_active) ? {
+        ctrl.set_beginning_transition_length(0.1);
+        ctrl.set_animation('正常_死亡');
+        return ctrl.state_continue;
+    };
+    v.mecha_active&&!v.show_car ? {
+        ctrl.set_beginning_transition_length(0.1);
+        ctrl.set_animation('机甲_死亡');
+        return ctrl.state_continue;
+    };
+    v.show_car ? {
+        ctrl.set_beginning_transition_length(0);
+        ctrl.set_animation('开车_死亡');
+        return ctrl.state_continue;
+    };
+};
+
+v.anim_ctrl=0;
+ctrl.set_beginning_transition_length(0);
+return ctrl.state_bypass;
