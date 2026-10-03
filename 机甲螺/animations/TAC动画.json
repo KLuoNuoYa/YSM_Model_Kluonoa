@@ -12803,7 +12803,8 @@
 						0
 					]
 				}
-			}
+			},
+			"loop": "hold_on_last_frame"
 		},
 		"TAC机甲_火箭筒奔跑": {
 			"loop": true,
@@ -14614,7 +14615,8 @@
 						0
 					]
 				}
-			}
+			},
+			"loop": "hold_on_last_frame"
 		},
 		"TAC机甲_火箭筒瞄准射击": {
 			"animation_length": 0.2083,
@@ -14868,7 +14870,8 @@
 						0
 					]
 				}
-			}
+			},
+			"loop": "hold_on_last_frame"
 		},
 		"TAC机甲_火箭筒匍匐射击": {
 			"animation_length": 0.2083,
@@ -15284,7 +15287,8 @@
 						0
 					]
 				}
-			}
+			},
+			"loop": "hold_on_last_frame"
 		},
 		"TAC机甲_主手掷弹": {
 			"loop": "hold_on_last_frame",
@@ -15933,7 +15937,7 @@
 			}
 		},
 		"TAC机甲_M134腰射": {
-			"loop": true,
+			"loop": "hold_on_last_frame",
 			"animation_length": 0.1667,
 			"bones": {
 				"UpBody": {
@@ -16505,7 +16509,7 @@
 			}
 		},
 		"TAC机甲_M134瞄准射击": {
-			"loop": true,
+			"loop": "hold_on_last_frame",
 			"animation_length": 0.1667,
 			"bones": {
 				"UpBody": {
@@ -18499,7 +18503,7 @@
 			}
 		},
 		"TAC机甲_M134匍匐射击": {
-			"loop": true,
+			"loop": "hold_on_last_frame",
 			"bones": {
 				"UpperBody": {
 					"rotation": [
@@ -19031,7 +19035,7 @@
 			}
 		},
 		"SUPERB机甲_M134腰射": {
-			"loop": true,
+			"loop": "hold_on_last_frame",
 			"animation_length": 0.1667,
 			"bones": {
 				"UpBody": {
@@ -19603,7 +19607,7 @@
 			}
 		},
 		"SUPERB机甲_M134瞄准射击": {
-			"loop": true,
+			"loop": "hold_on_last_frame",
 			"animation_length": 0.1667,
 			"bones": {
 				"UpBody": {
@@ -21597,7 +21601,7 @@
 			}
 		},
 		"SUPERB机甲_M134匍匐射击": {
-			"loop": true,
+			"loop": "hold_on_last_frame",
 			"bones": {
 				"UpperBody": {
 					"rotation": [
@@ -22129,7 +22133,7 @@
 			}
 		},
 		"SUPERB机甲_M2HB腰射": {
-			"loop": true,
+			"loop": "hold_on_last_frame",
 			"animation_length": 0.1667,
 			"bones": {
 				"UpBody": {
@@ -22701,7 +22705,7 @@
 			}
 		},
 		"SUPERB机甲_M2HB瞄准射击": {
-			"loop": true,
+			"loop": "hold_on_last_frame",
 			"animation_length": 0.1667,
 			"bones": {
 				"UpBody": {
@@ -24695,7 +24699,7 @@
 			}
 		},
 		"SUPERB机甲_M2HB匍匐射击": {
-			"loop": true,
+			"loop": "hold_on_last_frame",
 			"bones": {
 				"UpperBody": {
 					"rotation": [
@@ -32445,7 +32449,8 @@
 						-0.24399
 					]
 				}
-			}
+			},
+			"loop": "hold_on_last_frame"
 		},
 		"TAC正常_步枪瞄准": {
 			"loop": "hold_on_last_frame",
@@ -32904,7 +32909,8 @@
 						10
 					]
 				}
-			}
+			},
+			"loop": "hold_on_last_frame"
 		},
 		"TAC正常_步枪装弹": {
 			"animation_length": 1.75,
@@ -33882,7 +33888,8 @@
 						]
 					}
 				}
-			}
+			},
+			"loop": "hold_on_last_frame"
 		},
 		"TAC正常_步枪奔跑": {
 			"loop": true,
@@ -36175,7 +36182,8 @@
 						1.06468
 					]
 				}
-			}
+			},
+			"loop": "hold_on_last_frame"
 		},
 		"TAC正常_手枪持枪": {
 			"loop": "hold_on_last_frame",
@@ -37333,7 +37341,8 @@
 						5
 					]
 				}
-			}
+			},
+			"loop": "hold_on_last_frame"
 		},
 		"TAC正常_手枪奔跑": {
 			"loop": true,
@@ -39546,7 +39555,8 @@
 						}
 					}
 				}
-			}
+			},
+			"loop": "hold_on_last_frame"
 		},
 		"TAC正常_手枪瞄准射击": {
 			"animation_length": 0.1667,
@@ -39896,7 +39906,8 @@
 						10
 					]
 				}
-			}
+			},
+			"loop": "hold_on_last_frame"
 		},
 		"TAC正常_手枪匍匐射击": {
 			"animation_length": 0.1667,
@@ -40408,7 +40419,8 @@
 						}
 					}
 				}
-			}
+			},
+			"loop": "hold_on_last_frame"
 		},
 		"TAC正常_火箭筒持枪": {
 			"loop": "hold_on_last_frame",
@@ -41387,7 +41399,8 @@
 						}
 					}
 				}
-			}
+			},
+			"loop": "hold_on_last_frame"
 		},
 		"TAC正常_火箭筒奔跑": {
 			"loop": true,
@@ -43374,7 +43387,8 @@
 						14.87228
 					]
 				}
-			}
+			},
+			"loop": "hold_on_last_frame"
 		},
 		"TAC正常_火箭筒瞄准射击": {
 			"animation_length": 0.2083,
@@ -43621,7 +43635,8 @@
 						}
 					}
 				}
-			}
+			},
+			"loop": "hold_on_last_frame"
 		},
 		"TAC正常_火箭筒匍匐射击": {
 			"animation_length": 0.2083,
@@ -44030,7 +44045,8 @@
 						0.75777
 					]
 				}
-			}
+			},
+			"loop": "hold_on_last_frame"
 		},
 		"TAC正常_步枪近战": {
 			"animation_length": 0.75,
@@ -45851,7 +45867,7 @@
 			}
 		},
 		"TAC正常_M134腰射": {
-			"loop": true,
+			"loop": "hold_on_last_frame",
 			"animation_length": 0.1667,
 			"bones": {
 				"UpBody": {
@@ -46409,7 +46425,7 @@
 			}
 		},
 		"TAC正常_M134瞄准射击": {
-			"loop": true,
+			"loop": "hold_on_last_frame",
 			"animation_length": 0.1667,
 			"bones": {
 				"UpBody": {
@@ -48815,7 +48831,7 @@
 			}
 		},
 		"TAC正常_M134匍匐射击": {
-			"loop": true,
+			"loop": "hold_on_last_frame",
 			"bones": {
 				"UpperBody": {
 					"rotation": [
@@ -49340,7 +49356,7 @@
 			}
 		},
 		"SUPERB正常_M134腰射": {
-			"loop": true,
+			"loop": "hold_on_last_frame",
 			"animation_length": 0.1667,
 			"bones": {
 				"UpBody": {
@@ -49898,7 +49914,7 @@
 			}
 		},
 		"SUPERB正常_M134瞄准射击": {
-			"loop": true,
+			"loop": "hold_on_last_frame",
 			"animation_length": 0.1667,
 			"bones": {
 				"UpBody": {
@@ -52304,7 +52320,7 @@
 			}
 		},
 		"SUPERB正常_M134匍匐射击": {
-			"loop": true,
+			"loop": "hold_on_last_frame",
 			"bones": {
 				"UpperBody": {
 					"rotation": [
@@ -52829,7 +52845,7 @@
 			}
 		},
 		"SUPERB正常_M2HB腰射": {
-			"loop": true,
+			"loop": "hold_on_last_frame",
 			"animation_length": 0.1667,
 			"bones": {
 				"UpBody": {
@@ -53387,7 +53403,7 @@
 			}
 		},
 		"SUPERB正常_M2HB瞄准射击": {
-			"loop": true,
+			"loop": "hold_on_last_frame",
 			"animation_length": 0.1667,
 			"bones": {
 				"UpBody": {
@@ -55793,7 +55809,7 @@
 			}
 		},
 		"SUPERB正常_M2HB匍匐射击": {
-			"loop": true,
+			"loop": "hold_on_last_frame",
 			"bones": {
 				"UpperBody": {
 					"rotation": [

@@ -1,1 +1,8 @@
 v.should_show_mecha = v.roaming.mecha && !(v.show_car||q.is_riding||tlm.is_sitting);
+
+// 开火信号消抖：tac_is_fire 归零后延迟 9 帧（约0.15s）才算真正停火，消除连发时 fire_hold/hold 状态弹跳
+ctrl.tac_is_fire ? {
+    v.fire_linger=9;
+} : {
+    v.fire_linger=math.max(v.fire_linger-1,0);
+}
