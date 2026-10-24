@@ -10314,7 +10314,7 @@
 			"animation_length": 0.0101,
 			"bones": {
 				"molang": {
-					"rotation": ["v.bv=0;v.by=0;v.bg=0;", "v.hv=0;v.hy=0;v.hg=0;", "v.fast_run=0;v.fire=0;"]
+					"rotation": ["v.hv=0;v.hg=0;"]
 				},
 				"HairA1": {
 					"rotation": [

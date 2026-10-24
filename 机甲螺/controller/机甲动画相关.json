@@ -74,12 +74,12 @@
 				"off": {
 					"animations": [
 						{
-							"喷口关闭": "!(v.should_show_mecha&&!v.show_car||ctrl.elytra_fly)||(ctrl.climbing||ctrl.climb||ctrl.sneak||ctrl.sneaking)"
+							"喷口关闭": "!v.show_wing"
 						}
 					],
 					"transitions": [
 						{
-							"on": "(v.should_show_mecha&&!v.show_car||ctrl.elytra_fly)&&!(ctrl.climbing||ctrl.climb||ctrl.sneak||ctrl.sneaking)"
+							"on": "v.show_wing"
 						}
 					],
 					"blend_transition": {
@@ -90,15 +90,15 @@
 				"on": {
 					"animations": [
 						{
-							"喷口1": "(v.should_show_mecha&&!v.show_car||ctrl.elytra_fly)"
+							"喷口1": "v.show_wing"
 						},
 						{
-							"喷口2": "(v.should_show_mecha&&!v.show_car||ctrl.elytra_fly)"
+							"喷口2": "v.show_wing"
 						}
 					],
 					"transitions": [
 						{
-							"off": "!(v.should_show_mecha&&!v.show_car||ctrl.elytra_fly)||(ctrl.climbing||ctrl.climb||ctrl.sneak||ctrl.sneaking)"
+							"off": "!v.show_wing"
 						}
 					],
 					"blend_transition": {
@@ -120,7 +120,7 @@
 					],
 					"transitions": [
 						{
-							"展开中": "(v.should_show_mecha&&!v.show_car||ctrl.elytra_fly)&&!(ctrl.climbing||ctrl.climb||ctrl.sneak||ctrl.sneaking)"
+							"展开中": "v.show_wing"
 						}
 					],
 					"blend_transition": {
@@ -137,7 +137,7 @@
 					],
 					"transitions": [
 						{
-							"收起中": "!(v.should_show_mecha&&!v.show_car||ctrl.elytra_fly)||(ctrl.climbing||ctrl.climb||ctrl.sneak||ctrl.sneaking)"
+							"收起中": "!v.show_wing"
 						},
 						{
 							"展开": "q.all_animations_finished"
@@ -160,7 +160,7 @@
 							"飞行": "ctrl.elytra_fly"
 						},
 						{
-							"收起中": "!(v.should_show_mecha&&!v.show_car||ctrl.elytra_fly)||(ctrl.climbing||ctrl.climb||ctrl.sneak||ctrl.sneaking)"
+							"收起中": "!v.show_wing"
 						}
 					],
 					"blend_transition": {
@@ -177,7 +177,7 @@
 					],
 					"transitions": [
 						{
-							"展开中": "(v.should_show_mecha&&!v.show_car||ctrl.elytra_fly)&&!(ctrl.climbing||ctrl.climb||ctrl.sneak||ctrl.sneaking)"
+							"展开中": "v.show_wing"
 						},
 						{
 							"收起": "q.all_animations_finished"
@@ -200,7 +200,7 @@
 							"展开": "!ctrl.elytra_fly"
 						},
 						{
-							"收起中": "!(v.should_show_mecha&&!v.show_car||ctrl.elytra_fly)||(ctrl.climbing||ctrl.climb||ctrl.sneak||ctrl.sneaking)"
+							"收起中": "!v.show_wing"
 						}
 					],
 					"blend_transition": {
